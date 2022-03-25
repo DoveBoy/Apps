@@ -1,0 +1,30 @@
+{
+    "homepage": "https://github.com/rachpt/lanzou-gui",
+    "description": "蓝奏云 | 蓝奏云客户端 | 蓝奏网盘 GUI版本",
+    "version": "0.4.0",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/rachpt/lanzou-gui/releases/download/v0.4.0/lanzou-gui_win64_v0.4.0.7z",
+            "hash": "b348942f828bd8139a0a1c8b32e8e214c02747456f0d6413812ff40abd54413c"
+        }
+    },
+    "extract_dir": "lanzou-gui",
+    "bin": "lanzou-gui.exe",
+    "shortcuts": [
+        [
+            "lanzou-gui.exe",
+            "lanzou-gui"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/rachpt/lanzou-gui"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/rachpt/lanzou-gui/releases/download/$version/lanzou-gui_win64_v$version.7z"
+            }
+        }
+    }
+}

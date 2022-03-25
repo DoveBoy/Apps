@@ -1,0 +1,46 @@
+{
+    "version": "1.0.15",
+    "description": "A sandbox-based isolation software for 32- and 64-bit Windows NT-based operating systems.",
+    "homepage": "https://github.com/sandboxie-plus/Sandboxie",
+    "license": "GPL-3.0-only",
+    "notes": "When the program asking for \"put SandBoxes folder into it's parent directory\", you should select \"No\" for keep directory structure of scoop, and protect your sandbox data, because the parent directory will be deleted when uninstalling.",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/1.0.15/Sandboxie-Plus-x64-v1.0.15.exe",
+            "hash": "97db922f94eb8ec992f33a16de9ada7dda2fd1e844ee8ef1ec7ec77de244d0dd"
+        },
+        "32bit": {
+            "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/1.0.15/Sandboxie-Plus-x86-v1.0.15.exe",
+            "hash": "2c4427d0824d5f0758dd4cb94724e07549910067910179a2dae8256cc32791db"
+        }
+    },
+    "innosetup": true,
+    "pre_install": [
+        "ensure \"$persist_dir\" | Out-Null",
+        "Get-ChildItem \"$persist_dir\\*\" -Include 'Sandboxie.ini', 'Sandboxie-Plus.ini' | Copy-Item -Destination \"$dir\" -ErrorAction SilentlyContinue"
+    ],
+    "uninstaller": {
+        "script": "Get-ChildItem \"$dir\\*\" -Include 'Sandboxie.ini', 'Sandboxie-Plus.ini' | Copy-Item -Destination \"$persist_dir\" -ErrorAction SilentlyContinue -Force"
+    },
+    "shortcuts": [
+        [
+            "SandMan.exe",
+            "Sandboxie Plus"
+        ],
+        [
+            "SbieCtrl.exe",
+            "Sandboxie Ctrl"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/$version/Sandboxie-Plus-x64-v$version.exe"
+            },
+            "32bit": {
+                "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/$version/Sandboxie-Plus-x86-v$version.exe"
+            }
+        }
+    }
+}

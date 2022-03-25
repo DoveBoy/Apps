@@ -1,0 +1,29 @@
+{
+    "homepage": "https://github.com/zaxtyson/LanZouCloud-CMD",
+    "description": "蓝奏云 CMD | 无限制上传",
+    "version": "2.6.5",
+    "license": "Unknown",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/zaxtyson/LanZouCloud-CMD/releases/download/v2.6.5/lanzou-cmd_x64_v2.6.5.7z",
+            "hash": "e8e341ddc493b89b7e3a8dd08cb5e092838dde4bc09356bd9643fe1c164a0686"
+        }
+    },
+    "extract_dir": "lanzou-cmd",
+    "shortcuts": [
+        [
+            "lanzou-cmd.exe",
+            "lanzou-cmd"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/zaxtyson/LanZouCloud-CMD"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/zaxtyson/LanZouCloud-CMD/releases/download/v$version/lanzou-cmd_x64_v$version.7z"
+            }
+        }
+    }
+}
