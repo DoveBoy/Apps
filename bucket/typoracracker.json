@@ -1,5 +1,5 @@
 {
-    "version": "0.2022.03.24",
+    "version": "0.2022.03.30",
     "description": "A extract & decryption and pack & encryption tools for typora.",
     "homepage": "https://github.com/Mas0nShi/typoraCracker",
     "license": {
@@ -16,9 +16,9 @@
         "由此产生的任何问题都将由用户（您）承担。"
     ],
     "depends": "typora",
-    "url": "https://github.com/Mas0nShi/typoraCracker/archive/f44e9355fb040b7bac32390ba47e384c2dd26e3d.zip",
-    "hash": "94b34062406aaa0002f422a54809197805dc7648a884683923575d81f716f413",
-    "extract_dir": "typoraCracker-f44e9355fb040b7bac32390ba47e384c2dd26e3d",
+    "url": "https://github.com/Mas0nShi/typoraCracker/archive/d90f36ba800fe07f8a7ae5593c7a3e413da66061.zip",
+    "hash": "7b04a4092e32cf8ecbd7c5c78b3a34bdf87ff5be270da5af0c2e100498fcea79",
+    "extract_dir": "typoraCracker-d90f36ba800fe07f8a7ae5593c7a3e413da66061",
     "pre_install": [
         "$cont = @(",
         "    'if (-not $env:SCOOP_APPS) { $env:SCOOP_APPS = \"$env:SCOOP\\apps\" }'",
