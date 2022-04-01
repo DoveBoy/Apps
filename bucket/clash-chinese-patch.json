@@ -1,5 +1,5 @@
 {
-    "version": "0.19.13",
+    "version": "0.19.14",
     "description": "A Chinese (Simplified) Language Patch for 'Clash for Windows'",
     "homepage": "https://github.com/BoyceLig/Clash_Chinese_Patch",
     "license": "Proprietary",
@@ -24,6 +24,6 @@
             "Move-Item \"$(scoop prefix clash-for-windows)\\resources\\app.asar.bak\" \"$(scoop prefix clash-for-windows)\\resources\\app.asar\""
         ]
     },
-    "url": "https://github.com/BoyceLig/Clash_Chinese_Patch/releases/download/0.19.13/app.7z",
-    "hash": "47719675f370b39c44843cb50f08d163a395567c6fa51a633a841b003b722b7a"
+    "url": "https://github.com/BoyceLig/Clash_Chinese_Patch/releases/download/0.19.14/app.7z",
+    "hash": "1b55c9638d0e53b76794ee5885b5953fd144a0243348daa9799dfcd4baab0a56"
 }
