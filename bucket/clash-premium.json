@@ -1,12 +1,12 @@
 {
-    "version": "2022.04.10",
+    "version": "2022.04.11",
     "description": "A rule-based tunnel in Go.",
     "homepage": "https://github.com/Dreamacro/clash",
     "license": "GPL-3.0 License",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Dreamacro/clash/releases/download/premium/clash-windows-amd64-2022.04.10.zip",
-            "hash": "94dfec8d2d8817160bcebe9be4dbe5eea66edba2575e0b180267a460f4b61bfe",
+            "url": "https://github.com/Dreamacro/clash/releases/download/premium/clash-windows-amd64-2022.04.11.zip",
+            "hash": "0c42deb6d3facddd0e2f332051529542273f8a98dfee5bde6eb499a10911b2e0",
             "bin": [
                 [
                     "clash-windows-amd64.exe",
@@ -15,8 +15,8 @@
             ]
         },
         "32bit": {
-            "url": "https://github.com/Dreamacro/clash/releases/download/premium/clash-windows-386-2022.04.10.zip",
-            "hash": "d72a79e02125050dc0dfe797e715c0bb39d7ba98a8dec6d7ae3429be11037770",
+            "url": "https://github.com/Dreamacro/clash/releases/download/premium/clash-windows-386-2022.04.11.zip",
+            "hash": "9ffec44d45d23979b4961bb7740afd6f6ffc2f82b46d382b6398c76f006ea87f",
             "bin": [
                 [
                     "clash-windows-386.exe",
