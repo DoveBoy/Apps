@@ -7,7 +7,7 @@
         "url": "https://github.com/2dust/v2rayN/blob/master/LICENSE"
     },
     "url": "https://github.com/2dust/v2rayN/releases/download/5.16/v2rayN-Core.zip",
-    "hash": "ae23b80066346d07a811861101777ce29c5ef77f3c86e46b4abd8817aab82869",
+    "hash": "d2432ac3ec7881382c5807330c8f2da994f766bd8da551c2a3e3d59592842c09",
     "extract_dir": "v2rayN-Core",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\user-wininet.json\")) {",
