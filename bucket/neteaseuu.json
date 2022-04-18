@@ -1,0 +1,25 @@
+{
+    "homepage": "https://uu.163.com/",
+    "description": "Game accelerator created by Netease Inc.",
+    "version": "4.22.0.4041",
+    "license": {
+        "identifier": "EULA",
+        "url": "https://uu.163.com/agreement.html"
+    },
+    "url": "https://uu.gdl.netease.com/4041/UU-4.22.0.exe#/dl.7z",
+    "hash": "088e48ec807470f1412839cda4a86f4ebb76032ca574d2228856dcf7ce024e2c",
+    "shortcuts": [
+        [
+            "uu.exe",
+            "网易UU"
+        ]
+    ],
+    "checkver": {
+        "url": "https://uu.163.com/baike/js/dl.js",
+        "regex": "'dlUrl': 'https://.*?.gdl.netease.com/(?<build>\\d+)/UU-(?<ver>[\\d.]+).exe'",
+        "replace": "${ver}.${build}"
+    },
+    "autoupdate": {
+        "url": "https://uu.gdl.netease.com/$matchBuild/UU-$matchVer.exe#/dl.7z"
+    }
+}
