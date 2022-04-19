@@ -1,0 +1,40 @@
+{
+    "version": "5.4.3.1342",
+    "description": "Utility for data recovery, disk partition management, backup & restore",
+    "homepage": "https://www.diskgenius.com",
+    "license": "Unknown",
+    "architecture": {
+        "64bit": {
+            "url": "https://engdownload.eassos.cn/winpe/DGEng5431342_x64.zip",
+            "hash": "28aa6827fb81a9434953be6863471f2a6d12c4ce12ae6650e095f97f6436eb6b"
+        },
+        "32bit": {
+            "url": "https://engdownload.eassos.cn/winpe/DGEng5431342_x86.zip",
+            "hash": "a69165b8b516d49d04152f4f615820d0b3fc4dc0abb9072b52a54dba271d268b"
+        }
+    },
+    "extract_dir": "DiskGenius",
+    "pre_install": "if (!(Test-Path \"$persist_dir\\Options.ini\")) { New-Item \"$dir\\Options.ini\" | Out-Null }",
+    "bin": "DiskGenius.exe",
+    "shortcuts": [
+        [
+            "DiskGenius.exe",
+            "DiskGenius"
+        ]
+    ],
+    "persist": "Options.ini",
+    "checkver": {
+        "url": "https://internal.eassos.com/update/diskgenius/update.php",
+        "regex": "\\[([\\d.]+)\\]"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://engdownload.eassos.cn/winpe/DGEng$cleanVersion_x64.zip"
+            },
+            "32bit": {
+                "url": "https://engdownload.eassos.cn/winpe/DGEng$cleanVersion_x86.zip"
+            }
+        }
+    }
+}
