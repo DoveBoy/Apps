@@ -1,0 +1,42 @@
+{
+    "version": "1.8",
+    "description": "A clash client for Windows, support clash core and Clash.Meta core",
+    "homepage": "https://github.com/2dust/clashN",
+    "license": {
+        "identifier": "GPL-3.0-only",
+        "url": "https://github.com/2dust/clashN/blob/main/LICENSE"
+    },
+    "url": "https://github.com/2dust/clashN/releases/download/1.8/clashN-Core.zip",
+    "hash": "196655dbc306dd88df1b77f5bb8595360501aa155410ac99920d0d13f16c6f1a",
+    "extract_dir": "clashN-Core",
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\user-wininet.json\")) {",
+        "    New-Item -Path \"$dir\\user-wininet.json\" | Out-Null",
+        "}",
+        "if (Test-Path \"$persist_dir\\guiNConfig.json\") {",
+        "    Copy-Item \"$persist_dir\\guiNConfig.json\" \"$dir\\\" | Out-Null",
+        "}"
+    ],
+    "uninstaller": {
+        "script": [
+            "if (Test-Path \"$dir\\guiNConfig.json\") {",
+            "    Copy-Item \"$dir\\guiNConfig.json\" \"$persist_dir\\\" | Out-Null",
+            "}"
+        ]
+    },
+    "bin": "clashN.exe",
+    "shortcuts": [
+        [
+            "clashN.exe",
+            "clashN"
+        ]
+    ],
+    "persist": "user-wininet.json",
+    "checkver": {
+        "url": "https://api.github.com/repos/2dust/clashN/releases",
+        "jsonpath": "$[0].tag_name"
+    },
+    "autoupdate": {
+        "url": "https://github.com/2dust/clashN/releases/download/$version/clashN-Core.zip"
+    }
+}
