@@ -1,0 +1,13 @@
+{
+    "version": "2.4.0",
+    "description": "A command-line system information utility for Windows",
+    "homepage": "https://github.com/kiedtl/winfetch",
+    "license": "MIT",
+    "url": "https://raw.githubusercontent.com/kiedtl/winfetch/v2.4.0/winfetch.ps1",
+    "hash": "6e9966d8ea675aa71b3a511bccc6dc4089c8d5f7455c6fb904bc25d6e2f14346",
+    "bin": "winfetch.ps1",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://raw.githubusercontent.com/kiedtl/winfetch/v$version/winfetch.ps1"
+    }
+}
