@@ -1,5 +1,5 @@
 {
-    "version": "3.0.0",
+    "version": "3.0.1",
     "description": "lanzouyun-disk supports macos and windows, login, bulk upload/download of large files, URL parsing, built with electron.",
     "homepage": "https://github.com/chenhb23/lanzouyun-disk",
     "license": {
@@ -9,8 +9,8 @@
     "notes": "We don't persist your lanzouyun-disk data, they are still storaged in '$env:APPDATA\\lanzouyun-disk'.",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/chenhb23/lanzouyun-disk/releases/download/v3.0.0/lanzouyun-3.0.0-x64-win.zip",
-            "hash": "92056c0fe550d7b5f0c055071c8dbf2725b91c93cbe8bab6aae93fbb62d280b7"
+            "url": "https://github.com/chenhb23/lanzouyun-disk/releases/download/v3.0.1/lanzouyun-3.0.1-x64-win.zip",
+            "hash": "81878203afc744eb8b5455b61df281dcf0b031afb4c24ee9fb30b569c177976c"
         }
     },
     "bin": [
