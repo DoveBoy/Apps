@@ -1,0 +1,50 @@
+{
+    "version": "2.4.1",
+    "description": "SSH/Sftp/Shell/Telnet/Serial client",
+    "homepage": "https://kingtoolbox.github.io/",
+    "license": "Apache-2.0",
+    "suggest": {
+        "vcredist2022": "extras/vcredist2022"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/kingToolbox/WindTerm/releases/download/2.4.0/WindTerm_2.4.1_Windows_Portable_x86_64.zip",
+            "hash": "1614660d42b73a10037c72e725b0a7d86dc7e304fd4d9629fd0fbf9bbf503570"
+        },
+        "32bit": {
+            "url": "https://github.com/kingToolbox/WindTerm/releases/download/2.4.0/WindTerm_2.4.1_Windows_Portable_x86_32.zip",
+            "hash": "27f4f14f93ada0450bfeecddbec464d0a3532675ff612625d19a965b479d0d93"
+        }
+    },
+    "extract_dir": "WindTerm_2.4.1",
+    "shortcuts": [
+        [
+            "WindTerm.exe",
+            "WindTerm"
+        ]
+    ],
+    "post_install": [
+        "info '[Portable Mode] Configuring profiles directory...'",
+        "'{ \"path\" : \".\" }' | Set-Content -Path \"$dir\\profiles.config\"",
+        "if (!(Test-Path \"$dir\\.wind\\profiles\") -and (Test-Path \"$persist_dir\\profiles\")) {",
+        "    info '[Portable Mode] Copying existing profiles...'",
+        "    Copy-Item \"$persist_dir\\profiles\" \"$dir\\.wind\" -Recurse",
+        "}"
+    ],
+    "persist": ".wind",
+    "checkver": {
+        "url": "https://github.com/kingToolbox/WindTerm/releases",
+        "regex": "(?<tag>[\\d.]+)\\/WindTerm_([\\d.]+)_Windows_Portable_x86_64.zip"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/kingToolbox/WindTerm/releases/download/$matchTag/WindTerm_$version_Windows_Portable_x86_64.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/kingToolbox/WindTerm/releases/download/$matchTag/WindTerm_$version_Windows_Portable_x86_32.zip"
+            }
+        },
+        "extract_dir": "WindTerm_$version"
+    }
+}
