@@ -1,17 +1,17 @@
 {
-    "version": "1.0.21",
+    "version": "1.0.22",
     "description": "A sandbox-based isolation software for 32- and 64-bit Windows NT-based operating systems.",
     "homepage": "https://github.com/sandboxie-plus/Sandboxie",
     "license": "GPL-3.0-only",
     "notes": "When the program asking for \"put SandBoxes folder into it's parent directory\", you should select \"No\" for keep directory structure of scoop, and protect your sandbox data, because the parent directory will be deleted when uninstalling.",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/1.0.21/Sandboxie-Plus-x64-v1.0.21.exe",
-            "hash": "9e8d130b598e940a60c6564d7e00322cbbff732e8fda01a66552d7fba2fea990"
+            "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/1.0.22/Sandboxie-Plus-x64-v1.0.22.exe",
+            "hash": "57b846a6c7211ae11ad431970f696223ef039561c1257245f49d6bcc5be09b5f"
         },
         "32bit": {
-            "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/1.0.21/Sandboxie-Plus-x86-v1.0.21.exe",
-            "hash": "20a41ef50316318bde20e661dd54984e6842b796148f42f5de6372fe820ea0f9"
+            "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/1.0.22/Sandboxie-Plus-x86-v1.0.22.exe",
+            "hash": "5ca1dc88d36173de807e3a3460401e7a4f295d34866fd07801c3e3937c057a55"
         }
     },
     "innosetup": true,
