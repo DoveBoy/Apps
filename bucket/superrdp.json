@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0.38",
+    "description": "Super RDPWrap",
+    "homepage": "https://github.com/anhkgg/SuperRDP",
+    "license": {
+        "identifier": "Apache-2.0 license",
+        "url": "https://github.com/anhkgg/SuperRDP/blob/main/LICENSE"
+    },
+    "url": "https://github.com/anhkgg/SuperRDP/releases/download/2.0.0.38/SuperRDP2_2.0.0.38.zip",
+    "hash": "a9d4ee2e3cd74c0961eb93a743128972364168009da69072021640a670f45d33",
+    "bin": "SuperRDP2.exe",
+    "shortcuts": [
+        [
+            "SuperRDP2.exe",
+            "SuperRDP2"
+        ]
+    ],
+    "persist": "superrdp.ini",
+    "checkver": {
+        "url": "https://github.com/anhkgg/SuperRDP/releases"
+    },
+    "autoupdate": {
+        "url": "https://github.com/anhkgg/SuperRDP/releases/download/$version/SuperRDP2_$version.zip"
+    }
+}
