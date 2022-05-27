@@ -1,0 +1,31 @@
+{
+    "homepage": "https://weixin.qq.com",
+    "description": "微信，是一个生活方式",
+    "version": "3.6.0",
+    "license": "© 1998 - 2021 Tencent Inc. All Rights Reserved",
+    "notes": "We don't persist your WeChat data, they are still storaged in '%APPDATA%\\Tencent\\WeChat'.",
+    "architecture": {
+        "64bit": {
+            "url": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe#/dl.7z",
+            "hash": "039a9dea901301d057db147a9971a2c2a2dc45084049c62b9104a8e76d47d68f"
+        }
+    },
+    "shortcuts": [
+        [
+            "WeChat.exe",
+            "WeChat"
+        ]
+    ],
+    "post_install": "Echo $dir\\`$R5 $dir\\`$_15_ $dir\\`$PLUGINSDIR | Remove-Item -Recurse",
+    "checkver": {
+        "url": "https://pc.weixin.qq.com",
+        "regex": "class=\"download-version\">([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe#/dl.7z"
+            }
+        }
+    }
+}
