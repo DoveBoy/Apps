@@ -32,9 +32,8 @@
     ],
     "persist": "ClashWarden.ini",
     "checkver": {
-        "url": "https://github.com/dream7180/ClashWarden/releases.atom",
-        "regex": "<title>v(?<tag>[\\d.]+).*?(?<date>[\\d]{8})",
-        "replace": "${tag}-${date}"
+        "url": "https://api.github.com/repos/dream7180/ClashWarden/releases",
+        "regex": "releases/download/(?<tag>[\\d.]+)/ClashWarden_([\\d.-]+)_win64\\.7z"
     },
     "autoupdate": {
         "architecture": {
