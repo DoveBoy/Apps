@@ -2,11 +2,10 @@
     "version": "24.6.3",
     "description": "HEU KMS Activator, maintained by zbezj(知彼而知己).",
     "homepage": "https://github.com/zbezj/HEU_KMS_Activator",
-    "license": "Freeware",
+    "license": {
+        "identifier": "Freeware"
+    },
     "notes": [
-        "作者: 知彼而知己, 微信公众号: HEU168",
-        "不得用于商业目的，个人用户也仅限于研究、交流使用，24小时内务必删除，使用正版的 Windows 和 Office 应前往正规渠道购买。",
-        "",
         "Author: zbezj, WeChat Official Accounts: HEU168",
         "Do not use for commercial purposes, personal users are also limited to research, communication use, must be deleted within 24 hours, the use of genuine Windows and Office should be purchased from the regular channels."
     ],
@@ -15,7 +14,7 @@
     "pre_install": [
         "$7z=(Get-ChildItem $dir\\HEU_KMS_Activator_$version*).Name",
         "7z x -pHEU168 $dir\\$7z $('-o' + $dir) | Out-Null",
-        "Rename-Item -Path \"$dir\\HEU_KMS_Activator_v*.exe\" -NewName \"HEU_KMS_Activator.exe\" -Force",
+        "Rename-Item \"$dir\\HEU_KMS_Activator_v*.exe\" \"HEU_KMS_Activator.exe\" -Force",
         "Remove-Item \"$dir\\*dl.zip_\" -Force -ErrorAction SilentlyContinue"
     ],
     "bin": "HEU_KMS_Activator.exe",
@@ -25,8 +24,11 @@
             "HEU KMS Activator"
         ]
     ],
-    "checkver": "github",
+    "checkver": {
+        "url": "https://api.github.com/repos/zbezj/HEU_KMS_Activator/releases",
+        "regex": "(?sm)browser_download_url.*?releases/download/([\\d.]+)/(?<file>HEU_KMS_Activator.*?\\.zip)"
+    },
     "autoupdate": {
-        "url": "https://github.com/zbezj/HEU_KMS_Activator/releases/download/$version/HEU_KMS_Activator_v$version.HEU168.zip#dl.zip_"
+        "url": "https://github.com/zbezj/HEU_KMS_Activator/releases/download/$version/$matchFile#dl.zip_"
     }
 }
