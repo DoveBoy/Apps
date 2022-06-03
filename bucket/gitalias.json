@@ -1,0 +1,25 @@
+{
+    "version": "0.2022.06.02",
+    "description": "Git alias commands for faster easier version control.",
+    "homepage": "https://github.com/GitAlias/gitalias",
+    "license": {
+        "identifier": "GPL-2.0-only"
+    },
+    "notes": [
+        "Use gitalias by running: 'git config --global include.path $dir\\.gitalias'",
+        "custom usage: <https://github.com/GitAlias/gitalias/blob/main/doc/install/index.md#install-with-custom-usage>"
+    ],
+    "url": "https://github.com/GitAlias/gitalias/archive/d495bff2e30f50b9afb5e62c22d9dabe164b00fc.zip",
+    "hash": "f9b0f12cc6c618e13429cde9da92558cb1958e62e408762f54a840f99cfec18d",
+    "extract_dir": "gitalias-d495bff2e30f50b9afb5e62c22d9dabe164b00fc",
+    "pre_install": "Rename-Item -Path \"$dir\\gitalias.txt\" -NewName \".gitalias\" -Force | Out-Null",
+    "checkver": {
+        "url": "https://github.com/GitAlias/gitalias/commits/main.atom",
+        "regex": "(?s)>(\\d+)-(\\d+)-(\\d+)T.*?/(?<sha>[0-9a-f]{40})",
+        "replace": "0.${1}.${2}.${3}"
+    },
+    "autoupdate": {
+        "url": "https://github.com/GitAlias/gitalias/archive/$matchSha.zip",
+        "extract_dir": "gitalias-$matchSha"
+    }
+}
