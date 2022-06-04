@@ -1,5 +1,5 @@
 {
-    "version": "0.2022.06.02",
+    "version": "0.2022.06.02.d495bff",
     "description": "Git alias commands for faster easier version control.",
     "homepage": "https://github.com/GitAlias/gitalias",
     "license": {
@@ -15,8 +15,8 @@
     "pre_install": "Rename-Item -Path \"$dir\\gitalias.txt\" -NewName \".gitalias\" -Force | Out-Null",
     "checkver": {
         "url": "https://github.com/GitAlias/gitalias/commits/main.atom",
-        "regex": "(?s)>(\\d+)-(\\d+)-(\\d+)T.*?/(?<sha>[0-9a-f]{40})",
-        "replace": "0.${1}.${2}.${3}"
+        "regex": "(?s)>(\\d+)-(\\d+)-(\\d+)T.*?/(?<sha>(?<short>[0-9a-f]{7})[0-9a-f]{33})",
+        "replace": "0.${1}.${2}.${3}.${short}"
     },
     "autoupdate": {
         "url": "https://github.com/GitAlias/gitalias/archive/$matchSha.zip",
