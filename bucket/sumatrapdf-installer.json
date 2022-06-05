@@ -1,0 +1,61 @@
+{
+    "version": "3.4.4",
+    "description": "PDF and eBook reader",
+    "homepage": "https://www.sumatrapdfreader.org/free-pdf-reader",
+    "license": "GPL-3.0-only,BSD-2-Clause",
+    "extract_dir": "SumatraPDF",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.sumatrapdfreader.org/dl/rel/3.4.4/SumatraPDF-3.4.4-64-install.exe",
+            "hash": "5c4751464ae77dcd0b99a8216718679ba2cae860fc7efea834003842a443f150"
+        },
+        "32bit": {
+            "url": "https://www.sumatrapdfreader.org/dl/rel/3.4.4/SumatraPDF-3.4.4-install.exe",
+            "hash": "ba5aa41dfd9f12b6f3fc3bff66ce3d4b2b9944e9ae37b0dd653cfb0adb6cdf39"
+        }
+    },
+    "pre_install": [
+        "$file = 'SumatraPDF-settings.txt'",
+        "if (-not (Test-Path \"$persist_dir\\$file\")) {",
+        "    Write-Host 'File' $file 'does not exists. Creating.' -f Yellow",
+        "    Set-Content \"$dir\\$file\" 'CheckForUpdates = false' -Encoding Ascii",
+        "}",
+        "Get-ChildItem \"$dir\\SumatraPDF-*.exe\" | Rename-Item -NewName 'SumatraPDF-installer.exe'"
+    ],
+    "bin": "SumatraPDF.exe",
+    "installer": {
+        "file": "SumatraPDF-installer.exe",
+        "args": [
+            "-x",
+            "-d \"$dir\""
+        ]
+    },
+    "shortcuts": [
+        [
+            "SumatraPDF.exe",
+            "SumatraPDF"
+        ]
+    ],
+    "persist": [
+        "SumatraPDF-settings.txt",
+        "sumatrapdfcache"
+    ],
+    "post_install": "regsvr32 /s \"$dir\\pdfpreview.dll\"",
+    "uninstaller": {
+        "script": "regsvr32 /u /s \"$dir\\pdfpreview.dll\""
+    },
+    "checkver": {
+        "url": "https://www.sumatrapdfreader.org/docs/Version-history",
+        "regex": "([\\d.]+)\\s+\\(\\d+"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.sumatrapdfreader.org/dl/rel/$version/SumatraPDF-$version-64-install.exe"
+            },
+            "32bit": {
+                "url": "https://www.sumatrapdfreader.org/dl/rel/$version/SumatraPDF-$version-install.exe"
+            }
+        }
+    }
+}
