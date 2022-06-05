@@ -1,5 +1,5 @@
 {
-    "version": "1.11",
+    "version": "1.12",
     "description": "A clash client for Windows, support clash core and Clash.Meta core",
     "homepage": "https://github.com/2dust/clashN",
     "license": {
@@ -10,8 +10,8 @@
     "suggest": {
         "dotnet-runtime": "dotnet-runtime"
     },
-    "url": "https://github.com/2dust/clashN/releases/download/1.11/clashN-Core.zip",
-    "hash": "a27c56080eb0f18faba1b70ee99cbb8721a18116ecf0289e4ec605fedcd18474",
+    "url": "https://github.com/2dust/clashN/releases/download/1.12/clashN-Core.zip",
+    "hash": "c0d3cbcb430791626919af49645f4a3ec300a8c07b2d63c4a7449d4e3a977b47",
     "extract_dir": "clashN-Core",
     "pre_install": [
         "'config.yaml', 'guiNConfig.json' | ForEach-Object {",
