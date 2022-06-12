@@ -1,13 +1,13 @@
 {
-    "version": "5.25",
+    "version": "5.26",
     "description": "A V2Ray client for Windows, support Xray core and v2fly core.",
     "homepage": "https://github.com/2dust/v2rayN",
     "license": {
         "identifier": "GPL-3.0-only",
         "url": "https://github.com/2dust/v2rayN/blob/master/LICENSE"
     },
-    "url": "https://github.com/2dust/v2rayN/releases/download/5.25/v2rayN-Core.zip",
-    "hash": "ba3f688c142810c82ce0823414ae0d606a0301fb3eb7f8a9736ae31c58cf96e0",
+    "url": "https://github.com/2dust/v2rayN/releases/download/5.26/v2rayN-Core.zip",
+    "hash": "865c2bb69691f528a7bf1812e8ba14ec3a0aaf62124ab8a46e878aeaa72d2021",
     "extract_dir": "v2rayN-Core",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\user-wininet.json\")) {",
