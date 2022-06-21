@@ -1,5 +1,5 @@
 {
-    "version": "1.0.36",
+    "version": "1.0.37",
     "description": "64Gram (unofficial Telegram Desktop)",
     "homepage": "https://64gr.am",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/TDesktop-x64/tdesktop/releases/download/v1.0.36/64Gram_1.0.36_x64.zip",
-            "hash": "3d276255fa04f4401bcc7642061dad821ccdf09f11caa8c361068dc3c4ab6088"
+            "url": "https://github.com/TDesktop-x64/tdesktop/releases/download/v1.0.37/64Gram_1.0.37_x64.zip",
+            "hash": "5c522715c8ce728dbc541e8a9662f62f6a9d645e1cc85c0c9df28c7adbe07e6f"
         },
         "32bit": {
-            "url": "https://github.com/TDesktop-x64/tdesktop/releases/download/v1.0.36/64Gram_1.0.36_x86.zip",
-            "hash": "41dd8c9d790dc42e9d97e71b3042d86ebed96b07d5c6965f9323d27b6459a6f7"
+            "url": "https://github.com/TDesktop-x64/tdesktop/releases/download/v1.0.37/64Gram_1.0.37_x86.zip",
+            "hash": "dc6ea6bdb346376deab5ee9770af766989b8b8cc75d7b9f1aecf7685eed6db73"
         }
     },
     "persist": "tdata",
