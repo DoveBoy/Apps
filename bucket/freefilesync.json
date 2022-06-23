@@ -1,13 +1,13 @@
 {
-    "version": "11.21",
+    "version": "11.22",
     "description": "FreeFileSync. Folder comparison and synchronization",
     "homepage": "https://freefilesync.org",
     "license": {
         "identifier": "Freeware",
         "url": "https://freefilesync.org/faq.php#commercial-usage"
     },
-    "url": "https://freefilesync.org/download/FreeFileSync_11.21_Windows_Setup.exe",
-    "hash": "c91338fcbcb42a2ec99d525d3a466a18ed7704f9e689f1f90fe4fe501872d847",
+    "url": "https://freefilesync.org/download/FreeFileSync_11.22_Windows_Setup.exe",
+    "hash": "580fc8422094c87599d72811172daaf2e1af94b948157495fb45f5ee37284dde",
     "innosetup": true,
     "bin": [
         "FreeFileSync.exe",
