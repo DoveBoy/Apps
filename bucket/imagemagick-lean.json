@@ -5,12 +5,12 @@
     "license": "ImageMagick",
     "architecture": {
         "64bit": {
-            "url": "https://download.imagemagick.org/ImageMagick/download/binaries/ImageMagick-7.1.0-portable-Q16-HDRI-x64.zip",
-            "hash": "dabffdb5f4fa83b88cbb2c4eb339db4ffecb646cad63870c93d4858ec501feaa"
+            "url": "https://imagemagick.org/archive/binaries/ImageMagick-7.1.0-portable-Q16-HDRI-x64.zip",
+            "hash": "feaf76f454f22cc2b693991bf95c7396c55392b8d662692a44e47536af1ecdaa"
         },
         "32bit": {
-            "url": "https://download.imagemagick.org/ImageMagick/download/binaries/ImageMagick-7.1.0-portable-Q16-HDRI-x86.zip",
-            "hash": "35ca42943cc145d135deaa2b7e3da95ec8521fe39cc43aee0406869217b042bb"
+            "url": "https://imagemagick.org/archive/binaries/ImageMagick-7.1.0-portable-Q16-HDRI-x86.zip",
+            "hash": "eaf189d1860ad1dafcf226a460a37876cfdfbd35b9d081eefc0e3bc9787c2862"
         }
     },
     "bin": [
@@ -23,21 +23,21 @@
         "- For appropriate programming DLLs and environment variables, install 'imagemagick' instead."
     ],
     "checkver": {
-        "url": "https://download.imagemagick.org/ImageMagick/download/binaries/?C=N;O=D",
+        "url": "https://imagemagick.org/archive/binaries/?C=N;O=D",
         "regex": "ImageMagick-([\\d.-]+)-portable-Q16-HDRI-x64\\.zip\\.asc"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://download.imagemagick.org/ImageMagick/download/binaries/ImageMagick-$version-portable-Q16-HDRI-x64.zip"
+                "url": "https://imagemagick.org/archive/binaries/ImageMagick-$version-portable-Q16-HDRI-x64.zip"
             },
             "32bit": {
-                "url": "https://download.imagemagick.org/ImageMagick/download/binaries/ImageMagick-$version-portable-Q16-HDRI-x86.zip"
+                "url": "https://imagemagick.org/archive/binaries/ImageMagick-$version-portable-Q16-HDRI-x86.zip"
             }
         },
         "hash": {
             "mode": "rdf",
-            "url": "https://www.imagemagick.org/download/binaries/digest.rdf"
+            "url": "https://imagemagick.org/archive/binaries/digest.rdf"
         }
     }
 }
