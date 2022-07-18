@@ -1,14 +1,13 @@
 {
-    "version": "20220311-beta3",
+    "version": "20220701",
     "description": "Download images from Pixiv and more!",
-    "homepage": "https://nandaka.devnull.zone/",
+    "homepage": "https://nandaka.devnull.zone",
     "license": {
         "identifier": "BSD-2-Clause",
         "url": "https://github.com/Nandaka/PixivUtil2/blob/master/LICENSE"
     },
-    "url": "https://github.com/Nandaka/PixivUtil2/releases/download/pixivutil20220311-beta3/pixivutil20220311-beta3.zip",
-    "hash": "1e46317366d7d882a0f1349ce7db581a19fbec5911e5ae029ea2b00b028b83ce",
-    "bin": "PixivUtil2.exe",
+    "url": "https://github.com/Nandaka/PixivUtil2/releases/download/v20220701/pixivutil20220701.zip",
+    "hash": "c49a47d23869abab4ae7c09d55c130c650e2a2cd457f0298b056dd754852619c",
     "shortcuts": [
         [
             "PixivUtil2.exe",
@@ -16,9 +15,9 @@
         ]
     ],
     "checkver": {
-        "url": "https://api.github.com/repos/Nandaka/PixivUtil2/releases",
+        "url": "https://api.github.com/repos/Nandaka/PixivUtil2/releases?per_page=1",
         "jsonpath": "$[0].tag_name",
-        "regex": "(?<tag>v|pixivutil([\\w.-]+))"
+        "regex": "(?<tag>(?<prefix>v|pixivutil)(.*))"
     },
     "autoupdate": {
         "url": "https://github.com/Nandaka/PixivUtil2/releases/download/$matchTag/pixivutil$version.zip"
