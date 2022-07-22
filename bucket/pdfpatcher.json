@@ -1,13 +1,13 @@
 {
-    "version": "1.0.0.4064",
+    "version": "1.0.0.4084",
     "description": "PDF toolbox, you can edit bookmarks, cut and rotate pages, lift restrictions, extract or merge documents, explore the structure of the document, extract images, convert to images, etc.",
     "homepage": "https://pdfpatcher.cnblogs.com",
     "license": {
         "identifier": "Proprietary",
         "url": "https://github.com/wmjordan/PDFPatcher/blob/master/%E6%8E%88%E6%9D%83%E5%8D%8F%E8%AE%AE.txt"
     },
-    "url": "https://github.com/wmjordan/PDFPatcher/files/8986478/PDFPatcher.1.0.0.4064.7z.zip",
-    "hash": "4724671ae1066be000d30801eb1e6c695dc9b2dba4ef7b014c73217cae49d9a0",
+    "url": "https://github.com/wmjordan/PDFPatcher/files/9167865/PDFPatcher.1.0.0.4084.7z.zip",
+    "hash": "c13caee48b5b531212419e663feffec71387270d33a2fdf5bcfa372622f20a7e",
     "pre_install": "if (!(Test-Path \"$persist_dir\\AppConfig.json\")) { New-Item \"$dir\\AppConfig.json\" -ItemType \"file\" -Value \"{}\" | Out-Null }",
     "bin": "PDFPatcher.exe",
     "shortcuts": [
