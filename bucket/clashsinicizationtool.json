@@ -1,10 +1,10 @@
 {
-    "version": "1.4.3",
+    "version": "1.4.4",
     "description": "Clash for Windows汉化工具",
     "homepage": "https://github.com/BoyceLig/ClashSinicizationTool",
     "license": "Unknown",
-    "url": "https://github.com/BoyceLig/ClashSinicizationTool/releases/download/1.4.3/ClashSinicizationTool.7z",
-    "hash": "3e8fd7ba324facbeb1c392cbfe6af5450064c11f6972f36e3f1762b50894f7f0",
+    "url": "https://github.com/BoyceLig/ClashSinicizationTool/releases/download/1.4.4/ClashSinicizationTool-1.4.4.7z",
+    "hash": "d53033466b8f5eae9df57528e8e77006974cc2e553e67b49595286cb99e3c36b",
     "shortcuts": [
         [
             "Clash Sinicization Tool.exe",
