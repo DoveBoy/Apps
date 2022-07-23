@@ -13,6 +13,6 @@
     ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/BoyceLig/ClashSinicizationTool/releases/download/$version/ClashSinicizationTool.7z"
+        "url": "https://github.com/BoyceLig/ClashSinicizationTool/releases/download/$version/ClashSinicizationTool-$version.7z"
     }
 }
