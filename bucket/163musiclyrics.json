@@ -1,5 +1,5 @@
 {
-    "version": "4.7",
+    "version": "4.8",
     "description": "Windows 云音乐歌词获取【网易云、QQ音乐】",
     "homepage": "https://github.com/jitwxs/163MusicLyrics/",
     "license": {
@@ -10,8 +10,8 @@
         "  - Guide: <https://github.com/jitwxs/163MusicLyrics/wiki/3.x-Guide>",
         "  - ChangeLog: <https://github.com/jitwxs/163MusicLyrics/wiki/ChangeLog>"
     ],
-    "url": "https://github.com/jitwxs/163MusicLyrics/releases/download/v4.7/v4.7-green.zip",
-    "hash": "b64d39689237ddacae365a00cd44ef20b0bc253209fec814331f7ff6f1299e1b",
+    "url": "https://github.com/jitwxs/163MusicLyrics/releases/download/v4.8/v4.8-green.zip",
+    "hash": "1d29671ac6f811ee634f6122caaa7351dad877d210544cdf6700f041cd37beba",
     "bin": "MusicLyricApp.exe",
     "shortcuts": [
         [
