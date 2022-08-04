@@ -3,7 +3,7 @@
     "description": "Download bilibili videos (contributed videos, fanfics, movies, courses), live streams, and comics.",
     "homepage": "https://github.com/vooidzero/B23Downloader",
     "license": {
-        "identifier": "GPL-3.0 license",
+        "identifier": "GPL-3.0-or-later",
         "url": "https://github.com/vooidzero/B23Downloader/blob/main/LICENSE"
     },
     "architecture": {
@@ -21,13 +21,13 @@
         ]
     ],
     "checkver": {
-        "url": "https://github.com/vooidzero/B23Downloader/releases",
-        "regex": "B23Downloader-v([\\d.]+)"
+        "url": "https://api.github.com/repos/vooidzero/B23Downloader/releases",
+        "regex": "releases/download/v(?<tag>[\\d.]+)/B23Dld-v([\\d.]+)-win_64.zip"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/vooidzero/B23Downloader/releases/download/v$matchHead/B23Dld-v$version-win_64.zip",
+                "url": "https://github.com/vooidzero/B23Downloader/releases/download/v$matchTag/B23Dld-v$version-win_64.zip",
                 "extract_dir": "B23Dld-v$version-win_64"
             }
         }
