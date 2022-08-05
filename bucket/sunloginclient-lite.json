@@ -24,19 +24,19 @@
     "checkver": {
         "url": "https://client-api.oray.com/softwares/SL_WINDOWS_LITE?x64=1",
         "jp": "$.downloadurl",
-        "re": "/sunlogin_client_lite_([\\d\\.]+)_(?<arch>[Xx\\d]+)"
+        "re": "/SunloginClientLite_([\\d\\.]+)_(?<arch>[Xx\\d]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://dl-cdn.oray.com/sunlogin/windows/sunlogin_client_lite_$version_$matchArch.exe#/sunloginclient-lite.exe",
+                "url": "https://dl-cdn.oray.com/sunlogin/windows/SunloginClientLite_$version_$matchArch.exe#/sunloginclient-lite.exe",
                 "hash": {
                     "url": "https://client-api.oray.com/softwares/SL_WINDOWS_LITE?x64=1",
                     "jp": "$.md5"
                 }
             },
             "32bit": {
-                "url": "https://dl-cdn.oray.com/sunlogin/windows/sunlogin_client_lite_$version.exe#/sunloginclient-lite.exe",
+                "url": "https://dl-cdn.oray.com/sunlogin/windows/SunloginClientLite_$version.exe#/sunloginclient-lite.exe",
                 "hash": {
                     "url": "https://client-api.oray.com/softwares/SL_WINDOWS_LITE?x64=0",
                     "jp": "$.md5"
