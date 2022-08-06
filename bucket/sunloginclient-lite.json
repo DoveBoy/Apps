@@ -1,5 +1,5 @@
 {
-    "version": "1.0.1.43315",
+    "version": "1.0.2",
     "description": "SunLoginClient_Lite by Oray",
     "homepage": "https://sunlogin.oray.com/",
     "license": {
@@ -7,12 +7,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://dl-cdn.oray.com/sunlogin/windows/sunlogin_client_lite_1.0.1.43315_x64.exe#/sunloginclient-lite.exe",
-            "hash": "md5:9a9724dc5a33cadc02de0682c029552e"
+            "url": "https://dl-cdn.oray.com/sunlogin/windows/SunloginClientLite_1.0.2_x64.exe#/sunloginclient-lite.exe",
+            "hash": "md5:e31cb2f51ebbcc98ca9f51645727eb00"
         },
         "32bit": {
-            "url": "https://dl-cdn.oray.com/sunlogin/windows/sunlogin_client_lite_1.0.1.43315.exe#/sunloginclient-lite.exe",
-            "hash": "md5:b75ddf2b02aa7d56fa2cb0c1c4297ef0"
+            "url": "https://dl-cdn.oray.com/sunlogin/windows/SunloginClientLite_1.0.2.exe#/sunloginclient-lite.exe",
+            "hash": "md5:55726ad06d8ad4484210345b195d285a"
         }
     },
     "shortcuts": [
