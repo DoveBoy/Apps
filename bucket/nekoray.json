@@ -1,12 +1,12 @@
 {
-    "version": "1.1-2022-08-09",
+    "version": "1.2-2022-08-13",
     "description": "Qt/C++ based cross-platform proxy configuration manager.",
     "homepage": "https://github.com/MatsuriDayo/nekoray/",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/MatsuriDayo/nekoray/releases/download/1.1/nekoray-1.1-2022-08-09-windows64.zip",
-            "hash": "239715feb1916a451139780fcbf3334a8b3baaeb9dc306f52af5abbf11fa1673"
+            "url": "https://github.com/MatsuriDayo/nekoray/releases/download/1.2/nekoray-1.2-2022-08-13-windows64.zip",
+            "hash": "dff46a8aed03a0bd6aad7456d65681ed81d9ee5958ff839bd3fa9a1b18fa5b12"
         }
     },
     "extract_dir": "nekoray",
