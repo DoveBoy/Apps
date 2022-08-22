@@ -1,5 +1,5 @@
 {
-    "version": "2.8.1",
+    "version": "2.9.0",
     "description": "Official Command Line Interface for the IPinfo API (IP geolocation and other types of IP data)",
     "homepage": "https://ipinfo.io/",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ipinfo/cli/releases/download/ipinfo-2.8.1/ipinfo_2.8.1_windows_amd64.zip",
-            "hash": "402bf282526c23c46547a325191d1d944cb148e5f33b9d01218eee8d0f5cd3cb"
+            "url": "https://github.com/ipinfo/cli/releases/download/ipinfo-2.9.0/ipinfo_2.9.0_windows_amd64.zip",
+            "hash": "177faa80a655483a397e85a67e679d855c3cdc94a0a1ffb67b9826a3f23e429d"
         },
         "32bit": {
-            "url": "https://github.com/ipinfo/cli/releases/download/ipinfo-2.8.1/ipinfo_2.8.1_windows_386.zip",
-            "hash": "5eafcec3f984bb6fa28284371e34d00679f75f48774d6ad6d19ebf52cfa84ed9"
+            "url": "https://github.com/ipinfo/cli/releases/download/ipinfo-2.9.0/ipinfo_2.9.0_windows_386.zip",
+            "hash": "f3e3d1535d78d7a8f9c3f883500e875534ee90910471ead918b0c43ff7a77076"
         }
     },
     "post_install": "Rename-Item \"$dir\\ipinfo_*.exe\" ipinfo.exe -Force",
