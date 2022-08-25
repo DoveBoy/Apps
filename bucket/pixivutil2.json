@@ -1,13 +1,13 @@
 {
-    "version": "20220804",
+    "version": "20220825",
     "description": "Download images from Pixiv and more!",
     "homepage": "https://nandaka.devnull.zone",
     "license": {
         "identifier": "BSD-2-Clause",
         "url": "https://github.com/Nandaka/PixivUtil2/blob/master/LICENSE"
     },
-    "url": "https://github.com/Nandaka/PixivUtil2/releases/download/v20220804/pixivutil20220804.zip",
-    "hash": "9ffa355e4ae227950ef7203ba92578d8fab9dd521c1ed4f048c75a40b912a4bc",
+    "url": "https://github.com/Nandaka/PixivUtil2/releases/download/v20220825/pixivutil20220825.zip",
+    "hash": "62c09d4ad43f76967bcc13afc5ec026ad4f0b3a88d43bbc3422d619276e15a10",
     "shortcuts": [
         [
             "PixivUtil2.exe",
