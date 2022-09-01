@@ -1,5 +1,5 @@
 {
-    "version": "1.2.5",
+    "version": "1.2.6",
     "description": "OCR离线批量图片文字识别软件，带界面。可排除视频图片中的水印、游戏图片中的UI等干扰，提取干净的文本。基于 PaddleOCR 。",
     "homepage": "https://github.com/hiroi-sora/Umi-OCR",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/hiroi-sora/Umi-OCR/releases/download/v1.2.5/Umi-OCR.v1.2.5.7z",
-            "hash": "3d1f29b10b75a7eb73aa4e313187a6f89571cb1c69a39d8ec5e2f4fc09a6863b"
+            "url": "https://github.com/hiroi-sora/Umi-OCR/releases/download/v1.2.6/Umi-OCR.v1.2.6.7z",
+            "hash": "a39838162f1838a4b309af5feb0488a0a51d92a80cc3b7f26acfd1a40eebfcf8"
         }
     },
     "extract_dir": "Umi-OCR",
