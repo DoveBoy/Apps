@@ -11,7 +11,7 @@
         "dotnet-runtime": "dotnet-runtime"
     },
     "url": "https://github.com/2dust/clashN/releases/download/1.21/clashN-Core.zip",
-    "hash": "263c8626d7c04d98ddc087a1cc7acf412465151c12c178310b636a494f46b8e8",
+    "hash": "e1bed7e3cce16d1a03328c1d7b1d6610804cfef5e915ec1226f574f6d012c14b",
     "extract_dir": "clashN-Core",
     "pre_install": [
         "'config.yaml', 'guiNConfig.json' | ForEach-Object {",
