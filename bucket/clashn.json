@@ -6,10 +6,11 @@
         "identifier": "GPL-3.0-only",
         "url": "https://github.com/2dust/clashN/blob/main/LICENSE"
     },
+    "notes": [
+        "Create scheduled task by running: '$dir\\create-scheduled-task.ps1'",
+        "Delete scheduled task by running: '$dir\\delete-scheduled-task.ps1'"
+    ],
     "depends": "sudo",
-    "suggest": {
-        "dotnet-runtime": "dotnet-runtime"
-    },
     "url": "https://github.com/2dust/clashN/releases/download/1.21/clashN-Core.zip",
     "hash": "e1bed7e3cce16d1a03328c1d7b1d6610804cfef5e915ec1226f574f6d012c14b",
     "extract_dir": "clashN-Core",
@@ -17,7 +18,9 @@
         "'config.yaml', 'guiNConfig.json' | ForEach-Object {",
         "    if (Test-Path \"$persist_dir\\$_\") { Copy-Item \"$persist_dir\\$_\" \"$dir\\\" -Force | Out-Null }",
         "}",
-        "(Get-Content \"$bucketsdir\\meta\\scripts\\clashn\\start-clashn.ps1\") -replace 'clashn-core', 'clashn' | Set-Content \"$dir\\start-clashn.ps1\" -Encoding ASCII"
+        "Copy-Item \"$bucketsdir\\Apps\\scripts\\clashn\\start-clashn.ps1\" \"$dir\\start-clashn.ps1\" -ErrorAction 'SilentlyContinue' -Force | Out-Null",
+        "Copy-Item \"$bucketsdir\\Apps\\scripts\\clashn\\create-scheduled-task.ps1\" \"$dir\\create-scheduled-task.ps1\" -ErrorAction 'SilentlyContinue' -Force | Out-Null",
+        "Copy-Item \"$bucketsdir\\Apps\\scripts\\clashn\\delete-scheduled-task.ps1\" \"$dir\\delete-scheduled-task.ps1\" -ErrorAction 'SilentlyContinue' -Force | Out-Null"
     ],
     "uninstaller": {
         "script": [
@@ -41,7 +44,7 @@
         "data"
     ],
     "checkver": {
-        "url": "https://api.github.com/repos/2dust/clashN/releases",
+        "url": "https://api.github.com/repos/2dust/clashN/releases?per_page=1",
         "jsonpath": "$[0].tag_name"
     },
     "autoupdate": {
