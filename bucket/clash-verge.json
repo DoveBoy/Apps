@@ -3,7 +3,7 @@
     "description": "A Clash GUI based on tauri. Supports Windows and macOS.",
     "homepage": "https://github.com/zzzgydi/clash-verge",
     "license": {
-        "identifier": "GPL-3.0-only",
+        "identifier": "GPL-3.0-or-later",
         "url": "https://github.com/zzzgydi/clash-verge/blob/main/LICENSE"
     },
     "architecture": {
@@ -14,15 +14,20 @@
     },
     "pre_install": [
         "info '[Portable Mode]: Copying user data...'",
-        "if (Test-Path \"$persist_dir\\User Data\\*\") { Copy-Item \"$persist_dir\\User Data\\*\" \"$env:USERNAME\\.config\\clash-verge\\\" -Recurse -Force | Out-Null }"
+        "if (Test-Path \"$persist_dir\\*\") {",
+        "    ensure \"$env:USERNAME\\.config\\clash-verge\" | Out-Null",
+        "    Copy-Item \"$persist_dir\\*\" \"$env:USERNAME\\.config\\clash-verge\\\" -Recurse -Force | Out-Null ",
+        "}"
     ],
     "uninstaller": {
         "script": [
             "info '[Portable Mode]: Backing up user data...'",
-            "if (Test-Path \"$env:USERNAME\\.config\\clash-verge\\*\") { Copy-Item \"$env:USERNAME\\.config\\clash-verge\\*\" \"$persist_dir\\User Data\" -Recurse -Force | Out-Null }"
+            "if (Test-Path \"$env:USERNAME\\.config\\clash-verge\\*\") { ",
+            "    ensure \"$persist_dir\" | Out-Null",
+            "    Copy-Item \"$env:USERNAME\\.config\\clash-verge\\*\" \"$persist_dir\\\" -Recurse -Force | Out-Null ",
+            "}"
         ]
     },
-    "bin": "Clash Verge.exe",
     "shortcuts": [
         [
             "Clash Verge.exe",
