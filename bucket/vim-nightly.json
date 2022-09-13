@@ -1,5 +1,5 @@
 {
-    "version": "9.0.0453",
+    "version": "9.0.0459",
     "description": "A highly configurable text editor for efficiently creating and changing any kind of text.",
     "homepage": "https://www.vim.org",
     "license": "Vim",
@@ -9,12 +9,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/vim/vim-win32-installer/releases/download/v9.0.0453/gvim_9.0.0453_x64.zip",
-            "hash": "2a3d75c4005849d3da6688b4ee040d734439fc5574d92bc41f7a856a16a917b5"
+            "url": "https://github.com/vim/vim-win32-installer/releases/download/v9.0.0459/gvim_9.0.0459_x64.zip",
+            "hash": "49322d6a3ac2959c503bf8037e22d5a7adf115c3a47cd6eff035b0f8e1dbd93d"
         },
         "32bit": {
-            "url": "https://github.com/vim/vim-win32-installer/releases/download/v9.0.0453/gvim_9.0.0453_x86.zip",
-            "hash": "22241ad0858ecb55778c9260428e20a50279716121cc550210344ff678aeb472"
+            "url": "https://github.com/vim/vim-win32-installer/releases/download/v9.0.0459/gvim_9.0.0459_x86.zip",
+            "hash": "306f4bc0220dc256f204981fb00864d73d57a1df4e9ff5ab490ed61b8d6e78da"
         }
     },
     "extract_dir": "vim\\vim90",
