@@ -1,6 +1,6 @@
 {
     "version": "6.0.4",
-    "description": "ShadowsocksR for Windows(with dotnet runtime)",
+    "description": "ShadowsocksR for Windows(with dotnet runtime), maintained by @HMBSbige.",
     "homepage": "https://github.com/HMBSbige/ShadowsocksR-Windows",
     "license": {
         "identifier": "AGPL-3.0-only",
@@ -18,10 +18,20 @@
     },
     "extract_dir": "ShadowsocksR",
     "pre_install": [
-        "if (!(Test-Path \"$persist_dir\\gui-config.json\")) { New-Item \"$dir\\gui-config.json\" -ItemType \"file\" -Value \"{}\" | Out-Null }",
-        "if (!(Test-Path \"$persist_dir\\pac.txt\")) { New-Item \"$dir\\pac.txt\" -ItemType \"file\" | Out-Null }",
-        "if (!(Test-Path \"$persist_dir\\user-rule.txt\")) { New-Item \"$dir\\user-rule.txt\" -ItemType \"file\" | Out-Null }"
+        "@('gui-config.json', 'pac.txt', 'transfer_log.json', 'user-rule.txt') | ForEach-Object {",
+        "    if (Test-Path \"$persist_dir\\$_\") { Copy-Item \"$persist_dir\\$_\" \"$dir\\\" | Out-Null }",
+        "}"
     ],
+    "uninstaller": {
+        "script": [
+            "@('gui-config.json', 'pac.txt', 'transfer_log.json', 'user-rule.txt') | ForEach-Object {",
+            "    if (Test-Path \"$dir\\$_\") {",
+            "        ensure \"$persist_dir\" | Out-Null",
+            "        Copy-Item \"$dir\\$_\" \"$persist_dir\\\" | Out-Null",
+            "    }",
+            "}"
+        ]
+    },
     "bin": "ShadowsocksR.exe",
     "shortcuts": [
         [
@@ -29,11 +39,7 @@
             "ShadowsocksR"
         ]
     ],
-    "persist": [
-        "gui-config.json",
-        "pac.txt",
-        "user-rule.txt"
-    ],
+    "persist": "temp",
     "checkver": {
         "url": "https://github.com/HMBSbige/ShadowsocksR-Windows/releases",
         "regex": "<span class.*?ShadowsocksR-Win32-([\\d.]+)\\.7z</span>"
@@ -49,6 +55,7 @@
         },
         "hash": {
             "url": "https://github.com/HMBSbige/ShadowsocksR-Windows/releases",
+            "mode": "extract",
             "regex": "(?sm)$basename.*?$sha256"
         }
     }
