@@ -1,5 +1,5 @@
 {
-    "version": "1.5.10",
+    "version": "1.5.11",
     "description": "美观易用且无广告的漫画和游戏客户端，同时支持MacOS，Windows，Android，iOS。",
     "homepage": "https://github.com/niuhuan/pikapika",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/niuhuan/pikapika/releases/download/v1.5.10/pikapika-v1.5.10-flutter_2.10.3-windows-x86_64.zip",
-            "hash": "946ec8d58826809e5faa618bc5319b333951fb8c2969d69225c9bb1c70f43b07"
+            "url": "https://github.com/niuhuan/pikapika/releases/download/v1.5.11/pikapika-v1.5.11-flutter_2.10.3-windows-x86_64.zip",
+            "hash": "47c528ea27820513a7cd33e27c49c0492ede19a7fb2735bcafcdea0a1e95816e"
         }
     },
     "shortcuts": [
