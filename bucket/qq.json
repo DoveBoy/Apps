@@ -1,10 +1,10 @@
 {
     "homepage": "https://im.qq.com",
     "description": "I'm QQ - 每一天，乐在沟通",
-    "version": "9.6.6.28796",
+    "version": "9.6.7.28807",
     "license": "Copyright © 1998 - 2021 Tencent. All Rights Reserved.",
-    "url": "https://dldir1.qq.com/qqfile/qq/PCQQ9.6.6/QQ9.6.6.28796.exe#/dl.7z",
-    "hash": "be1d1c38f605f601e9743838d1d2f41731cbd7e09f9df342d58fbb90588a865a",
+    "url": "https://dldir1.qq.com/qqfile/qq/PCQQ9.6.7/QQ9.6.7.28807.exe#/dl.7z",
+    "hash": "68a08e82a943a989a346e309a4f4f7a7ec09b735b7ce0e814253f5667b865f50",
     "shortcuts": [
         [
             "Bin\\QQScLauncher.exe",
