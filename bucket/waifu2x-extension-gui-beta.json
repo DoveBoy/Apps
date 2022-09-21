@@ -12,6 +12,19 @@
             "extract_dir": "waifu2x-extension-gui"
         }
     },
+    "pre_install": [
+        "if (Test-Path \"$persist_dir\\settings.ini\") {",
+        "    Copy-Item \"$persist_dir\\settings.ini\" \"$dir\\\" | Out-Null",
+        "}"
+    ],
+    "uninstaller": {
+        "script": [
+            "if (Test-Path \"$dir\\settings.ini\") {",
+            "    ensure \"$persist_dir\" | Out-Null",
+            "    Copy-Item \"$dir\\settings.ini\" \"$persist_dir\\\" | Out-Null",
+            "}"
+        ]
+    },
     "shortcuts": [
         [
             "Waifu2x-Extension-GUI.exe",
