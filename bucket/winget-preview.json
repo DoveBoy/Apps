@@ -25,13 +25,13 @@
     },
     "bin": "winget.exe",
     "checkver": {
-        "url": "https://github.com/microsoft/winget-cli/tags",
-        "regex": "/archive/refs/tags/v([\\d.]+)(?<pre>-preview)?\\.zip"
+        "url": "https://github.com/microsoft/winget-cli/releases.atom",
+        "regex": "tag/v([\\d.]+)-preview"
     },
     "autoupdate": {
-        "url": "https://github.com/microsoft/winget-cli/releases/download/v$version$matchPre/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle#/dl.7z",
+        "url": "https://github.com/microsoft/winget-cli/releases/download/v$version-preview/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle#/dl.7z",
         "hash": {
-            "url": "https://github.com/microsoft/winget-cli/releases/download/v$version$matchPre/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.txt"
+            "url": "https://github.com/microsoft/winget-cli/releases/download/v$version-preview/Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.txt"
         }
     }
 }
