@@ -1,5 +1,5 @@
 {
-    "version": "1.9.20220917",
+    "version": "1.10.20220923",
     "description": "Qt/C++ based cross-platform proxy configuration manager(Use Matsuri custom version of v2ray-core).",
     "homepage": "https://github.com/MatsuriDayo/nekoray",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/MatsuriDayo/nekoray/releases/download/1.9/nekoray-1.9-2022-09-17-windows64.zip",
-            "hash": "0fe7c8e76c933724927a8fab633ddc7fecd04be774708f7e99687dab5820260a"
+            "url": "https://github.com/MatsuriDayo/nekoray/releases/download/1.10/nekoray-1.10-2022-09-23-windows64.zip",
+            "hash": "f6244d05e682d336cdf9be8428c08391afe4b23006c80c00ce259af896178076"
         }
     },
     "extract_dir": "nekoray",
