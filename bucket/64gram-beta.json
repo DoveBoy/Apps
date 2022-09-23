@@ -1,5 +1,5 @@
 {
-    "version": "1.0.45",
+    "version": "1.0.47",
     "description": "64Gram (unofficial Telegram Desktop)",
     "homepage": "https://64gr.am",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/TDesktop-x64/tdesktop/releases/download/v1.0.45/64Gram_1.0.45.beta_x64.zip",
-            "hash": "49d6ef78cf2384dd1b8826e3d73728919d0a36707aa9df1ba26dbe7b806a3371"
+            "url": "https://github.com/TDesktop-x64/tdesktop/releases/download/v1.0.47/64Gram_1.0.47.beta_x64.zip",
+            "hash": "896272630f94f243897aaf93a6d177d6dc0c6ac33021071ce3a816cfc5ceb5f4"
         },
         "32bit": {
-            "url": "https://github.com/TDesktop-x64/tdesktop/releases/download/v1.0.45/64Gram_1.0.45.beta_x86.zip",
-            "hash": "5134c94032fe1a580684d7e6b9954412137bdb1261f3ca2526d974c8d4d49eed"
+            "url": "https://github.com/TDesktop-x64/tdesktop/releases/download/v1.0.47/64Gram_1.0.47.beta_x86.zip",
+            "hash": "7d7b4f9f78f5f27e4ac6a68a8930056e29f2c0972744575446ec336e21ffaec0"
         }
     },
     "pre_install": "if (Test-Path \"$persist_dir\\log.txt\") { Copy-Item \"$persist_dir\\log.txt\" \"$dir\\\" }",
