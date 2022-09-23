@@ -32,16 +32,16 @@
     ],
     "persist": "tdata",
     "checkver": {
-        "url": "https://github.com/TDesktop-x64/tdesktop/releases",
-        "regex": "64Gram_([\\d.]+)(?<beta>\\.beta)?_x86\\.zip</span>"
+        "url": "https://api.github.com/repos/TDesktop-x64/tdesktop/releases",
+        "regex": "/releases/tag/v([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/TDesktop-x64/tdesktop/releases/download/v$version/64Gram_$version$matchBeta_x64.zip"
+                "url": "https://github.com/TDesktop-x64/tdesktop/releases/download/v$version/64Gram_$version.beta_x64.zip"
             },
             "32bit": {
-                "url": "https://github.com/TDesktop-x64/tdesktop/releases/download/v$version/64Gram_$version$matchBeta_x86.zip"
+                "url": "https://github.com/TDesktop-x64/tdesktop/releases/download/v$version/64Gram_$version.beta_x86.zip"
             }
         }
     }
