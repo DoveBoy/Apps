@@ -1,5 +1,5 @@
 {
-    "version": "26.0.0",
+    "version": "26.1.0",
     "description": "HEU KMS Activator, maintained by zbezj(知彼而知己).",
     "homepage": "https://github.com/zbezj/HEU_KMS_Activator",
     "license": {
@@ -9,8 +9,8 @@
         "Author: zbezj, WeChat Official Accounts: HEU168",
         "Do not use for commercial purposes, personal users are also limited to research, communication use, must be deleted within 24 hours, the use of genuine Windows and Office should be purchased from the regular channels."
     ],
-    "url": "https://github.com/zbezj/HEU_KMS_Activator/releases/download/26.0.0/HEU_KMS_Activator_v26.0.0_Password_HEU168.zip#dl.zip_",
-    "hash": "736e7e010b4f72a0ba002817aadebac8b6ad6d97267511d7fd7c556e02fd308e",
+    "url": "https://github.com/zbezj/HEU_KMS_Activator/releases/download/26.1.0/HEU_KMS_Activator_v26.1.0_Password_HEU168.zip#dl.zip_",
+    "hash": "a71aa74cfeee3c073fdc34cb169a3d491ae6abb99db42e403537cddaab575644",
     "pre_install": [
         "$7z=(Get-ChildItem $dir\\HEU_KMS_Activator_$version*).Name",
         "7z x -pHEU168 $dir\\$7z $('-o' + $dir) | Out-Null",
