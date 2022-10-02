@@ -1,0 +1,21 @@
+{
+    "version": "0.2022.10.01.30e00f6",
+    "description": "Data files from Loyalsoldier/v2ray-rules-dat, works for v2ray and Xray.",
+    "homepage": "https://github.com/Loyalsoldier/v2ray-rules-dat",
+    "license": {
+        "identifier": "GPL-3.0-or-later",
+        "url": "https://github.com/Loyalsoldier/v2ray-rules-dat/raw/master/LICENSE"
+    },
+    "url": "https://github.com/Loyalsoldier/v2ray-rules-dat/archive/30e00f6c7c80317958034c2c0c6c59d2d5ff28b4.zip",
+    "hash": "0588bb518b668df44b7ab46babb63354a6dc05f8578f5e83619cd8adaa9cd677",
+    "extract_dir": "v2ray-rules-dat-30e00f6c7c80317958034c2c0c6c59d2d5ff28b4",
+    "checkver": {
+        "url": "https://github.com/Loyalsoldier/v2ray-rules-dat/commits/release.atom",
+        "regex": "(?s)>(\\d+)-(\\d+)-(\\d+)T.*?/(?<sha>(?<short>[0-9a-f]{7})[0-9a-f]{33})",
+        "replace": "0.${1}.${2}.${3}.${short}"
+    },
+    "autoupdate": {
+        "url": "https://github.com/Loyalsoldier/v2ray-rules-dat/archive/$matchSha.zip",
+        "extract_dir": "v2ray-rules-dat-$matchSha"
+    }
+}
