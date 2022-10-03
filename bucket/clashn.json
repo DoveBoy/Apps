@@ -10,31 +10,16 @@
         "Create scheduled task by running: '$dir\\create-scheduled-task.ps1'",
         "Delete scheduled task by running: '$dir\\delete-scheduled-task.ps1'"
     ],
-    "depends": [
-        "sudo",
-        "Apps/clash",
-        "Apps/clash-premium",
-        "Apps/clash-meta"
-    ],
-    "suggest": {
-        "windowsdesktop-runtime-6": [
-            "windowsdesktop-runtime-6-np",
-            "windowsdesktop-runtime-6"
-        ]
-    },
+    "depends": "sudo",
     "url": "https://github.com/2dust/clashN/releases/download/2.0/clashN.zip",
     "hash": "724d3c70ace013271fe4b451c84048e0d00e36c1a5b2d1692d5bd3d755f6cd9b",
-    "extract_dir": "clashN",
     "pre_install": [
-        "Copy-Item \"$(appdir clash $global)\\current\\Clash.exe\" \"$dir\" -Force | Out-Null",
-        "Copy-Item \"$(appdir clash-premium $global)\\current\\Clash.Premium.exe\" \"$dir\" -Force | Out-Null",
-        "Copy-Item \"$(appdir clash-meta $global)\\current\\Clash.Meta.exe\" \"$dir\" -Force | Out-Null",
         "'config.yaml', 'guiNConfig.json' | ForEach-Object {",
         "    if (Test-Path \"$persist_dir\\$_\") { Copy-Item \"$persist_dir\\$_\" \"$dir\\\" -Force | Out-Null }",
         "}",
-        "(Get-Content \"$bucketsdir\\Apps\\scripts\\clashn\\start-clashn.ps1\") -replace 'clashn-core', 'clashn' | Set-Content \"$dir\\start-clashn.ps1\" -Encoding ASCII",
-        "(Get-Content \"$bucketsdir\\Apps\\scripts\\clashn\\create-scheduled-task.ps1\") -replace 'clashn-core', 'clashn' | Set-Content \"$dir\\create-scheduled-task.ps1\" -Encoding ASCII",
-        "(Get-Content \"$bucketsdir\\Apps\\scripts\\clashn\\delete-scheduled-task.ps1\") -replace 'clashn-core', 'clashn' | Set-Content \"$dir\\delete-scheduled-task.ps1\" -Encoding ASCII"
+        "Copy-Item \"$bucketsdir\\Apps\\scripts\\clashn\\start-clashn.ps1\" \"$dir\\start-clashn.ps1\" -ErrorAction 'SilentlyContinue' -Force | Out-Null",
+        "Copy-Item \"$bucketsdir\\Apps\\scripts\\clashn\\create-scheduled-task.ps1\" \"$dir\\create-scheduled-task.ps1\" -ErrorAction 'SilentlyContinue' -Force | Out-Null",
+        "Copy-Item \"$bucketsdir\\Apps\\scripts\\clashn\\delete-scheduled-task.ps1\" \"$dir\\delete-scheduled-task.ps1\" -ErrorAction 'SilentlyContinue' -Force | Out-Null"
     ],
     "uninstaller": {
         "script": [
