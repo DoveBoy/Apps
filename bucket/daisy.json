@@ -1,5 +1,5 @@
 {
-    "version": "0.1.7",
+    "version": "0.1.8",
     "description": "美观易用且无广告的漫画和轻小说客户端, 同时支持MacOS，Windows，Android，iOS。类似动漫之家。",
     "homepage": "https://github.com/niuhuan/daisy",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/niuhuan/daisy/releases/download/v0.1.7/daisy-v0.1.7-flutter_3.3.2-windows-x86_64.zip",
-            "hash": "9fd9ce803bc44d5fe39286a7a2cc8776e4d10d9120bad1ca3174d4faa4eb6380"
+            "url": "https://github.com/niuhuan/daisy/releases/download/v0.1.8/daisy-v0.1.8-flutter_3.3.3-windows-x86_64.zip",
+            "hash": "017b51964135bfdcdf3a8c0ede7f1a7f99af59523686dcd95be528cf626f836d"
         }
     },
     "shortcuts": [
@@ -21,7 +21,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/niuhuan/daisy/releases/download/v$version/daisy-v$version-flutter_3.3.2-windows-x86_64.zip"
+                "url": "https://github.com/niuhuan/daisy/releases/download/v$version/daisy-v$version-flutter_3.3.3-windows-x86_64.zip"
             }
         }
     }
