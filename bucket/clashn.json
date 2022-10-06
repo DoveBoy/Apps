@@ -13,6 +13,7 @@
     "depends": "sudo",
     "url": "https://github.com/2dust/clashN/releases/download/2.1/clashN.zip",
     "hash": "89c9e7aeb81414d1549058ce0de3c634f9343af720d656c18199f286c6fd4119",
+    "extract_dir": "clashN",
     "pre_install": [
         "'config.yaml', 'guiNConfig.json' | ForEach-Object {",
         "    if (Test-Path \"$persist_dir\\$_\") { Copy-Item \"$persist_dir\\$_\" \"$dir\\\" -Force | Out-Null }",
