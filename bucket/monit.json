@@ -7,9 +7,27 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/fzf404/Monit/releases/download/v0.7.1/Monit-0.7.1-win-x64.7z",
-            "hash": "aabb27a15565b060b82ba9c2d4ea8b5389ad58d7a53a4edecf31ae2cec7f367d"
+            "url": "https://github.com/fzf404/Monit/releases/download/v0.7.1/Monit-0.7.1-win-x64.exe#/dl.7z",
+            "hash": "d6f0e755f75c04ae6ac02d761834b5a4eda3dac458186fb814f7fb8c86f8c9cc",
+            "pre_install": [
+                "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+                "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninst*\" -Force -Recurse"
+            ]
         }
+    },
+    "installer": {
+        "script": [
+            "Import-Module $(Join-Path $(Find-BucketDirectory -Root -Name apps) scripts/AppsUtils.psm1)",
+            "Mount-ExternalRuntimeData -Source \"$persist_dir\\appdata\" -Target \"$env:APPDATA\\monit\"",
+            "Remove-Module -Name AppsUtils"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "Import-Module $(Join-Path $(Find-BucketDirectory -Root -Name apps) scripts/AppsUtils.psm1)",
+            "Dismount-ExternalRuntimeData -Target \"$env:APPDATA\\monit\"",
+            "Remove-Module -Name AppsUtils"
+        ]
     },
     "shortcuts": [
         [
@@ -17,11 +35,12 @@
             "Monit"
         ]
     ],
+    "persist": "appdata",
     "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/fzf404/Monit/releases/download/v$version/Monit-$version-win-x64.7z"
+                "url": "https://github.com/fzf404/Monit/releases/download/v$version/Monit-$version-win-x64.exe#/dl.7z"
             }
         }
     }
