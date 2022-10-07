@@ -1,0 +1,47 @@
+{
+    "##": "优酷",
+    "version": "9.2.10.1001",
+    "license": {
+        "identifier": "Copyright © 2019 优酷"
+    },
+    "description": "[优酷] - 优酷视频客户端",
+    "homepage": "https://www.youku.com",
+    "architecture": {
+        "64bit": {
+            "url": "https://pcclient.download.youku.com/iku-win-release/youkuclient_setup_9.2.10.1001.exe#/dl.7z",
+            "hash": "3d1fd2767595db52602013aa2a75e16568f9df4f77b607dfdaa1782a5fc3c80f",
+            "installer": {
+                "script": [
+                    "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\"",
+                    "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse"
+                ]
+            }
+        }
+    },
+    "bin": [
+        [
+            "YOUKU.exe",
+            "youku"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "YOUKU.exe",
+            "优酷"
+        ],
+        [
+            "uninstaller.exe",
+            "卸载优酷"
+        ]
+    ],
+    "checkver": {
+        "url": "https://pd.youku.com/pc",
+        "regex": "youkuclient_setup_([\\d.]+).exe"
+    },
+    "autoupdate": {
+        "url": "https://pcclient.download.youku.com/iku-win-release/youkuclient_setup_$version.exe#/dl.7z",
+        "hash": {
+            "mode": "download"
+        }
+    }
+}
