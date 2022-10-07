@@ -9,12 +9,28 @@
         "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\`$TEMP\" -Force -Recurse",
         "Copy-Item \"$dir\\QQLive.tpc\" \"$dir\\instok\""
     ],
+    "installer": {
+        "script": [
+            "# handle runtime cache",
+            "Import-Module $(Join-Path $(Find-BucketDirectory -Root -Name apps) scripts/AppsUtils.psm1)",
+            "Mount-ExternalRuntimeData -Source \"$persist_dir\\appdata\" -Target \"$env:APPDATA\\Tencent\\QQLive\"",
+            "Remove-Module -Name AppsUtils"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "Import-Module $(Join-Path $(Find-BucketDirectory -Root -Name apps) scripts/AppsUtils.psm1)",
+            "Dismount-ExternalRuntimeData -Target \"$env:APPDATA\\Tencent\\QQLive\"",
+            "Remove-Module -Name AppsUtils"
+        ]
+    },
     "shortcuts": [
         [
             "QQLive.exe",
             "QQLive"
         ]
     ],
+    "persist": "appdata",
     "checkver": {
         "url": "https://v.qq.com/download.html",
         "regex": "//(?<url>[^\"]+)/TencentVideo([\\d\\.]+)\\.exe"
