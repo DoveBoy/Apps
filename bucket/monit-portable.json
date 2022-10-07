@@ -1,0 +1,41 @@
+{
+    "version": "0.7.1",
+    "description": "Monit - 用于展示各种信息的桌面小组件.",
+    "homepage": "https://monit.fzf404.art",
+    "license": {
+        "identifier": "MIT",
+        "url": "https://github.com/fzf404/Monit/raw/main/LICENSE"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/fzf404/Monit/releases/download/v0.7.1/Monit-0.7.1-win-x64.7z",
+            "hash": "aabb27a15565b060b82ba9c2d4ea8b5389ad58d7a53a4edecf31ae2cec7f367d"
+        }
+    },
+    "pre_install": [
+        "if (Test-Path \"$env:AppData\\monit\") {",
+        "    info '[Persistent data]: Copying user data...'",
+        "    ensure \"$dir\\User Data\" | Out-Null",
+        "    Copy-Item \"$env:AppData\\monit\\*\" \"$dir\\User Data\\\" -ErrorAction SilentlyContinue -Recurse -Force",
+        "    Remove-Item \"$env:AppData\\monit\" -ErrorAction SilentlyContinue -Recurse -Force",
+        "}"
+    ],
+    "shortcuts": [
+        [
+            "Monit.exe",
+            "Monit",
+            "--user-data-dir=\"$dir\\User Data\""
+        ]
+    ],
+    "persist": "User Data",
+    "checkver": {
+        "github": "https://github.com/fzf404/Monit"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/fzf404/Monit/releases/download/v$version/Monit-$version-win-x64.7z"
+            }
+        }
+    }
+}
