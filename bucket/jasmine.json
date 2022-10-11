@@ -1,5 +1,5 @@
 {
-    "version": "1.3.4",
+    "version": "1.3.5",
     "description": "一个美观易用的漫画客户端, 同时支持支持 Android / iOS / MacOS / Windows / Linux。",
     "homepage": "https://github.com/niuhuan/jasmine",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/niuhuan/jasmine/releases/download/v1.3.4/jasmine-v1.3.4-windows-x86_64.zip",
-            "hash": "46c20369ef80cea642c31a0e96443eaa469db873c1ba796836794bff7361bab1"
+            "url": "https://github.com/niuhuan/jasmine/releases/download/v1.3.5/jasmine-v1.3.5-windows-x86_64.zip",
+            "hash": "ce449a54e7ee14dbb673ff295e1860778e19af5963c831401d9ec06a113b9a1a"
         }
     },
     "shortcuts": [
