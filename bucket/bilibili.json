@@ -1,0 +1,54 @@
+{
+    "version": "1.6.1",
+    "description": "Bilibili(bilibili.com) Official Client.",
+    "homepage": "https://app.bilibili.com",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.bilibili.com/blackboard/protocal/privacy-pc-desktop.html"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://dl.hdslb.com/mobile/fixed/bili_win/bili_win-install.exe#/dl.7z",
+            "hash": "sha512:9585246dbd6cd4b5f8dcb30b5db040c17a7dc3c6e5f0d0d525b0a3ed09336b47d831bbd4cb0e9b6924ce17f6e12292b859cdc1729a572e1b0c91d7197765bc2a",
+            "pre_install": [
+                "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+                "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\" -Force -Recurse"
+            ]
+        }
+    },
+    "installer": {
+        "script": [
+            "Import-Module $(Join-Path $(Find-BucketDirectory -Root -Name apps) scripts/AppsUtils.psm1)",
+            "Mount-ExternalRuntimeData -Source \"$persist_dir\\appdata\" -Target \"$env:APPDATA\\bilibili\"",
+            "Remove-Module -Name AppsUtils"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "Import-Module $(Join-Path $(Find-BucketDirectory -Root -Name apps) scripts/AppsUtils.psm1)",
+            "Dismount-ExternalRuntimeData -Target \"$env:APPDATA\\bilibili\"",
+            "Remove-Module -Name AppsUtils"
+        ]
+    },
+    "shortcuts": [
+        [
+            "哔哩哔哩.exe",
+            "哔哩哔哩"
+        ]
+    ],
+    "checkver": {
+        "url": "http://api.bilibili.com/x/elec-frontend/update/latest.yml",
+        "regex": "bilibili-setup-v([\\d\\.]+)\\.exe"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://dl.hdslb.com/mobile/fixed/bili_win/bili_win-install.exe#/dl.7z",
+                "hash": {
+                    "url": "http://api.bilibili.com/x/elec-frontend/update/latest.yml",
+                    "regex": "sha512: ([\\w\\d+\\/=]{24,88})"
+                }
+            }
+        }
+    }
+}
