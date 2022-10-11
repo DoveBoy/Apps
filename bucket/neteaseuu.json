@@ -28,7 +28,6 @@
             "网易UU"
         ]
     ],
-    "persist": "appdata",
     "checkver": {
         "url": "https://uu.163.com/baike/js/dl.js",
         "regex": "'dlUrl': 'https://.*?.gdl.netease.com/(?<build>\\d+)/UU-(?<ver>[\\d.]+).exe'",

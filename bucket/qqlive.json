@@ -30,7 +30,6 @@
             "QQLive"
         ]
     ],
-    "persist": "appdata",
     "checkver": {
         "url": "https://v.qq.com/download.html",
         "regex": "//(?<url>[^\"]+)/TencentVideo([\\d\\.]+)\\.exe"
