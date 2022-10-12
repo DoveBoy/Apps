@@ -10,28 +10,35 @@
         "64bit": {
             "url": "https://pcclient.download.youku.com/iku-win-release/youkuclient_setup_9.2.10.1001.exe#/dl.7z",
             "hash": "3d1fd2767595db52602013aa2a75e16568f9df4f77b607dfdaa1782a5fc3c80f",
-            "installer": {
-                "script": [
-                    "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\"",
-                    "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse"
-                ]
-            }
+            "pre_install": [
+                "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\"",
+                "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Unins*\" -Force -Recurse"
+            ]
         }
     },
-    "bin": [
-        [
-            "YOUKU.exe",
-            "youku"
+    "installer": {
+        "script": [
+            "# handle runtime cache",
+            "Import-Module $(Join-Path $(Find-BucketDirectory -Root -Name apps) scripts/AppsUtils.psm1)",
+            "Mount-ExternalRuntimeData -Source \"$persist_dir\\appdata\" -Target \"$env:APPDATA\\youku\"",
+            "Mount-ExternalRuntimeData -Source \"$persist_dir\\appdata\" -Target \"$env:APPDATA\\youku-app\"",
+            "Mount-ExternalRuntimeData -Source \"$persist_dir\\appdata\" -Target \"$env:APPDATA\\youku-electron\"",
+            "Remove-Module -Name AppsUtils"
         ]
-    ],
+    },
+    "uninstaller": {
+        "script": [
+            "Import-Module $(Join-Path $(Find-BucketDirectory -Root -Name apps) scripts/AppsUtils.psm1)",
+            "Dismount-ExternalRuntimeData -Target \"$env:APPDATA\\youku\"",
+            "Dismount-ExternalRuntimeData -Target \"$env:APPDATA\\youku-app\"",
+            "Dismount-ExternalRuntimeData -Target \"$env:APPDATA\\youku-electron\"",
+            "Remove-Module -Name AppsUtils"
+        ]
+    },
     "shortcuts": [
         [
             "YOUKU.exe",
             "优酷"
-        ],
-        [
-            "uninstaller.exe",
-            "卸载优酷"
         ]
     ],
     "checkver": {
