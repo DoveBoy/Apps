@@ -10,6 +10,21 @@
     "hash": "f98554d310b818967764ab9416ed9cdc2341b5e9311abdeb990478598913b3df",
     "url": "https://dldir1.qq.com/music/clntupate/QQMusic_YQQWinPCDL.exe#/dl.7z",
     "post_install": "Copy-Item \"$dir\\QQMusic.tpc\" \"$dir\\instok\"",
+    "installer": {
+        "script": [
+            "# handle runtime cache",
+            "Import-Module $(Join-Path $(Find-BucketDirectory -Root -Name apps) scripts/AppsUtils.psm1)",
+            "Mount-ExternalRuntimeData -Source \"$persist_dir\\appdata\" -Target \"$env:APPDATA\\Tencent\\QQMusic\"",
+            "Remove-Module -Name AppsUtils"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "Import-Module $(Join-Path $(Find-BucketDirectory -Root -Name apps) scripts/AppsUtils.psm1)",
+            "Dismount-ExternalRuntimeData -Target \"$env:APPDATA\\Tencent\\QQMusic\"",
+            "Remove-Module -Name AppsUtils"
+        ]
+    },
     "checkver": {
         "url": "https://y.qq.com/download/download.html",
         "regex": "Windows PC.*\\:([\\d.]+)"
