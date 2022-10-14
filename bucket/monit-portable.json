@@ -16,8 +16,8 @@
         "if (Test-Path \"$env:AppData\\monit\") {",
         "    info '[Persistent data]: Copying user data...'",
         "    ensure \"$dir\\User Data\" | Out-Null",
-        "    Copy-Item \"$env:AppData\\monit\\*\" \"$dir\\User Data\\\" -ErrorAction SilentlyContinue -Recurse -Force",
-        "    Remove-Item \"$env:AppData\\monit\" -ErrorAction SilentlyContinue -Recurse -Force",
+        "    Copy-Item \"$env:AppData\\monit\\*\" \"$dir\\User Data\\\" -Recurse -Force -ErrorAction 'SilentlyContinue'",
+        "    Remove-Item \"$env:AppData\\monit\" -Recurse -Force -ErrorAction 'SilentlyContinue'",
         "}"
     ],
     "shortcuts": [
