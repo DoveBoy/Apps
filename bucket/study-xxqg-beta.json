@@ -1,0 +1,41 @@
+{
+    "version": "1.0.37-beta1",
+    "description": "自动化学习强国,每日稳定45分",
+    "homepage": "https://github.com/johlanse/study_xxqg",
+    "license": {
+        "identifier": "MIT license",
+        "url": "https://github.com/johlanse/study_xxqg/blob/main/LICENSE"
+    },
+    "notes": "文档地址: <https://johlanse.shhy.xyz/#/>",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/johlanse/study_xxqg/releases/download/v1.0.37-beta1/study_xxqg_windows_amd64.zip",
+            "hash": "51cc01ee66baeeceee4e2c491f45e45bac2a4b4c427e2e1f15e93ec549f48cae"
+        },
+        "32bit": {
+            "url": "https://github.com/johlanse/study_xxqg/releases/download/v1.0.37-beta1/study_xxqg_windows_386.zip",
+            "hash": "a6367f7f72c460773964d4fd70d5f911a54ff4a164de58a7cfc005a98a23ce92"
+        }
+    },
+    "bin": "study_xxqg.exe",
+    "shortcuts": [
+        [
+            "study_xxqg.exe",
+            "study_xxqg"
+        ]
+    ],
+    "checkver": {
+        "url": "https://api.github.com/repos/johlanse/study_xxqg/releases",
+        "regex": "(?sm)browser_download_url.*?releases/download/v([\\w.-]+)/(?<file>study_xxqg_windows.*?.zip)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/johlanse/study_xxqg/releases/download/v$version/study_xxqg_windows_amd64.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/johlanse/study_xxqg/releases/download/v$version/study_xxqg_windows_386.zip"
+            }
+        }
+    }
+}
