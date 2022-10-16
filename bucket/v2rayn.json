@@ -8,7 +8,7 @@
         "xray"
     ],
     "url": "https://github.com/2dust/v2rayN/releases/download/5.37/v2rayN.zip",
-    "hash": "f90197708b26365f78b238eca7ef238ebb2983032d4dc2a01cc558eccfa77316",
+    "hash": "7cfe1fba59c6bb938e4599a9cd674c5b44fe55668f8fae9793b8381a4fe51ff2",
     "extract_dir": "v2rayN",
     "pre_install": [
         "# 'guiNConfig.json',",
