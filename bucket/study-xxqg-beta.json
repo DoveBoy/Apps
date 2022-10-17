@@ -1,5 +1,5 @@
 {
-    "version": "1.0.37-beta1",
+    "version": "1.0.37-beta2",
     "description": "自动化学习强国,每日稳定45分",
     "homepage": "https://github.com/johlanse/study_xxqg",
     "license": {
@@ -9,12 +9,12 @@
     "notes": "文档地址: <https://johlanse.shhy.xyz/#/>",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/johlanse/study_xxqg/releases/download/v1.0.37-beta1/study_xxqg_windows_amd64.zip",
-            "hash": "51cc01ee66baeeceee4e2c491f45e45bac2a4b4c427e2e1f15e93ec549f48cae"
+            "url": "https://github.com/johlanse/study_xxqg/releases/download/v1.0.37-beta2/study_xxqg_windows_amd64.zip",
+            "hash": "a38de7591f6a4b13d93bf60b6c18ef06a7ea7ee3a911dd1c711b550bd3d389f2"
         },
         "32bit": {
-            "url": "https://github.com/johlanse/study_xxqg/releases/download/v1.0.37-beta1/study_xxqg_windows_386.zip",
-            "hash": "a6367f7f72c460773964d4fd70d5f911a54ff4a164de58a7cfc005a98a23ce92"
+            "url": "https://github.com/johlanse/study_xxqg/releases/download/v1.0.37-beta2/study_xxqg_windows_386.zip",
+            "hash": "2bfb2d67a136d3c2081594c3125f91f0c242bebea487093a8ab4d8864b8c483e"
         }
     },
     "bin": "study_xxqg.exe",
