@@ -1,5 +1,5 @@
 {
-    "version": "2.5",
+    "version": "2.6",
     "description": "A clash client for Windows, support clash core and Clash.Meta core",
     "homepage": "https://github.com/2dust/clashN",
     "license": {
@@ -11,8 +11,8 @@
         "Delete scheduled task by running: '$dir\\delete-scheduled-task.ps1'"
     ],
     "depends": "sudo",
-    "url": "https://github.com/2dust/clashN/releases/download/2.5/clashN.zip",
-    "hash": "ec51882a88342c0c40b1090202f1a5f188f3a3c6b22378a7e590b710f0f749e3",
+    "url": "https://github.com/2dust/clashN/releases/download/2.6/clashN.zip",
+    "hash": "6b93ca5e13c83255ea69677911392ce482b63fb8c7d6ce558ed9a1a0aa36bf56",
     "extract_dir": "clashN",
     "pre_install": [
         "'config.yaml', 'guiNConfig.json' | ForEach-Object {",
