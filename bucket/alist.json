@@ -1,5 +1,5 @@
 {
-    "version": "3.2.0",
+    "version": "3.2.1",
     "description": "🗂️A file list program that supports multiple storage, powered by Gin and Solidjs. / 一个支持多存储的文件列表程序，使用 Gin 和 Solidjs。",
     "homepage": "https://alist.nn.ci/",
     "notes": "Guide: <https://alist.nn.ci/zh/guide/>",
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/alist-org/alist/releases/download/v3.2.0/alist-windows-4.0-amd64.zip",
-            "hash": "9e704952c410c16f6867408cd8c9cf69e3764ef9e5524b8ea802fe37f1a43464"
+            "url": "https://github.com/alist-org/alist/releases/download/v3.2.1/alist-windows-4.0-amd64.zip",
+            "hash": "e47b90dbae40fd1005b31d4b6e9e50d109bda11e39cc379955a69b600150e741"
         },
         "32bit": {
-            "url": "https://github.com/alist-org/alist/releases/download/v3.2.0/alist-windows-4.0-386.zip",
-            "hash": "ef69a613a07fa836559a9ab780b5519281466da7682364dcc248fb216719df5a"
+            "url": "https://github.com/alist-org/alist/releases/download/v3.2.1/alist-windows-4.0-386.zip",
+            "hash": "d6a1aff16a19fe6ac6e64cf521c3a0da16825a304830a021808d8a639cfe37d6"
         }
     },
     "bin": "alist.exe",
