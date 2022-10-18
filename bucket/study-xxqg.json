@@ -24,6 +24,10 @@
             "study_xxqg"
         ]
     ],
+    "persist": [
+        "config",
+        "tools"
+    ],
     "checkver": {
         "url": "https://api.github.com/repos/johlanse/study_xxqg/releases",
         "regex": "/releases/tag/v([\\d.]+)"
