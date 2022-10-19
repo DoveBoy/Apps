@@ -1,5 +1,5 @@
 {
-    "version": "1.5.3.20220514",
+    "version": "1.5.4.20221019",
     "description": "A command line tool that supports bilibili video downloads, maintained by nilaoda.",
     "homepage": "https://github.com/nilaoda/BBDown",
     "license": {
@@ -21,8 +21,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/nilaoda/BBDown/releases/download/1.5.3/BBDown_1.5.3_20220514_win-x64.zip",
-            "hash": "3f4dfeb4fb577c2e65ae6a54ca51e920ac2b14a13c35d0ef59703f108b06ce25"
+            "url": "https://github.com/nilaoda/BBDown/releases/download/1.5.4/BBDown_1.5.4_20221019_win-x64.zip",
+            "hash": "d3eafd71c3450a42f818ac2f77f103c702699d834197d308183070d5958243eb"
         }
     },
     "bin": "BBDown.exe",
