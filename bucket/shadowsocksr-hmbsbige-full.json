@@ -41,8 +41,8 @@
     ],
     "persist": "temp",
     "checkver": {
-        "url": "https://github.com/HMBSbige/ShadowsocksR-Windows/releases",
-        "regex": "<span class.*?ShadowsocksR-Win32-([\\d.]+)\\.7z</span>"
+        "url": "https://api.github.com/repos/HMBSbige/ShadowsocksR-Windows/releases",
+        "regex": "/releases/tag/(?:v)?([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
