@@ -1,0 +1,22 @@
+{
+    "version": "16.0.1",
+    "description": "A free PC optimizer and cleanup for Windows. Now let AI work for you.",
+    "homepage": "https://www.iobit.com/en/advancedsystemcarefree.php",
+    "license": "Freeware",
+    "url": "https://cdn.iobit.com/dl/advanced-systemcare-setup.exe",
+    "hash": "ec0776f218a2666473c5c453e25c4586746f1fe5c6107703a035652c3b895fcb",
+    "innosetup": true,
+    "bin": "ASC.exe",
+    "shortcuts": [
+        [
+            "ASC.exe",
+            "ASC"
+        ]
+    ],
+    "checkver": {
+        "regex": "(?i)ver_size.*V *([\\d.]+)</span>"
+    },
+    "autoupdate": {
+        "url": "https://cdn.iobit.com/dl/advanced-systemcare-setup.exe"
+    }
+}
