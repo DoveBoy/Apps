@@ -1,24 +1,8 @@
 {
-    "version": "1.5.4",
-    "description": "A command line tool that supports bilibili video downloads, maintained by nilaoda.",
     "homepage": "https://github.com/nilaoda/BBDown",
-    "license": {
-        "identifier": "MIT",
-        "url": "https://github.com/nilaoda/BBDown/raw/master/LICENSE"
-    },
-    "notes": [
-        "This software requires external programs for mixing:",
-        "- Normal video: ffmpeg, or mp4box",
-        "- Dolby Vision: ffmpeg5.0 or higher or the new mp4box."
-    ],
-    "depends": "aria2",
-    "suggest": {
-        "ffmpeg": [
-            "ffmpeg",
-            "ffmpeg-shared"
-        ],
-        "mp4box": "gpac"
-    },
+    "description": "Command line Bilibili downloader",
+    "version": "1.5.4",
+    "license": "MIT",
     "architecture": {
         "64bit": {
             "url": "https://github.com/nilaoda/BBDown/releases/download/1.5.4/BBDown_1.5.4_20221019_win-x64.zip",
@@ -26,9 +10,17 @@
         }
     },
     "bin": "BBDown.exe",
+    "suggest": {
+        "aria2": "aria2",
+        "ffmpeg": [
+            "ffmpeg",
+            "ffmpeg-shared"
+        ],
+        "mp4box": "gpac"
+    },
     "checkver": {
         "url": "https://api.github.com/repos/nilaoda/BBDown/releases/latest",
-        "regex": "BBDown_([\\d.]+)_(?<extra>[\\d-]+)_win-x64.zip"
+        "regex": "BBDown_([\\d.]+)_(?<extra>[\\d-]+)_win"
     },
     "autoupdate": {
         "architecture": {
