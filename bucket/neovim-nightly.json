@@ -1,5 +1,5 @@
 {
-    "version": "0.8.0",
+    "version": "0.9.0-dev-184",
     "description": "Vim fork focused on extensibility and usability",
     "homepage": "https://neovim.io",
     "license": {
