@@ -30,7 +30,7 @@
     ],
     "checkver": {
         "url": "https://api.github.com/repos/johlanse/study_xxqg/releases",
-        "regex": "(?sm)browser_download_url.*?releases/download/v([\\w.-]+)/(?<file>study_xxqg_windows.*?.zip)"
+        "regex": "/releases/tag/(?:v|V)?([\\d.]+-[\\w.]+)"
     },
     "autoupdate": {
         "architecture": {
