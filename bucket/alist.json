@@ -17,15 +17,8 @@
         [
             "alist.exe",
             "alist",
-            "--conf \"$dir\\data\\config.json\""
+            "--force-bin-dir"
         ]
-    ],
-    "post_install": [
-        "$file = 'data\\config.json'",
-        "if (!(Test-Path \"$persist_dir\\$file\")) {",
-        "   $CONT = @{ database = @{ db_file = \"$persist_dir\\data\\data.db\" }; temp_dir = \"$persist_dir\\data\\temp\"; log = @{ name = \"$persist_dir\\log\\log.log\" } }",
-        "   Set-Content \"$dir\\$file\" ($CONT | ConvertTo-Json) -Encoding ASCII",
-        "}"
     ],
     "persist": [
         "data",
