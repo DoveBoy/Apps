@@ -1,11 +1,11 @@
 {
-    "version": "18.0.5.6",
+    "version": "18.0.5.7",
     "description": "Driver removal utility that can help you completely uninstall AMD/NVIDIA graphics card drivers and packages from your system, without leaving leftovers behind (including registry keys, folders and files, driver store)",
     "homepage": "https://www.wagnardsoft.com/",
     "license": "Unknown",
-    "url": "https://www.wagnardsoft.com/DDU/download/DDU%20v18.0.5.6.exe#/dl.7z",
-    "hash": "sha1:855511dfa6a45a0922a10d1011a8b4f7725424b8",
-    "extract_dir": "DDU v18.0.5.6",
+    "url": "https://www.wagnardsoft.com/DDU/download/DDU%20v18.0.5.7.exe#/dl.7z",
+    "hash": "sha1:5a39e469330f9f0268ba1f0d3d21d998f7714c52",
+    "extract_dir": "DDU v18.0.5.7",
     "shortcuts": [
         [
             "Display Driver Uninstaller.exe",
