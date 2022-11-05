@@ -1,5 +1,5 @@
 {
-    "version": "0.9.0-dev-213",
+    "version": "0.9.0-dev-227",
     "description": "Vim fork focused on extensibility and usability",
     "homepage": "https://neovim.io",
     "license": {
@@ -12,7 +12,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/neovim/neovim/releases/download/nightly/nvim-win64.zip",
-            "hash": "865ab2c4b9051c9760fc6ff1901837c0a803af1bbe81f8fb22752e4a0ef7b763"
+            "hash": "2aaf1c0907266a9c9eda1114cda3d4c2e6dff2dd77ce599374916384c14825c5"
         }
     },
     "extract_dir": "nvim-win64",
