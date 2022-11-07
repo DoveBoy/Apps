@@ -1,6 +1,6 @@
 {
     "##": "优酷",
-    "version": "9.2.10.1002",
+    "version": "9.2.11.1001",
     "license": {
         "identifier": "Copyright © 2019 优酷"
     },
@@ -8,8 +8,8 @@
     "homepage": "https://www.youku.com",
     "architecture": {
         "64bit": {
-            "url": "https://pcclient.download.youku.com/iku-win-release/youkuclient_setup_9.2.10.1002.exe#/dl.7z",
-            "hash": "2edc9a89a416e08e50de6402e2f43a0fca385b3f190cfc49214197779e2a3134",
+            "url": "https://pcclient.download.youku.com/iku-win-release/youkuclient_setup_9.2.11.1001.exe#/dl.7z",
+            "hash": "4578a16c5f747cb1d93f57f54a3c6833df748e0c513a8a4e446e98b023f64edb",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Unins*\" -Force -Recurse"
