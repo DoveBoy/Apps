@@ -1,12 +1,12 @@
 {
     "homepage": "https://github.com/niuhuan/bili-cli-rs",
     "description": "[RUST] 一个Rust的Bilibili视频下载器",
-    "version": "releases-20221106",
+    "version": "releases-20221108",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/niuhuan/bili-cli-rs/releases/download/releases-20221106/bili-cli.zip",
-            "hash": "1a0767c8ee663cb2ce8efb57228802488212629bc61b3f3bcc6dadae19797819"
+            "url": "https://github.com/niuhuan/bili-cli-rs/releases/download/releases-20221108/bili-cli-windows.zip",
+            "hash": "48e4d82a1edaca671a5b667d9e97a87e491bc5be38fa56c194ea518011c8e18c"
         }
     },
     "bin": "bili-cli.exe",
