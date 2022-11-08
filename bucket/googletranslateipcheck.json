@@ -1,5 +1,5 @@
 {
-    "version": "1.1.1",
+    "version": "1.2",
     "description": "扫描国内可用的谷歌翻译IP",
     "homepage": "https://github.com/Ponderfly/GoogleTranslateIpCheck",
     "license": {
@@ -10,8 +10,8 @@
     "depends": "sudo",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Ponderfly/GoogleTranslateIpCheck/releases/download/1.1.1/GoogleTranslateIpCheck-win-x64.zip",
-            "hash": "cf118e3afb8813cb36a4c3635a1d867f6575bc12ebeb43042dee5fe840d7b73b"
+            "url": "https://github.com/Ponderfly/GoogleTranslateIpCheck/releases/download/1.2/GoogleTranslateIpCheck-win-x64.zip",
+            "hash": "ee5b5b0d4d22a6082a4a4b59103271303abadf0dbbef9a1d7d9356600172c7dd"
         }
     },
     "extract_dir": "GoogleTranslateIpCheck",
