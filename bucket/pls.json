@@ -22,7 +22,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/chenjiandongx/pls/releases/download/$version/pls_windows_amd64.exe#/pls.exe"
+                "url": "https://github.com/chenjiandongx/pls/releases/download/$version/pls_windows_amd64.exe"
             }
         }
     }
