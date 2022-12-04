@@ -1,13 +1,13 @@
 {
-    "version": "0.0.8370.36583-alpha",
+    "version": "0.0.8373.36849-alpha",
     "description": "a calculator for Windows.",
     "homepage": "https://github.com/shapoco/calctus",
     "license": "MIT license",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/shapoco/calctus/releases/download/v0.0.8370.36583-alpha/calctus-v0.0.8370.36583-alpha.zip",
-            "hash": "7d018480ff62eb0df1bfe0eb5105443effd725c20ab57f8ca95e185d57673d31",
-            "extract_dir": "calctus-v0.0.8370.36583-alpha"
+            "url": "https://github.com/shapoco/calctus/releases/download/v0.0.8373.36849-alpha/calctus-v0.0.8373.36849-alpha.zip",
+            "hash": "20e32fb9ce899920c5ecf239aa47760436edeccc53c71878acf4a71a7ded0818",
+            "extract_dir": "calctus-v0.0.8373.36849-alpha"
         }
     },
     "bin": "Calctus.exe",
