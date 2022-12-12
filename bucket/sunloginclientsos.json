@@ -1,5 +1,5 @@
 {
-    "version": "1.0.2",
+    "version": "1.1.0",
     "description": "SunLoginClient_Lite by Oray",
     "homepage": "https://sunlogin.oray.com/",
     "license": {
@@ -7,36 +7,37 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://dl-cdn.oray.com/sunlogin/windows/SunloginClientLite_1.0.2_x64.exe#/sunloginclient-lite.exe",
-            "hash": "md5:e31cb2f51ebbcc98ca9f51645727eb00"
+            "url": "https://dl-cdn.oray.com/sunlogin/windows/SunloginClientSOS_1.1.0_x64.exe",
+            "hash": "md5:0b3dd3a0473db89aa36f55831d8ce07e"
         },
         "32bit": {
-            "url": "https://dl-cdn.oray.com/sunlogin/windows/SunloginClientLite_1.0.2.exe#/sunloginclient-lite.exe",
-            "hash": "md5:55726ad06d8ad4484210345b195d285a"
+            "url": "https://dl-cdn.oray.com/sunlogin/windows/SunloginClientSOS_1.1.0.exe",
+            "hash": "md5:712ffd8940e68d2096bcc649ddfc9049"
         }
     },
+    "pre_install": "Get-ChildItem \"$dir\\SunloginClient*.exe\" | Rename-Item -NewName 'SunloginClient.exe'",
     "shortcuts": [
         [
-            "sunloginclient-lite.exe",
+            "SunloginClient.exe",
             "向日葵简约版"
         ]
     ],
     "checkver": {
         "url": "https://client-api.oray.com/softwares/SL_WINDOWS_LITE?x64=1",
         "jp": "$.downloadurl",
-        "re": "/SunloginClientLite_([\\d\\.]+)_(?<arch>[Xx\\d]+)"
+        "re": "/SunloginClientSOS_([\\d\\.]+)_(?<arch>[Xx\\d]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://dl-cdn.oray.com/sunlogin/windows/SunloginClientLite_$version_$matchArch.exe#/sunloginclient-lite.exe",
+                "url": "https://dl-cdn.oray.com/sunlogin/windows/SunloginClientSOS_$version_$matchArch.exe",
                 "hash": {
                     "url": "https://client-api.oray.com/softwares/SL_WINDOWS_LITE?x64=1",
                     "jp": "$.md5"
                 }
             },
             "32bit": {
-                "url": "https://dl-cdn.oray.com/sunlogin/windows/SunloginClientLite_$version.exe#/sunloginclient-lite.exe",
+                "url": "https://dl-cdn.oray.com/sunlogin/windows/SunloginClientSOS_$version.exe",
                 "hash": {
                     "url": "https://client-api.oray.com/softwares/SL_WINDOWS_LITE?x64=0",
                     "jp": "$.md5"
