@@ -1,13 +1,13 @@
 {
-    "version": "2.18.2",
+    "version": "2.19.0",
     "description": "Disk Usage Analyzer",
     "homepage": "https://github.com/Byron/dua-cli",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Byron/dua-cli/releases/download/v2.18.2/dua-v2.18.2-x86_64-pc-windows-msvc.zip",
-            "hash": "95cd2bc2cc92512c37a2d9a7546b5ff5e97b89f34a2ccc0c8dc2ed2715d93b99",
-            "extract_dir": "dua-v2.18.2-x86_64-pc-windows-msvc"
+            "url": "https://github.com/Byron/dua-cli/releases/download/v2.19.0/dua-v2.19.0-x86_64-pc-windows-msvc.zip",
+            "hash": "bda95909a3bcb7cef74416a7862a323ee0015914dec433d348167e0792f236b8",
+            "extract_dir": "dua-v2.19.0-x86_64-pc-windows-msvc"
         }
     },
     "bin": "dua.exe",
