@@ -1,10 +1,10 @@
 {
-    "version": "12.1.0",
+    "version": "12.2.0",
     "description": "Complete Software Uninstall without Leaving a Trace",
     "homepage": "https://www.iobit.com/en/advanceduninstaller.php",
     "license": "Freeware",
     "url": "https://cdn.iobit.com/dl/iobituninstaller.exe",
-    "hash": "3c64c3cad3a672f59c8dcd51fb0eba76669f3a08866336825c14409a91257894",
+    "hash": "460023624e848d8d0690e692e057e0f8e3040ef713bfd847501dbe22cd0d62f1",
     "innosetup": true,
     "bin": "IObitUninstaler.exe",
     "shortcuts": [
