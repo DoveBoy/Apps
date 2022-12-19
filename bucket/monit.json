@@ -1,5 +1,5 @@
 {
-    "version": "0.7.2",
+    "version": "0.7.3",
     "description": "Monit - 用于展示各种信息的桌面小组件.",
     "homepage": "https://monit.fzf404.art",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/fzf404/Monit/releases/download/v0.7.2/Monit-0.7.2-win-x64.exe#/dl.7z",
-            "hash": "53aa8885f2f94e8008dd748ec2f5abd0f73c5cfd613ab854d3ffda6d7a0d93c6",
+            "url": "https://github.com/fzf404/Monit/releases/download/v0.7.3/Monit-0.7.3-win-x64.exe#/dl.7z",
+            "hash": "4c64ee488c81ee4af0b9a9af58dc0b69be5d7962dfdf66472125e4059063c0db",
             "pre_install": [
                 "if (Test-Path \"$env:AppData\\monit\") {",
                 "    info '[Persistent data]: Copying user data...'",
