@@ -1,5 +1,5 @@
 {
-    "version": "0.7.2",
+    "version": "0.7.3",
     "description": "Monit - 用于展示各种信息的桌面小组件.",
     "homepage": "https://monit.fzf404.art",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/fzf404/Monit/releases/download/v0.7.2/Monit-0.7.2-win-x64.7z",
-            "hash": "ebacd9094d6390efcc9f48b90bb1e39c31a6359a73c1e70763c34ca99463fe51"
+            "url": "https://github.com/fzf404/Monit/releases/download/v0.7.3/Monit-0.7.3-win-x64.7z",
+            "hash": "21970bedd62342c04260eca3ada19e6887d21307c023aa2ee7d50bd349cd7e50"
         }
     },
     "pre_install": [
