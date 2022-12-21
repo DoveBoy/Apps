@@ -1,10 +1,10 @@
 {
-    "version": "5.1.0",
+    "version": "5.2.0",
     "description": "Enjoy the always-new software and a smoother PC",
     "homepage": "https://www.iobit.com/en/iobit-software-updater.php",
     "license": "Freeware",
     "url": "https://cdn.iobit.com/dl/iobit-software-updater-setup.exe",
-    "hash": "6a4c53e18bb57b5a844cc3c5097b23e4abb8888b2454537e855ae27445f10547",
+    "hash": "f88a097f5e35a9e337cb2d63f13ae23da04e0b461431ad6ab0dc5ccb8bb59d1f",
     "innosetup": true,
     "bin": "SoftwareUpdater.exe",
     "shortcuts": [
