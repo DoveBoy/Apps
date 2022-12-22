@@ -1,12 +1,12 @@
 {
-    "version": "1.8-stable",
+    "version": "1.9",
     "description": "pyTranscriber can be used to generate automatic transcription / automatic subtitles for audio/video files through a friendly graphical user interface.",
     "homepage": "https://github.com/raryelcostasouza/pyTranscriber",
     "license": "GPL-3.0 license",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/raryelcostasouza/pyTranscriber/releases/download/v1.8-stable/pyTranscriber-v1.8-win-portable.zip",
-            "hash": "a92015761844caf627daa5d0a523dc442beff02a764570435ed699c71838d55c"
+            "url": "https://github.com/raryelcostasouza/pyTranscriber/releases/download/v1.9/pyTranscriber-v1.9-win-portable.zip",
+            "hash": "e65f329bc59cf89f643466f15f96efa5e423356ddd11e63379c7fa71de80ac41"
         }
     },
     "shortcuts": [
