@@ -1,5 +1,5 @@
 {
-    "version": "1.5.5",
+    "version": "2.0.0",
     "description": "Upscayl. Free and Open Source AI Image Upscaler for Linux, MacOS and Windows built with Linux-First philosophy.",
     "homepage": "https://github.com/upscayl/upscayl",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/upscayl/upscayl/releases/download/v1.5.5/Upscayl-Setup-1.5.5.exe#/dl.7z",
-            "hash": "sha512:a3ee1d1c568afa617093d38de38e4fe9e3ac2865786c5d6d665624e9fcae0624f2d3fbe10d8b965a9098fa7ed9d99e21ebca290fe025d5f0eb9dbbde17365129",
+            "url": "https://github.com/upscayl/upscayl/releases/download/v2.0.0/upscayl-2.0.0-win.exe#/dl.7z",
+            "hash": "sha512:9af884d70c41253b1f21ca1e2271d436945689671348d8a60b0ce846d918007319b0c4a8814bdbb3e5f6233965e3ee19940deddd5c0c2f05a246e101f46df2c1",
             "pre_install": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\" -Removal"
         }
     },
@@ -22,11 +22,15 @@
         ]
     ],
     "persist": "User Data",
-    "checkver": "github",
+    "checkver": {
+        "url": "https://api.github.com/repos/upscayl/upscayl/releases",
+        "jsonpath": "$[0].tag_name",
+        "regex": "(?<tag>v([\\w.-]+))"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/upscayl/upscayl/releases/download/v$version/Upscayl-Setup-$version.exe#/dl.7z",
+                "url": "https://github.com/upscayl/upscayl/releases/download/$matchTag/upscayl-$version-win.exe#/dl.7z",
                 "hash": {
                     "url": "$baseurl/latest.yml",
                     "mode": "extract",
