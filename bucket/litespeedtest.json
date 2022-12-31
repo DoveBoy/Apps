@@ -1,20 +1,20 @@
 {
     "homepage": "https://github.com/xxf098/LiteSpeedTest",
     "description": "A simple tool for batch test ss/ssr/v2ray/trojan servers.",
-    "version": "0.13.1",
+    "version": "0.14.1",
     "license": "GPL-3.0 license",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/xxf098/LiteSpeedTest/releases/download/v0.13.1/lite-windows-amd64-v3-v0.13.1.zip",
-            "hash": "d31edea3c803f894fe0711db5a2fb9fbe5ca25e297507cdddf4083c5b34c26b9",
+            "url": "https://github.com/xxf098/LiteSpeedTest/releases/download/v0.14.1/lite-windows-amd64-v3-v0.14.1.zip",
+            "hash": "353da645ce16926e1f2e4588d07c77e67fab7cc4507700ff057e94beadf5036a"
         },
         "32bit": {
-            "url": "https://github.com/xxf098/LiteSpeedTest/releases/download/v0.13.1/lite-windows-386-v0.13.1.zip",
-            "hash": "7656da49dd0604fe52150e1bcb7a6267551f21c5cbbdf8835018c4a6cf40e03e",
+            "url": "https://github.com/xxf098/LiteSpeedTest/releases/download/v0.14.1/lite-windows-386-v0.14.1.zip",
+            "hash": "1c87c2144a08b12b7014c4e8604f19ecf1c1179fdf660613bee534c520a378ce"
         },
         "arm64": {
-            "url": "https://github.com/xxf098/LiteSpeedTest/releases/download/v0.13.1/lite-windows-arm64-v0.13.1.zip",
-            "hash": "406db76ede58bb545b7e096ab4fa0a23fa0da2e009359509d55a784e49eb971e",
+            "url": "https://github.com/xxf098/LiteSpeedTest/releases/download/v0.14.1/lite-windows-arm64-v0.14.1.zip",
+            "hash": "b2fc9c46ac144cdf2972c36d0dde9e51405b3fe8640fc02894ad98f52dfaba8d"
         }
     },
     "pre_install": "Get-ChildItem \"$dir\\lite-windows*.exe\" | Rename-Item -NewName 'litespeedtest.exe'",
@@ -28,13 +28,13 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/xxf098/LiteSpeedTest/releases/download/v$version/lite-windows-amd64-v3-v$version.zip",
+                "url": "https://github.com/xxf098/LiteSpeedTest/releases/download/v$version/lite-windows-amd64-v3-v$version.zip"
             },
             "32bit": {
-                "url": "https://github.com/xxf098/LiteSpeedTest/releases/download/v$version/lite-windows-386-v$version.zip",
+                "url": "https://github.com/xxf098/LiteSpeedTest/releases/download/v$version/lite-windows-386-v$version.zip"
             },
             "arm64": {
-                "url": "https://github.com/xxf098/LiteSpeedTest/releases/download/v$version/lite-windows-arm64-v$version.zip",
+                "url": "https://github.com/xxf098/LiteSpeedTest/releases/download/v$version/lite-windows-arm64-v$version.zip"
             }
         }
     }
