@@ -1,10 +1,10 @@
 {
-    "version": "6.1",
+    "version": "6.2",
     "description": "GUI client based on v2ray core",
     "homepage": "https://github.com/2dust/v2rayN",
     "license": "GPL-3.0-only",
-    "url": "https://github.com/2dust/v2rayN/releases/download/6.1/v2rayN.zip",
-    "hash": "3c35485053300937e334b2eaed0489be9d2997e7eccb85cf940ce11d7a769c4a",
+    "url": "https://github.com/2dust/v2rayN/releases/download/6.2/v2rayN.zip",
+    "hash": "3896e91e6739d668c463db9e6007117ca6c60b2432fcfe28e43af7fed576901f",
     "extract_dir": "v2rayN",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\user-wininet.json\")) {",
