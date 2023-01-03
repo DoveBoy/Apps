@@ -1,12 +1,12 @@
 {
-    "version": "2.9",
+    "version": "2.10",
     "description": "Qt/C++ based cross-platform proxy configuration manager / v2ray sing-box GUI client",
     "homepage": "https://github.com/MatsuriDayo/nekoray",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/MatsuriDayo/nekoray/releases/download/2.9/nekoray-2.9-2022-12-19-windows64.zip",
-            "hash": "a47937e8716d424cd2789421aaad24556523d87d1d2f103d9dee14ea08924314"
+            "url": "https://github.com/MatsuriDayo/nekoray/releases/download/2.10/nekoray-2.10-2023-01-03-windows64.zip",
+            "hash": "44b47f0a97c7f4eb346cae57aa1fd809c621a462906aeacc661011a82efd6d23"
         }
     },
     "extract_dir": "nekoray",
@@ -23,7 +23,7 @@
     ],
     "persist": "config",
     "checkver": {
-        "url": "https://api.github.com/repos/MatsuriDayo/nekoray/releases/latest",
+        "url": "https://api.github.com/repos/MatsuriDayo/nekoray/releases",
         "regex": "nekoray-([\\d.]+)-(?<extra>[\\d-]+)-windows64"
     },
     "autoupdate": {
