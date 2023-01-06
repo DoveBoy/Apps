@@ -1,5 +1,5 @@
 {
-    "version": "1.7.0",
+    "version": "1.7.4",
     "description": "Pure Writer Desktop is currently basic, providing only two-directions real-time synchronous editing for your current article.",
     "homepage": "https://writer.drakeet.com/desktop",
     "license": {
@@ -13,8 +13,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/PureWriter/desktop/releases/download/1.7.0/PureWriter-1.7.0-Windows-x64.exe#/installer.exe",
-            "hash": "e3a26254800e0812c4d658e4710a5731b7a75698513c0996f886e69e24b8c2e2"
+            "url": "https://github.com/PureWriter/desktop/releases/download/1.7.4/PureWriter-1.7.4-Windows-x64.exe#/installer.exe",
+            "hash": "66c47a7c67d2f1d56e1610ba1a42e9715ed0c491e3eb305d96a5bdad0a78dfb6"
         }
     },
     "installer": {
