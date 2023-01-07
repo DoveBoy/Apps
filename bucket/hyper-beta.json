@@ -1,12 +1,12 @@
 {
     "homepage": "https://hyper.is",
     "description": "A terminal built on web technologies",
-    "version": "4.0.0-canary.1",
+    "version": "4.0.0-canary.2",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/vercel/hyper/releases/download/v4.0.0-canary.1/Hyper-Setup-4.0.0-canary.1.exe#/dl.7z",
-            "hash": "1fa884f44b0ef5bbe2176288a5adde77e108550ae66d62bac30cfc165520704d",
+            "url": "https://github.com/vercel/hyper/releases/download/v4.0.0-canary.2/Hyper-Setup-4.0.0-canary.2.exe#/dl.7z",
+            "hash": "85ef7475ce5780a37856417cf4c3884637a357eeca278d35cb8fa0f646e9b24e",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\`$R0\" -Force -Recurse"
