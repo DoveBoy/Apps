@@ -1,5 +1,5 @@
 {
-    "version": "6.5",
+    "version": "6.6",
     "description": "GUI client based on v2ray core",
     "homepage": "https://github.com/2dust/v2rayN",
     "license": "GPL-3.0-only",
@@ -7,8 +7,8 @@
         "v2ray",
         "xray"
     ],
-    "url": "https://github.com/2dust/v2rayN/releases/download/6.5/v2rayN.zip",
-    "hash": "b8f0c8a78a34ecf638005e13c83207a00a08adf8f29fcb7591c2ce46caf41abe",
+    "url": "https://github.com/2dust/v2rayN/releases/download/6.6/v2rayN.zip",
+    "hash": "e536fbf2946b1966c556e918a800cc43a42c5ad27e71821ae918c094f6e9493a",
     "extract_dir": "v2rayN",
     "pre_install": [
         "# 'guiNConfig.json',",
