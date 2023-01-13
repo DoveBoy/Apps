@@ -1,5 +1,5 @@
 {
-    "version": "20230105",
+    "version": "202305",
     "description": "Download images from Pixiv and more!",
     "homepage": "https://nandaka.devnull.zone",
     "license": {
@@ -16,8 +16,7 @@
     ],
     "checkver": {
         "url": "https://api.github.com/repos/Nandaka/PixivUtil2/releases?per_page=1",
-        "jsonpath": "$[0].tag_name",
-        "regex": "(?<tag>(?<prefix>v|pixivutil)(.*))"
+        "regex": "releases/download/(?<tag>[vV]?[\\d.]+)/pixivutil([\\d.]+)\\.zip"
     },
     "autoupdate": {
         "url": "https://github.com/Nandaka/PixivUtil2/releases/download/$matchTag/pixivutil$version.zip"
