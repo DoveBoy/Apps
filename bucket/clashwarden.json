@@ -1,5 +1,5 @@
 {
-    "version": "1.3-2",
+    "version": "1.3.1",
     "description": "小巧高效的 clash 控制程序",
     "homepage": "https://github.com/dream7180/ClashWarden",
     "license": {
@@ -13,12 +13,12 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/dream7180/ClashWarden/releases/download/1.3.2/ClashWarden_1.3-2_win64.7z",
-            "hash": "96b3c128502d024d0933ae923c573be4b177f0792dac3e01b6c88b66570bf466"
+            "url": "https://github.com/dream7180/ClashWarden/releases/download/1.3.1/ClashWarden_1.3.1_win64.7z",
+            "hash": "6dcf2bad2c737d8e907fcff616cc3772a2a21a3549f1e7d51cf8926419ca5a9e"
         },
         "32bit": {
-            "url": "https://github.com/dream7180/ClashWarden/releases/download/1.3.2/ClashWarden_1.3-2_win32.7z",
-            "hash": "933fdbcb1dd06d282470f7c5420b335f3c41dd25a719065fe70d363fd936191a"
+            "url": "https://github.com/dream7180/ClashWarden/releases/download/1.3.1/ClashWarden_1.3.1_win32.7z",
+            "hash": "8d4360c2e47f9686c9fe55fed278f0a5c5d8dacb06eacc45d8a8ee7b5eaea915"
         }
     },
     "extract_dir": "ClashWarden",
