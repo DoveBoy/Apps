@@ -1,16 +1,16 @@
 {
-    "version": "0.2.7",
+    "version": "1.0.0",
     "description": "An open source visual route tracking CLI tool",
     "homepage": "https://github.com/sjlleo/nexttrace",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/sjlleo/nexttrace/releases/download/v0.2.7/nexttrace_windows_amd64.exe#/nexttrace.exe",
-            "hash": "0bf0dac39327eb8104ffc13b7b2013cae8662cf0f4c49170658f228ab79e1525"
+            "url": "https://github.com/sjlleo/nexttrace/releases/download/v1.0.0/nexttrace_windows_amd64.exe#/nexttrace.exe",
+            "hash": "708fc597df9b9cbeb9d44716a7135a10b5b1043eae7e8cffaf1f4197bd1071a5"
         },
         "arm64": {
-            "url": "https://github.com/sjlleo/nexttrace/releases/download/v0.2.7/nexttrace_windows_arm64.exe#/nexttrace.exe",
-            "hash": "b73105742ee9f96b36657fe2e6fd930ea123bf52ac46e9d24a5c56bbb8a2e6e4"
+            "url": "https://github.com/sjlleo/nexttrace/releases/download/v1.0.0/nexttrace_windows_arm64.exe#/nexttrace.exe",
+            "hash": "2b9ce7b313d1def289cf3776776fadd1f0738f4e8b9748de591261b5b083f2b9"
         }
     },
     "bin": "nexttrace.exe",
