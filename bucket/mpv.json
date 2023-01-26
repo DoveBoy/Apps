@@ -1,0 +1,42 @@
+{
+    "version": "0.35.0",
+    "description": "Video player based on MPlayer/mplayer2 (builds by shinchiro)",
+    "homepage": "https://mpv.io",
+    "license": "LGPL-2.1-or-later,GPL-2.0-or-later",
+    "notes": "You can use Icaros (https://www.majorgeeks.com/files/details/icaros.html) to enable thumbnails for all media types.",
+    "suggest": {
+        "yt-dlp": "yt-dlp"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://downloads.sourceforge.net/project/mpv-player-windows/release/mpv-0.35.0-x86_64.7z",
+            "hash": "sha1:1e262583d3fe7d87a927142ba8ad946c1c932bb6"
+        },
+        "32bit": {
+            "url": "https://downloads.sourceforge.net/project/mpv-player-windows/release/mpv-0.35.0-i686.7z",
+            "hash": "sha1:ea56c20a2cce2296e3917c4c0110db371d398550"
+        }
+    },
+    "env_add_path": ".",
+    "shortcuts": [
+        [
+            "mpv.exe",
+            "mpv"
+        ]
+    ],
+    "persist": "portable_config",
+    "checkver": {
+        "sourceforge": "mpv-player-windows/release",
+        "regex": "mpv-([\\d.]+)-"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://downloads.sourceforge.net/project/mpv-player-windows/release/mpv-$version-x86_64.7z"
+            },
+            "32bit": {
+                "url": "https://downloads.sourceforge.net/project/mpv-player-windows/release/mpv-$version-i686.7z"
+            }
+        }
+    }
+}
