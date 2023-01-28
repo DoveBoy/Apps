@@ -1,5 +1,5 @@
 {
-    "version": "1.1.7",
+    "version": "1.1.8",
     "description": "“绅士漫画”的客户端",
     "homepage": "https://github.com/niuhuan/wax",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/niuhuan/wax/releases/download/v1.1.7/z-old_flutter-wax-v1.1.7-windows-x86_64.zip",
-            "hash": "760eefdf07ebc90ac2f1bc12c0cd18df97c8a47fe33673141480ca60afe6f571"
+            "url": "https://github.com/niuhuan/wax/releases/download/v1.1.8/z-old_flutter-wax-v1.1.8-windows-x86_64.zip",
+            "hash": "2c79f6e7e13de4d881af6ffabced78dce8a8caa1260b49a6e6fc310aaf412961"
         }
     },
     "shortcuts": [
@@ -17,11 +17,14 @@
             "wax"
         ]
     ],
-    "checkver": "github",
+    "checkver": {
+        "url": "https://api.github.com/repos/niuhuan/wax/releases",
+        "regex": "(?<prefix>z-)?old_flutter-wax-[vV]?([\\w.-]+)-windows-x86_64.zip"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/niuhuan/wax/releases/download/v$version/old_flutter-wax-v$version-windows-x86_64.zip"
+                "url": "https://github.com/niuhuan/wax/releases/download/v$version/$matchPrefixold_flutter-wax-v$version-windows-x86_64.zip"
             }
         }
     }
