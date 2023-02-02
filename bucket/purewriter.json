@@ -27,6 +27,12 @@
             "Start-Process msiexec -ArgumentList @('/uninstall', \"`\"$productId`\"\", '/passive', '/norestart') -Wait | Out-Null"
         ]
     },
+    "shortcuts": [
+        [
+            "Pure Writer.exe",
+            "Pure Writer"
+        ]
+    ],
     "checkver": {
         "url": "https://api.github.com/repos/PureWriter/desktop/releases",
         "regex": "releases/download/(?<tag>[\\d.]+)/PureWriter-([\\d.]+)-Windows-x64.exe"
