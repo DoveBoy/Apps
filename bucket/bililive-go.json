@@ -1,5 +1,5 @@
 {
-    "version": "0.7.6",
+    "version": "0.7.7",
     "description": "A Stream Recorder For Bilibili Live",
     "homepage": "https://github.com/hr3lxphr6j/bililive-go",
     "license": "GPL-3.0-only",
@@ -8,13 +8,13 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/hr3lxphr6j/bililive-go/releases/download/v0.7.6/bililive-windows-amd64.zip",
-            "hash": "a05f515836e8838b427c2fd4b710ab8998ea6be3a25355987a00282e70aad19d",
+            "url": "https://github.com/hr3lxphr6j/bililive-go/releases/download/v0.7.7/bililive-windows-amd64.zip",
+            "hash": "469f10fc610557a7fd6427867ecf0ea99f5ac4afcdfae3be5ce1dd4d8b0bc312",
             "pre_install": "Rename-Item -Path \"$dir\\bililive-windows-amd64.exe\" -NewName \"bililive-go\" -Force"
         },
         "32bit": {
-            "url": "https://github.com/hr3lxphr6j/bililive-go/releases/download/v0.7.6/bililive-windows-386.zip",
-            "hash": "316ac3837b29c67cc3d9bcc3496d933581e3eb95446cc82981e430f44deff015",
+            "url": "https://github.com/hr3lxphr6j/bililive-go/releases/download/v0.7.7/bililive-windows-386.zip",
+            "hash": "b56c30faed984c0f5acd5a3dc1eb1395002079285c39514c137063b8afde6e15",
             "pre_install": "Rename-Item -Path \"$dir\\bililive-windows-386.exe\" -NewName \"bililive-go\" -Force"
         }
     },
