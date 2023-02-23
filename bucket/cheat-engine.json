@@ -1,13 +1,13 @@
 {
-    "version": "7.4",
+    "version": "7.5",
     "description": "Tool for modifying/debugging single player games and applications.",
     "homepage": "https://cheatengine.org/index.php",
     "license": {
         "identifier": "Freeware",
         "url": "https://github.com/cheat-engine/cheat-engine/issues/60#issuecomment-467317576"
     },
-    "url": "https://github.com/cheat-engine/cheat-engine/releases/download/7.4/CheatEngine74.exe",
-    "hash": "6d0e14d66da69c163f824f8fa7d87de3eea41cdbd48c0973de296cf6d2d0fed3",
+    "url": "https://github.com/cheat-engine/cheat-engine/releases/download/7.5/CheatEngine75.exe",
+    "hash": "e2e15826b69778e381f25ac8f2b109a377b23f7cf79b5f482e81f4d28c30f95e",
     "innosetup": true,
     "architecture": {
         "64bit": {
