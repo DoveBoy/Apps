@@ -1,13 +1,13 @@
 {
-    "version": "1.4.0",
+    "version": "1.4.1",
     "description": "Remote Administration Tool for Windows",
     "homepage": "https://github.com/quasar/Quasar",
     "license": "MIT license",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/quasar/Quasar/releases/download/v1.4.0/Quasar.v1.4.0.zip",
-            "hash": "f2e8a0a730be436eea5cdca3b229b945ad149a0e9e2cca971cb998f88a08956d",
-            "extract_dir": "Quasar v1.4.0"
+            "url": "https://github.com/quasar/Quasar/releases/download/v1.4.1/Quasar.v1.4.1.zip",
+            "hash": "4cdeb2eae1cec1ab07077142313c524e9cf360cdec63497538c4405c2d8ded62",
+            "extract_dir": "Quasar v1.4.1"
         }
     },
     "bin": "Quasar.exe",
