@@ -1,13 +1,13 @@
 {
-    "version": "3.4.5.22071",
+    "version": "3.4.6.22074",
     "description": "Tencent TIM, lightweight alternative to QQ",
     "homepage": "https://office.qq.com/",
     "license": {
         "identifier": "Unknown",
         "url": "http://play.mobile.qq.com/yy/eim/help/serverinfo.html"
     },
-    "url": "http://dldir1.qq.com/qqfile/qq/TIM3.4.5/TIM3.4.5.22071.exe#/dl.7z",
-    "hash": "e92a4705964f2f572e376aa6634e6d487fba2dd3060f0f1c1991ab86350934e6",
+    "url": "http://dldir1.qq.com/qqfile/qq/TIM3.4.6/TIM3.4.6.22074.exe#/dl.7z",
+    "hash": "3492424e5a7e168b140eb07dc708be25082f3ce34cdfabc4a254191fddb5a3ab",
     "pre_install": [
         "if (Test-Path \"$env:AppData\\Tencent\\Tim\") {",
         "    info '[Persistent data]: Copying user data...'",
@@ -15,7 +15,7 @@
         "    Copy-Item \"$env:AppData\\Tencent\\Tim\\*\" \"$dir\\User Data\\\" -Recurse -Force -ErrorAction 'SilentlyContinue'",
         "    Remove-Item \"$env:AppData\\Tencent\\Tim\" -Recurse -Force -ErrorAction 'SilentlyContinue'",
         "}",
-        "Move-Item \"$dir\\Files\\*\" \"$dir\\\"",
+        "Move-Item \"$dir\\Files\\*\" \"$dir\\\""
     ],
     "post_install": "Remove-Item \"$dir\\Application Data\", \"$dir\\Common\" -Recurse -Force -ErrorAction 'SilentlyContinue'",
     "shortcuts": [
