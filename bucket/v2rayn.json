@@ -12,7 +12,6 @@
     "hash": "6aa5aa20efce2e166a47ca4bde389f8f91b8e4e71260edac9bc74b373bec7c03",
     "extract_dir": "v2rayN",
     "pre_install": [
-        "}",
         "foreach ($form in @('*.exe', '*.dat')) {",
         "    foreach ($_ in Get-ChildItem \"$(appdir xray $global)\\current\" -File) {",
         "        $name = $_.Name",
