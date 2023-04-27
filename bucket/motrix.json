@@ -1,0 +1,37 @@
+{
+    "version": "1.8.14",
+    "description": "A full-featured download manager.",
+    "homepage": "https://motrix.app",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/agalwood/Motrix/releases/download/v1.8.14/Motrix-Setup-1.8.14.exe#/dl.7z",
+            "hash": "sha512:a7032814327872ef7fa5567f961468bd88f576d4f7c22e6e35ba284c4148e30d3e5f7af198d3a2300792783783ea5540767110161c8aa8ddc8266d864fbc228d",
+            "pre_install": [
+                "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+                "Remove-Item \"$dir\\`$*\" -Force -Recurse"
+            ]
+        }
+    },
+    "shortcuts": [
+        [
+            "Motrix.exe",
+            "Motrix"
+        ]
+    ],
+    "checkver": {
+        "url": "https://api.github.com/repos/agalwood/Motrix/releases",
+        "regex": "/releases/tag/v([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/agalwood/Motrix/releases/download/v$version/Motrix-Setup-$version.exe#/dl.7z",
+                "hash": {
+                    "url": "$baseurl/latest.yml",
+                    "regex": "sha512:\\s+$base64"
+                }
+            }
+        }
+    }
+}
