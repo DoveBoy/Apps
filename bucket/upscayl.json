@@ -24,13 +24,12 @@
     "persist": "User Data",
     "checkver": {
         "url": "https://api.github.com/repos/upscayl/upscayl/releases",
-        "jsonpath": "$[0].tag_name",
-        "regex": "(?<tag>v([\\w.-]+))"
+        "regex": "(?sm)browser_download_url.*?releases/download/v([\\w.-]+)/upscayl-([\\w.-]+)-win\\.exe"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/upscayl/upscayl/releases/download/$matchTag/upscayl-$version-win.exe#/dl.7z",
+                "url": "https://github.com/upscayl/upscayl/releases/download/v$version/upscayl-$version-win.exe#/dl.7z",
                 "hash": {
                     "url": "$baseurl/latest.yml",
                     "mode": "extract",
