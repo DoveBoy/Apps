@@ -1,5 +1,5 @@
 {
-    "version": "115.0.5752.2",
+    "version": "115.0.5753.1",
     "description": "Fast, secure, and free web browser, built for the modern web.",
     "homepage": "https://www.google.com/chrome/canary",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://dl.google.com/release2/chrome/acy2lgub2hndnizpd2fubfcxdt6a_115.0.5752.2/115.0.5752.2_chrome_installer.exe#/dl.7z",
-            "hash": "85f6c0540519a9337e2e2c65d6d28b86247e5a2723191a8a5980402737f3b927"
+            "url": "https://dl.google.com/release2/chrome/nwirbxyxdohk2qqkehg2ubcvtm_115.0.5753.1/115.0.5753.1_chrome_installer.exe#/dl.7z",
+            "hash": "710393e76932525aaddbe4dfd9aac712ae0a73c0c304e95e8fec4fef6683d4b1"
         },
         "32bit": {
-            "url": "https://dl.google.com/release2/chrome/adnwrdwuxmtxpjzpuwmmrj5uv7wq_115.0.5752.2/115.0.5752.2_chrome_installer.exe#/dl.7z",
-            "hash": "6f9199413fa877f91f7de52607f869e0a9949f7cd08a0bea2a5b68490b42c807"
+            "url": "https://dl.google.com/release2/chrome/acpjt32ekw3giadrnzd2q6yrlyyq_115.0.5754.0/115.0.5754.0_chrome_installer.exe#/dl.7z",
+            "hash": "d0d0f35d2d42811d0c01dec9d29e9572caa8b5a07d4880471e8439c30f74423c"
         }
     },
     "installer": {
