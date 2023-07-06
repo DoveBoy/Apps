@@ -1,5 +1,5 @@
 {
-    "version": "0.0.6",
+    "version": "0.0.7",
     "description": "A illustrations and wallpapers client.",
     "homepage": "https://github.com/niuhuan/coco",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/niuhuan/coco/releases/download/v0.0.6/coco-v0.0.6-windows-x86_64.zip",
-            "hash": "744ba5b70946c83e9a9da040313e91a763b73f589d0ef9e965cc5c399c0bcc6b"
+            "url": "https://github.com/niuhuan/coco/releases/download/v0.0.7/coco-v0.0.7-windows-x86_64.zip",
+            "hash": "6b5c0933ccc169fade798d28ce6a81aeed4774fc6a5fea1191d5fdb49166ff75"
         }
     },
     "shortcuts": [
