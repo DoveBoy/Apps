@@ -1,5 +1,5 @@
 {
-    "version": "1.1",
+    "version": "1.2",
     "homepage": "https://www.sordum.org/windows-11-classic-context-menu",
     "description": "An application that allows Windows 11 users to revert back to the classic Windows 10 context menu.",
     "license": {
@@ -9,7 +9,7 @@
     "architecture": {
         "64bit": {
             "url": "https://www.sordum.org/files/download/win11-classic-context-menu/W11ClassicMenu.zip",
-            "hash": "311bf739c38f70f377e3c20a69761f3414cc1145650257d26f3f76cf5083689a"
+            "hash": "40e4a58d2e356ca3fe8a892a1fb92bc0f8543fe735e5629eb8cc5eddc7795dcd"
         }
     },
     "extract_dir": "W11ClassicMenu",
