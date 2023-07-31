@@ -1,0 +1,32 @@
+{
+    "version": "3.01",
+    "description": "Block the keyboard input while you were eating instant noodles on your laptop keyboard.",
+    "homepage": "https://github.com/Nigh/I-wanna-clean-keyboard",
+    "license": {
+        "identifier": "Unlicense license",
+        "url": "https://github.com/Nigh/I-wanna-clean-keyboard/blob/master/LICENSE"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Nigh/I-wanna-clean-keyboard/releases/download/v3.01/iwck.exe",
+            "hash": "7e2ff91f78f74fee0c5a6ddcd49de48be2644eca1d7c50eb68fa34923288ae0b"
+        }
+    },
+    "shortcuts": [
+        [
+            "iwck.exe",
+            "iwck"
+        ]
+    ],
+    "checkver": {
+        "url": "https://api.github.com/repos/Nigh/I-wanna-clean-keyboard/releases",
+        "regex": "/releases/tag/v([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Nigh/I-wanna-clean-keyboard/releases/download/v$version/iwck.exe"
+            }
+        }
+    }
+}
