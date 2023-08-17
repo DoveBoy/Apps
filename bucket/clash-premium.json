@@ -1,5 +1,5 @@
 {
-    "version": "2023.07.22",
+    "version": "2023.08.17",
     "description": "A rule-based tunnel in Go.",
     "homepage": "https://github.com/Dreamacro/clash",
     "license": {
@@ -8,16 +8,16 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Dreamacro/clash/releases/download/premium/clash-windows-amd64-2023.07.22.zip",
-            "hash": "b1969ee89b5720c5880588a760f321a678a2d75828479a57b5d3588d1ffe27ac"
+            "url": "https://github.com/Dreamacro/clash/releases/download/premium/clash-windows-amd64-2023.08.17.zip",
+            "hash": "a39b590d8fda0f1a76373d431d126a8798ef8b6fe11af1aa70f88b865b40b15b"
         },
         "32bit": {
-            "url": "https://github.com/Dreamacro/clash/releases/download/premium/clash-windows-386-2023.07.22.zip",
-            "hash": "70fd9bb5d3afc84036f8d7ae6688b6d3c2eb060110cb23d4d8417c76e0da3f1a"
+            "url": "https://github.com/Dreamacro/clash/releases/download/premium/clash-windows-386-2023.08.17.zip",
+            "hash": "ec1a3e6b439d6258673a4691a680cb748e42a456427d9b6bd6b49efb10c8fc58"
         },
         "arm64": {
-            "url": "https://github.com/Dreamacro/clash/releases/download/premium/clash-windows-arm64-2023.07.22.zip",
-            "hash": "4829fabc2bb992f53b9ff8172b9ff5a3123617b307d8f067b19e4120e5e64146"
+            "url": "https://github.com/Dreamacro/clash/releases/download/premium/clash-windows-arm64-2023.08.17.zip",
+            "hash": "c5a992017e8376d8482cbec99445d4f070cca7d567f9efdcecff755a57fdd9ec"
         }
     },
     "pre_install": "Get-ChildItem \"$dir\\clash*.exe\" | Rename-Item -NewName 'clash-premium.exe'",
