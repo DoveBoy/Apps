@@ -1,0 +1,59 @@
+{
+    "version": "0.79",
+    "description": "SSH and telnet client.",
+    "homepage": "https://www.chiark.greenend.org.uk/~sgtatham/putty/",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-0.79-installer.msi",
+            "hash": "sha512:6db13a338ad1c109dc6daa93713a37682a58841fca0ce7a1f03c73c65f10d579e4dff49f8176d50d4512d102d0ded5bbadb7c93cc64a5cc2cb8016be35f2be03"
+        },
+        "32bit": {
+            "url": "https://the.earth.li/~sgtatham/putty/latest/w32/putty-0.79-installer.msi",
+            "hash": "sha512:3fa0ff37bbff33a3520a1ca8e0e0fd54e7265981eadcc920f6aa6611d5c9aa899ce4e0734a9a050a2c5c967b93927039481b234326eaf223a2a2a75f9f143daa"
+        }
+    },
+    "installer": {
+        "script": "Start-Process -Wait msiexec \"/i `\"$dir\\installer.msi`\" /qn TARGETDIR=`\"$dir`\" INSTALLDIR=`\"$dir`\"\" -Verb RunAs"
+    },
+    "uninstaller": {
+        "script": "Start-Process -Wait msiexec \"/x '{45B3032F-22CC-40CD-9E97-4DA7095FA5A2}' /qn\" -Verb RunAs"
+    },
+    "bin": [
+        "PFiles\\PuTTY\\pageant.exe",
+        "PFiles\\PuTTY\\plink.exe",
+        "PFiles\\PuTTY\\pscp.exe",
+        "PFiles\\PuTTY\\psftp.exe",
+        "PFiles\\PuTTY\\putty.exe",
+        "PFiles\\PuTTY\\puttygen.exe"
+    ],
+    "shortcuts": [
+        [
+            "PFiles\\PuTTY\\putty.exe",
+            "PuTTY"
+        ],
+        [
+            "PFiles\\PuTTY\\puttygen.exe",
+            "PuTTY Key Generator"
+        ]
+    ],
+    "checkver": "The latest version is ([\\d\\.]+)\\.",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://the.earth.li/~sgtatham/putty/latest/w64/putty-64bit-$version-installer.msi",
+                "hash": {
+                    "url": "https://the.earth.li/~sgtatham/putty/$version/sha512sums",
+                    "find": "([a-fA-F0-9]+)\\s+\\*?(?:w64/$basename)"
+                }
+            },
+            "32bit": {
+                "url": "https://the.earth.li/~sgtatham/putty/latest/w32/putty-$version-installer.msi",
+                "hash": {
+                    "url": "https://the.earth.li/~sgtatham/putty/$version/sha512sums",
+                    "find": "([a-fA-F0-9]+)\\s+\\*?(?:w32/$basename)"
+                }
+            }
+        }
+    }
+}
