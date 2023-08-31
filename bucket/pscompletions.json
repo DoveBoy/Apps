@@ -16,6 +16,7 @@
     "psmodule": {
         "name": "PSCompletions"
     },
+    "persist": "completions",
     "checkver": {
         "url": "https://www.powershellgallery.com/packages/PSCompletions",
         "regex": "<h2>([\\d.]+)</h2>"
