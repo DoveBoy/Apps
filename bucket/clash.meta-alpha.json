@@ -1,5 +1,5 @@
 {
-    "version": "0.2023.08.31.49d04a1",
+    "version": "0.2023.09.01.9ceaf20",
     "description": "A rule-based tunnel in Go.",
     "homepage": "https://github.com/MetaCubeX/Clash.Meta",
     "license": {
@@ -7,16 +7,16 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/MetaCubeX/Clash.Meta/releases/download/Prerelease-Alpha/clash.meta-windows-amd64-alpha-49d04a1.zip",
-            "hash": "82b63158490d1580a1734565be99384b4ae08ae1425f523b2c9eb2885594390d"
+            "url": "https://github.com/MetaCubeX/Clash.Meta/releases/download/Prerelease-Alpha/clash.meta-windows-amd64-alpha-9ceaf20.zip",
+            "hash": "da99122ab4b908efdeb4698c3f06522b22e6e9c8c6680ca9f2e53e367747a2dc"
         },
         "32bit": {
-            "url": "https://github.com/MetaCubeX/Clash.Meta/releases/download/Prerelease-Alpha/clash.meta-windows-386-alpha-49d04a1.zip",
-            "hash": "971e60814690bd6c0c6f904ef04fc38da960690d00dae47c9199a306694a7d72"
+            "url": "https://github.com/MetaCubeX/Clash.Meta/releases/download/Prerelease-Alpha/clash.meta-windows-386-alpha-9ceaf20.zip",
+            "hash": "92aa6718e21e10bfb1ae8421caad63d03c0c7037701f18f94f80f563b4c613e5"
         },
         "arm64": {
-            "url": "https://github.com/MetaCubeX/Clash.Meta/releases/download/Prerelease-Alpha/clash.meta-windows-arm64-alpha-49d04a1.zip",
-            "hash": "7d8401a333373173a460e9d7fdc15300ffed8376417899b3afece4097876e745"
+            "url": "https://github.com/MetaCubeX/Clash.Meta/releases/download/Prerelease-Alpha/clash.meta-windows-arm64-alpha-9ceaf20.zip",
+            "hash": "60e2f01a49cb34a9c676f6fa0eb9d6bf6a975ea96b73c55e5da3f3dfa895e158"
         }
     },
     "pre_install": "Get-ChildItem \"$dir\\Clash.Meta*.exe\" | Rename-Item -NewName 'Clash.Meta.exe'",
