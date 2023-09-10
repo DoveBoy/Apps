@@ -27,7 +27,7 @@
         ]
     ],
     "checkver": {
-        "url": "https://api.github.com/repos/neovim/neovim/releases",
+        "url": "https://api.github.com/repos/neovim/neovim/releases/tags/nightly",
         "regex": "NVIM v([\\w.-]+)"
     },
     "autoupdate": {
