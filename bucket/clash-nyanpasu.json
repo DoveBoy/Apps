@@ -1,5 +1,5 @@
 {
-    "version": "1.4.1",
+    "version": "1.4.2",
     "description": "Clash Nyanpasu! (∠・ω< )⌒☆",
     "homepage": "https://github.com/keiko233/clash-nyanpasu",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/keiko233/clash-nyanpasu/releases/download/v1.4.1/Clash.Nyanpasu_1.4.1_x64-setup.exe#/dl.7z",
-            "hash": "eb92a3bc66473a88bd74390a5dbc3cf1dd0c72b6452954f3a87d4b2d5cbabeed"
+            "url": "https://github.com/keiko233/clash-nyanpasu/releases/download/v1.4.2/Clash.Nyanpasu_1.4.2_x64-setup.exe#/dl.7z",
+            "hash": "f572e80fdc386f2321cc7a6581555cdcb1958c0491882a8db230de506f207fb8"
         }
     },
     "pre_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\uninst*\" -Force -Recurse",
