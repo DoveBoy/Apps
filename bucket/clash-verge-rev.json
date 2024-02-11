@@ -1,5 +1,5 @@
 {
-    "version": "1.5.0",
+    "version": "1.5.1",
     "description": "Clash.meta GUI: A sleek Tauri-based interface revolutionizing ease of use across Windows, macOS, and Linux, merging beauty with simplicity for an unparalleled user experience",
     "homepage": "https://github.com/clash-verge-rev/clash-verge-rev",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v1.5.0/Clash.Verge_1.5.0_x64-setup.exe#/dl.7z",
-            "hash": "056ee4769de19cf06fc468e75138ecfd22b1b39581b1c9dfb1f1a5b127fbb8c3"
+            "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v1.5.1/Clash.Verge_1.5.1_x64-setup.exe#/dl.7z",
+            "hash": "a47fa8d29e4d842b6aadca58644a1c702e0cec382016f46127e2efd82076d3b0"
         }
     },
     "pre_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\uninst*\" -Force -Recurse",
