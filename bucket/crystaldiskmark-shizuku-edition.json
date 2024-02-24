@@ -1,10 +1,10 @@
 {
     "homepage": "https://crystalmark.info/en/",
     "description": "CrystalDiskMark is a disk benchmark software.",
-    "version": "8.0.4c",
+    "version": "8.0.5",
     "license": "MIT",
-    "url": "https://downloads.sourceforge.net/projects/crystaldiskmark/8.0.4c/CrystalDiskMark8_0_4cShizuku.zip",
-    "hash": "sha1:bf793052f7d44ed69e933fdeb13c007034d02763",
+    "url": "https://downloads.sourceforge.net/projects/crystaldiskmark/8.0.5/CrystalDiskMark8_0_5Shizuku.zip",
+    "hash": "sha1:a9bfcfaa2602bd1ae8679636fa949cf791c4c2fb",
     "architecture": {
         "64bit": {
             "shortcuts": [
