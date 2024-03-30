@@ -1,23 +1,23 @@
 {
-    "version": "8.7.1_3",
+    "version": "8.7.1_4",
     "description": "Command line tool and library for transferring data with URLs",
     "homepage": "https://curl.se/",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://curl.se/windows/dl-8.7.1_3/curl-8.7.1_3-win64-mingw.tar.xz",
-            "hash": "fe8fe33c87b496bd138c173b785082911c05b96ea97de28210c3795aeef623b0",
-            "extract_dir": "curl-8.7.1_3-win64-mingw"
+            "url": "https://curl.se/windows/dl-8.7.1_4/curl-8.7.1_4-win64-mingw.tar.xz",
+            "hash": "50d7fa00b8753aee5a0c78deb611ad14ae51bdd2961c4837691370da602c7c0c",
+            "extract_dir": "curl-8.7.1_4-win64-mingw"
         },
         "32bit": {
-            "url": "https://curl.se/windows/dl-8.7.1_3/curl-8.7.1_3-win32-mingw.tar.xz",
-            "hash": "20ddebde122fb0d24066431e2283db4ba710f34351859e8d18bf7690dfb61bd8",
-            "extract_dir": "curl-8.7.1_3-win32-mingw"
+            "url": "https://curl.se/windows/dl-8.7.1_4/curl-8.7.1_4-win32-mingw.tar.xz",
+            "hash": "76f0540d4cf883a6b1ba5a74a2219e3e3d86b70eea7f69070749152b5b083833",
+            "extract_dir": "curl-8.7.1_4-win32-mingw"
         },
         "arm64": {
-            "url": "https://curl.se/windows/dl-8.7.1_3/curl-8.7.1_3-win64a-mingw.tar.xz",
-            "hash": "1c2d2cd34b2cd3c6832636414e5a69e91df7ed37ae97b9a9117d0ead079dd6c1",
-            "extract_dir": "curl-8.7.1_3-win64a-mingw"
+            "url": "https://curl.se/windows/dl-8.7.1_4/curl-8.7.1_4-win64a-mingw.tar.xz",
+            "hash": "63236852388ffa6c7de4ea0b06d519320e957c12c2edc700d0fe98373d534bdd",
+            "extract_dir": "curl-8.7.1_4-win64a-mingw"
         }
     },
     "bin": "bin\\curl.exe",
