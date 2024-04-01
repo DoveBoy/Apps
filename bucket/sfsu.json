@@ -1,16 +1,20 @@
 {
-    "version": "1.8.7",
+    "version": "1.9.1",
     "description": "Stupid Fast Scoop Utilities. Incredibly fast replacements for commonly used Scoop commands, written in Rust.",
     "homepage": "https://github.com/jewlexx/sfsu",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/jewlexx/sfsu/releases/download/v1.8.7/dl-x86_64.7z",
-            "hash": "cf71230c4cb459fc5ce50d7c9e28447089e94568cf437a297407458871382659"
+            "url": "https://github.com/jewlexx/sfsu/releases/download/v1.9.1/sfsu-x86_64.exe#/sfsu.exe",
+            "hash": "15f8d9479c4103575e05ae5400d9d8406c93487371f143a3c003244a4ca0ca1e"
         },
         "32bit": {
-            "url": "https://github.com/jewlexx/sfsu/releases/download/v1.8.7/dl-i686.7z",
-            "hash": "9151775e474a823b0ce36186973fdaed092f53e8a59ae44a674c0a3882ee17df"
+            "url": "https://github.com/jewlexx/sfsu/releases/download/v1.9.1/sfsu-i686.exe#/sfsu.exe",
+            "hash": "31685e69a0510a3b043f0a0ef43fed419b3ffa8ccbc8df1d25c20c31adbdace2"
+        },
+        "arm64": {
+            "url": "https://github.com/jewlexx/sfsu/releases/download/v1.9.1/sfsu-aarch64.exe#/sfsu.exe",
+            "hash": "e913ed6a8759c93b7e9aff9d9512b3465380859fb2f4652f81f65b397fb04b44"
         }
     },
     "notes": "In order to replace scoop commands use `Invoke-Expression (&sfsu hook)` in your Powershell profile.",
@@ -19,10 +23,13 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/jewlexx/sfsu/releases/download/v$version/dl-x86_64.7z"
+                "url": "https://github.com/jewlexx/sfsu/releases/download/v$version/sfsu-x86_64.exe#/sfsu.exe"
             },
             "32bit": {
-                "url": "https://github.com/jewlexx/sfsu/releases/download/v$version/dl-i686.7z"
+                "url": "https://github.com/jewlexx/sfsu/releases/download/v$version/sfsu-i686.exe#/sfsu.exe"
+            },
+            "arm64": {
+                "url": "https://github.com/jewlexx/sfsu/releases/download/v$version/sfsu-aarch64.exe#/sfsu.exe"
             }
         },
         "hash": {
