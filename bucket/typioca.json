@@ -1,12 +1,12 @@
 {
-    "version": "2.11.1",
+    "version": "2.11.2",
     "description": "Minimal, terminal based typing speed tester.",
     "homepage": "https://github.com/bloznelis/typioca",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/bloznelis/typioca/releases/download/2.11.1/typioca-win-amd64.exe#/typioca.exe",
-            "hash": "c9abe44ecf0296176eabc3bec69fe7e9c767c228759f10b8a800ef7b95b6db5c"
+            "url": "https://github.com/bloznelis/typioca/releases/download/2.11.2/typioca-win-amd64.exe#/typioca.exe",
+            "hash": "48c70620d9142fecc7933089aecd6ced83db2dac72d3ade2a0adc3f3c14d31e4"
         }
     },
     "bin": "typioca.exe",
