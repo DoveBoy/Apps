@@ -1,5 +1,5 @@
 {
-    "version": "1.9.0-rc.5",
+    "version": "1.9.0-rc.6",
     "description": "The universal proxy platform.",
     "homepage": "https://sing-box.sagernet.org",
     "license": {
@@ -8,19 +8,19 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/SagerNet/sing-box/releases/download/v1.9.0-rc.5/sing-box-1.9.0-rc.5-windows-amd64.zip",
-            "extract_dir": "sing-box-1.9.0-rc.5-windows-amd64",
-            "hash": "621cc60dd38a90108d728a92c1799bd144c81b6a1d6e11b8d24837dc9bdabb0d"
+            "url": "https://github.com/SagerNet/sing-box/releases/download/v1.9.0-rc.6/sing-box-1.9.0-rc.6-windows-amd64.zip",
+            "extract_dir": "sing-box-1.9.0-rc.6-windows-amd64",
+            "hash": "722d93bc71302bddfb739fd7631d69b488c13598cc68ea78267fe89f394b748f"
         },
         "32bit": {
-            "url": "https://github.com/SagerNet/sing-box/releases/download/v1.9.0-rc.5/sing-box-1.9.0-rc.5-windows-386.zip",
-            "extract_dir": "sing-box-1.9.0-rc.5-windows-386",
-            "hash": "b46b2b88cd8529e36f6f957051e3cb4033ecd44824d98978c5706651baf44f49"
+            "url": "https://github.com/SagerNet/sing-box/releases/download/v1.9.0-rc.6/sing-box-1.9.0-rc.6-windows-386.zip",
+            "extract_dir": "sing-box-1.9.0-rc.6-windows-386",
+            "hash": "b0e7a5984c42caba244b7ae2faf705ae91ea255b93515114947ff15dc2e5c3eb"
         },
         "arm64": {
-            "url": "https://github.com/SagerNet/sing-box/releases/download/v1.9.0-rc.5/sing-box-1.9.0-rc.5-windows-arm64.zip",
-            "extract_dir": "sing-box-1.9.0-rc.5-windows-arm64",
-            "hash": "903a6bb6e61f4d40c202111f0295d0a2c3280ed36f2d3ea997464026bad07954"
+            "url": "https://github.com/SagerNet/sing-box/releases/download/v1.9.0-rc.6/sing-box-1.9.0-rc.6-windows-arm64.zip",
+            "extract_dir": "sing-box-1.9.0-rc.6-windows-arm64",
+            "hash": "b9ed5e3f261450d21e039e2747b4333bcb53039e9279c38dff48d3b7887dfa0e"
         }
     },
     "bin": "sing-box.exe",
