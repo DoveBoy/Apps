@@ -1,5 +1,5 @@
 {
-    "version": "3.0.0",
+    "version": "3.0.6",
     "description": "获取微信账号信息(昵称/账号/手机/邮箱/数据库密钥/wxid)；PC微信数据库读取、解密脚本；聊天记录查看工具；聊天记录导出为html(包含语音图片)。支持多账户信息获取，支持所有微信版本。",
     "homepage": "https://github.com/xaoyaoo/PyWxDump",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/xaoyaoo/PyWxDump/releases/download/v3.0.0/wxdump.exe",
-            "hash": "b2a44f82b9dad1db606e470c976f84dab2b9c5c7b87be22f8c006abbee83b94f"
+            "url": "https://github.com/xaoyaoo/PyWxDump/releases/download/v3.0.6/wxdump.exe",
+            "hash": "ff8cda26b60ae083ac7990c97a546044678aad4a8a003edce8849ad1d69b416a"
         }
     },
     "bin": "pywxdump.exe",
