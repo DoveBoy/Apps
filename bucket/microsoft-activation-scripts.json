@@ -9,12 +9,7 @@
     "url": "https://github.com/massgravel/Microsoft-Activation-Scripts/archive/master.zip",
     "hash": "a0ce9a69ac733f2e101352251ea4ee222db1ed0a8df64991abb94d8ced44de14",
     "extract_dir": "Microsoft-Activation-Scripts-master",
-    "shortcuts": [
-        [
-            "MAS\\All-In-One-Version\\MAS_AIO.cmd",
-            "MAS_AIO"
-        ]
-    ],
+    "env_add_path": "MAS\\All-In-One-Version",
     "checkver": {
         "url": "https://github.com/massgravel/Microsoft-Activation-Scripts/releases.atom",
         "regex": "/releases/tag/([\\d.]+)"
