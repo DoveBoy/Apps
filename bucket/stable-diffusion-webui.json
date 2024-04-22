@@ -1,5 +1,5 @@
 {
-    "version": "1.9.0",
+    "version": "1.9.1",
     "description": "A browser interface based on Gradio library for Stable Diffusion.",
     "homepage": "https://github.com/AUTOMATIC1111/stable-diffusion-webui",
     "license": {
@@ -16,9 +16,9 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui/archive/refs/tags/v1.9.0.zip",
-            "hash": "4680094612de67933d3c3ce6b1feb0c098fa7e330962b827c4ca7d8780563e29",
-            "extract_dir": "stable-diffusion-webui-1.9.0"
+            "url": "https://github.com/AUTOMATIC1111/stable-diffusion-webui/archive/refs/tags/v1.9.1.zip",
+            "hash": "fb35acb573c4dd5051ed64ee28c2d0e0933f349a60c51e35a46814df91cdd335",
+            "extract_dir": "stable-diffusion-webui-1.9.1"
         }
     },
     "shortcuts": [
