@@ -1,5 +1,5 @@
 {
-    "version": "1.8.28",
+    "version": "1.8.29",
     "description": "Typora plugin. feature enhancement tool | Typora 插件，功能增强工具",
     "homepage": "https://github.com/obgnail/typora_plugin",
     "license": {
@@ -11,9 +11,9 @@
         "\"$(scoop prefix typora)\\resources\\plugin\\updater\\updater.exe\""
     ],
     "depends": "typora",
-    "url": "https://github.com/obgnail/typora_plugin/archive/1.8.28.zip",
-    "hash": "865baa213ec75a7300cae3f58328bd2a8398c71c735adf2321ac741ca4654d77",
-    "extract_dir": "typora_plugin-1.8.28",
+    "url": "https://github.com/obgnail/typora_plugin/archive/1.8.29.zip",
+    "hash": "bd728fbfa666c291cbfb98061aa0c607eaf51cc3068c3c870b110eba3d2a08ee",
+    "extract_dir": "typora_plugin-1.8.29",
     "post_install": "Copy-Item \"$dir\\plugin\" \"$(scoop prefix typora)\\resources\" -Recurse -Force -ErrorAction 'SilentlyContinue'",
     "uninstaller": {
         "script": [
