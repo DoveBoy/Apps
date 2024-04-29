@@ -1,5 +1,5 @@
 {
-    "version": "0.2024.04.25.77c74f5",
+    "version": "0.2024.04.29.93eb664",
     "description": "Scripts to build a trimmed-down Windows 11 image.",
     "homepage": "https://github.com/ntdevlabs/tiny11builder",
     "license": "Unknown",
@@ -7,9 +7,9 @@
         "Download Windows 11 from UUPDump or from the Microsoft website (https://www.microsoft.com/software-download/windows11)",
         "UUP dump website: (https://www.uupdump.cn/) or (https://uupdump.net/)."
     ],
-    "url": "https://github.com/ntdevlabs/tiny11builder/archive/77c74f524d204e7c55ad8fe64c2297ebe5e8a30f.zip",
-    "hash": "4321cfcf7ec0668366dbfaeeace9d80e54adb5e1df859689fcde267ef4941f93",
-    "extract_dir": "tiny11builder-77c74f524d204e7c55ad8fe64c2297ebe5e8a30f",
+    "url": "https://github.com/ntdevlabs/tiny11builder/archive/93eb664e56c1228b24a6f7c52fdedbb81e8dd931.zip",
+    "hash": "710ccf6fd5032e1ee67332e79879db8a743856d672b3eef5312be8505251f3aa",
+    "extract_dir": "tiny11builder-93eb664e56c1228b24a6f7c52fdedbb81e8dd931",
     "shortcuts": [
         [
             "tiny11 creator.bat",
