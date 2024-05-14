@@ -1,5 +1,5 @@
 {
-    "version": "0.1.10",
+    "version": "0.2.0",
     "description": "A Scrcpy client in Rust & Tarui aimed at providing mouse and key mapping to control Android device, similar to a game emulator",
     "homepage": "https://github.com/AkiChase/scrcpy-mask",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/AkiChase/scrcpy-mask/releases/download/v0.1.10/scrcpy-mask_0.1.10_x64-setup.exe#/dl.7z",
-            "hash": "a414108d7228329ccca8ec4310b70cd84f50297e53f9a5e36c647d096683555c"
+            "url": "https://github.com/AkiChase/scrcpy-mask/releases/download/v0.2.0/scrcpy-mask_0.2.0_x64-setup.exe#/dl.7z",
+            "hash": "294e19ae0be3b0400128aaa5eeac886b22ca5f5f315b252c1bf4d4efabf40c10"
         }
     },
     "pre_install": "Remove-Item \"$dir\\`$*\", \"$dir\\uninst*\" -Force -Recurse",
