@@ -1,13 +1,13 @@
 {
-    "version": "0.8.25",
+    "version": "0.8.26",
     "description": "A multi-platform proxy client based on ClashMeta, simple and easy to use, open-source and ad-free.",
     "homepage": "https://github.com/chen08209/FlClash",
     "license": {
         "identifier": "GPL-3.0 license",
         "url": "https://github.com/chen08209/FlClash#GPL-3.0-1-ov-file"
     },
-    "url": "https://github.com/chen08209/FlClash/releases/download/v0.8.25/FlClash-0.8.25-windows-amd64.zip",
-    "hash": "f6017dbde0d66bb6bbc589e352a9155cef5539b1f6441b2ae73b62a00e19b109",
+    "url": "https://github.com/chen08209/FlClash/releases/download/v0.8.26/FlClash-0.8.26-windows-amd64.zip",
+    "hash": "c60640c0a6930a15ab8a47aae706cf77f0ce5f957a719821dc7b59683c6acf2f",
     "installer": {
         "script": [
             "# handle runtime cache",
