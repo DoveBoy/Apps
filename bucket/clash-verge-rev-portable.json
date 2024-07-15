@@ -1,5 +1,5 @@
 {
-    "version": "1.7.3",
+    "version": "1.7.4",
     "description": "Clash.meta GUI: A sleek Tauri-based interface revolutionizing ease of use across Windows, macOS, and Linux, merging beauty with simplicity for an unparalleled user experience",
     "homepage": "https://github.com/clash-verge-rev/clash-verge-rev",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v1.7.3/Clash.Verge_1.7.3_x64_portable.zip",
-            "hash": "ca8fb0f342a202194d6db5bafa14ff5b7d0506cb8521e3a7a633782c7ca231ee"
+            "url": "https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v1.7.4/Clash.Verge_1.7.4_x64_portable.zip",
+            "hash": "b8041b6b96b546ab6b4e765a38086b01e5c112113813eb95516d3ed2c3d98774"
         }
     },
     "installer": {
