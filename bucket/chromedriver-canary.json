@@ -1,17 +1,17 @@
 {
-    "version": "128.0.6602.0",
+    "version": "128.0.6602.2",
     "description": "An open source tool for automated testing of webapps across many browsers",
     "homepage": "https://chromedriver.chromium.org/",
     "license": "BSD-3-Clause",
     "architecture": {
         "64bit": {
-            "url": "https://storage.googleapis.com/chrome-for-testing-public/128.0.6602.0/win64/chromedriver-win64.zip",
-            "hash": "ccd74e64f8f03e19833a440c00cae5bfa4ca24dd591fb10a7579434cf2018044",
+            "url": "https://storage.googleapis.com/chrome-for-testing-public/128.0.6602.2/win64/chromedriver-win64.zip",
+            "hash": "332fa7a1803e879dcd0612fbf23ef1021a5a7ef7cba35675b7ceb082b842c656",
             "extract_dir": "chromedriver-win64"
         },
         "32bit": {
-            "url": "https://storage.googleapis.com/chrome-for-testing-public/128.0.6602.0/win32/chromedriver-win32.zip",
-            "hash": "bdff7e711b6b6de998b61282b81988723dc1124db658aa7716f0d204b2d84c7b",
+            "url": "https://storage.googleapis.com/chrome-for-testing-public/128.0.6602.2/win32/chromedriver-win32.zip",
+            "hash": "4eb35604c5ca2e72a5fdf39708c8140527b593fc3dbf85f447f3c9cd4bce124f",
             "extract_dir": "chromedriver-win32"
         }
     },
