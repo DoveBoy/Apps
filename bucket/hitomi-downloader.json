@@ -16,6 +16,9 @@
             "hitomi downloader GUI"
         ]
     ],
+    "persist": [
+        "hitomi_downloader_GUI.ini"
+    ],
     "checkver": {
         "github": "https://github.com/KurtBestor/Hitomi-Downloader",
         "regex": "Downloader\\sv(?<major>[\\d.]+)(?<build>[a-z]?)?",
