@@ -1,13 +1,13 @@
 {
-    "version": "0.0.1-alpha.14",
+    "version": "0.0.1-alpha.15",
     "description": "🧡 Next generation information browser.",
     "homepage": "https://app.follow.is/",
     "license": {
         "identifier": "GPL-3.0 license",
         "url": "https://github.com/RSSNext/Follow#GPL-3.0-1-ov-file"
     },
-    "url": "https://github.com/RSSNext/Follow/releases/download/v0.0.1-alpha.14/Follow-0.0.1-alpha.14-windows-x64.exe#/dl.7z",
-    "hash": "sha512:0ef29a53639ad91d114c458dffd755b9e832b8321b98d93d96692b595d21561df4d15c726798a8b912ba2873bb9890dcf3cf585416f2a0d987c6796ee8704cfd",
+    "url": "https://github.com/RSSNext/Follow/releases/download/v0.0.1-alpha.15/Follow-0.0.1-alpha.15-windows-x64.exe#/dl.7z",
+    "hash": "sha512:7c02c3d4f39f857524f5a53c97f6d36d4b4405fe6b87614837dd988679581692331ea27953ac9aa07653497f776333259afdcb41f24b44d89c4ee6ae5dcb8933",
     "pre_install": [
         "Get-Item \"$dir\\Follow*.nupkg\" | Rename-Item -NewName 'Follow.nupkg'",
         "Expand-7zipArchive \"$dir\\Follow.nupkg\" \"$dir\" -ExtractDir 'lib\\net45'",
