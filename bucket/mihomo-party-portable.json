@@ -1,5 +1,5 @@
 {
-    "version": "1.3.2",
+    "version": "1.3.3",
     "description": "Another Mihomo GUI.",
     "homepage": "https://mihomo.party/",
     "license": {
@@ -8,16 +8,16 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/pompurin404/mihomo-party/releases/download/v1.3.2/mihomo-party-windows-1.3.2-x64-portable.7z",
-            "hash": "5aa1f83e613b2b973b6757bdad883f030c873aec9c8e12f86dd24ddc2636327a"
+            "url": "https://github.com/pompurin404/mihomo-party/releases/download/v1.3.3/mihomo-party-windows-1.3.3-x64-portable.7z",
+            "hash": "938bd7b23eecb2663de4bbf27f0abf8a1750ced5b66c46658d7b9fc94b3c5295"
         },
         "32bit": {
-            "url": "https://github.com/pompurin404/mihomo-party/releases/download/v1.3.2/mihomo-party-windows-1.3.2-ia32-portable.7z",
-            "hash": "81a2e6e309de53ed4499778fff21b76e79f15799b64c3474c9ac04bbec5a993b"
+            "url": "https://github.com/pompurin404/mihomo-party/releases/download/v1.3.3/mihomo-party-windows-1.3.3-ia32-portable.7z",
+            "hash": "a997ac66fc81fbaf67f205c9a61952624126b2393a409e5d9b443c2d2754c3eb"
         },
         "arm64": {
-            "url": "https://github.com/pompurin404/mihomo-party/releases/download/v1.3.2/mihomo-party-windows-1.3.2-arm64-portable.7z",
-            "hash": "a84d4425ab01e245fe9eae08743d9fb6a7015afda1f58e6b163ea0ec2c31a10f"
+            "url": "https://github.com/pompurin404/mihomo-party/releases/download/v1.3.3/mihomo-party-windows-1.3.3-arm64-portable.7z",
+            "hash": "cfd31516075e5630427c499ad99d32d9d839da74bcdbba5ddce5a75902262677"
         }
     },
     "installer": {
