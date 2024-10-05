@@ -1,5 +1,5 @@
 {
-    "version": "4.2.8",
+    "version": "4.2.9",
     "description": "🔧 Electron based open source toolbox, free integration of rich plug-ins. 基于 electron 的开源工具箱，自由集成丰富插件。",
     "homepage": "https://rubickcenter.github.io/docs",
     "license": {
@@ -8,16 +8,16 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/rubickCenter/rubick/releases/download/v4.2.8/rubick-Setup-4.2.8-x64.exe#/dl.7z",
-            "hash": "sha512:aa60d115c957634037804ba289f7bc69d6af15858a6315ec7fa9f0a8d2a618713ad59fa24e7a5cec078daf97a313a5672a597a4e9f850c8c2e91c9cb7ed9ee53",
+            "url": "https://github.com/rubickCenter/rubick/releases/download/v4.2.9/rubick-Setup-4.2.9-x64.exe#/dl.7z",
+            "hash": "sha512:759403103f97fd5fe3ccc04419d4d1006e76291bb2dfc9802eff71712491a54874aaa2e4aa05660fe8eb7dd2a5ac42f8b7e566b30f817b753477745d0e984ed6",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\`$R0\" -Force -Recurse"
             ]
         },
         "32bit": {
-            "url": "https://github.com/rubickCenter/rubick/releases/download/v4.2.8/rubick-Setup-4.2.8-ia32.exe#/dl.7z",
-            "hash": "sha512:17e5ea850c1e4ea96e3a9f03984307934a94c85d40f1251dc925559823a1c021e2e0ad589fa98baf16371ed7ffe2647c5238f0d00171d42003c0998322889325",
+            "url": "https://github.com/rubickCenter/rubick/releases/download/v4.2.9/rubick-Setup-4.2.9-ia32.exe#/dl.7z",
+            "hash": "sha512:264326680fb23b7bdaba0db8f2e8f7dd64632c89e91d1fd746b0319ac843271679b3800b66091f6bf65dad5dc77168766348cb4c9b0d22fb79701e53a34e9d0d",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\`$R0\" -Force -Recurse"
