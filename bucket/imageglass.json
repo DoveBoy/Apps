@@ -1,14 +1,14 @@
 {
-    "version": "9.1.8.723",
+    "version": "9.1.8.1104",
     "description": "A lightweight, versatile image viewer",
     "homepage": "https://imageglass.org",
     "license": "GPL-3.0-only",
     "notes": "If this app doesn't work maybe you need to clean '$dir\\igconfig.json' and reinstall '$dir\\Themes'.",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/d2phap/ImageGlass/releases/download/9.1.8.723/ImageGlass_9.1.8.723_x64.zip",
-            "hash": "881999047ef09a0fca80b1906c4a0010316b732ece23b31f10d1102f0e11c96d",
-            "extract_dir": "ImageGlass_9.1.8.723_x64"
+            "url": "https://github.com/d2phap/ImageGlass/releases/download/9.1.8.1104/ImageGlass_9.1.8.1104_x64.zip",
+            "hash": "72515549686a9a31e49aa75173f8e7b46e975c8e3704eef1639953280cd2bfe0",
+            "extract_dir": "ImageGlass_9.1.8.1104_x64"
         },
         "arm64": {
             "url": "https://github.com/d2phap/ImageGlass/releases/download/9.1.8.723/ImageGlass_9.1.8.723_arm64.zip",
