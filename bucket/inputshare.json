@@ -1,13 +1,13 @@
 {
-    "version": "0.5.2",
+    "version": "0.5.3",
     "description": "InputShare enables you share keyboard and mouse of your computer with an Android device via ADB in wired / wireless way.",
     "homepage": "https://bhznjns.github.io/InputShare/",
     "license": {
         "identifier": "Apache-2.0 license",
         "url": "https://github.com/BHznJNs/InputShare#Apache-2.0-1-ov-file"
     },
-    "url": "https://github.com/BHznJNs/InputShare/releases/download/0.5.2/InputShare-win-x64.zip",
-    "hash": "4fbf5da8d98d76f81c9592ae74334b46f524915af5ba2b6f04ccd6155554dfd4",
+    "url": "https://github.com/BHznJNs/InputShare/releases/download/0.5.3/InputShare-win-x64.zip",
+    "hash": "73a5ebba66d34fb962500ebd9844fcb97ef503a9cacee840cb16af14d4a54b6f",
     "extract_dir": "main",
     "shortcuts": [
         [
