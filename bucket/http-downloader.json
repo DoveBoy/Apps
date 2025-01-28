@@ -31,8 +31,8 @@
         "download_history"
     ],
     "checkver": {
-        "url": "https://github.com/erickutcher/httpdownloader/releases",
-        "regex": "tree/v([\\d.]+)"
+        "url": "https://api.github.com/repos/erickutcher/httpdownloader/releases/latest",
+        "regex": "/releases/tag/v([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
