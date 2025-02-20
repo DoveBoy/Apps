@@ -1,13 +1,13 @@
 {
-    "version": "1.19.25",
+    "version": "2.0.0",
     "description": "Flash OS images to SD cards & USB drives, safely and easily.",
     "homepage": "https://etcher.io/",
     "license": {
         "identifier": "Apache-2.0 license",
         "url": "https://github.com/balena-io/etcher/blob/master/LICENSE"
     },
-    "url": "https://github.com/balena-io/etcher/releases/download/v1.19.25/balenaEtcher-1.19.25.Setup.exe#/dl.7z",
-    "hash": "5684b1f0db8dcfa7d19b1aef810639d7753e48b487a20cf63f0dc524ded5d4cf",
+    "url": "https://github.com/balena-io/etcher/releases/download/v2.0.0/balenaEtcher-2.0.0.Setup.exe#/dl.7z",
+    "hash": "816f3c87d42a7d881cb8c4e897d29932654a1f19d923f1c1638c402dbb1de891",
     "pre_install": [
         "Get-Item \"$dir\\balena_etcher*.nupkg\" | Rename-Item -NewName 'balenaetcher.nupkg'",
         "Expand-7zipArchive \"$dir\\balenaetcher.nupkg\" \"$dir\" -ExtractDir 'lib\\net45'",
