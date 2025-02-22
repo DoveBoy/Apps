@@ -1,5 +1,5 @@
 {
-    "version": "2.2.0",
+    "version": "2.2.1",
     "description": "B 站（bilibili）自动任务工具，支持docker、青龙、k8s等多种部署方式。敏感肌也能用。",
     "homepage": "https://github.com/RayWangQvQ/BiliBiliToolPro",
     "license": {
@@ -8,18 +8,18 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/RayWangQvQ/BiliBiliToolPro/releases/download/2.2.0/bilibili-tool-pro-v2.2.0-win-x64.zip",
-            "hash": "0794ea5dcd5ae73db7d437e15438c14b50aad8cc5fc65517c8668934efe22e77",
+            "url": "https://github.com/RayWangQvQ/BiliBiliToolPro/releases/download/2.2.1/bilibili-tool-pro-v2.2.1-win-x64.zip",
+            "hash": "0c9b69c214f879903de1e0faa62846822a9a4d9281927d83775638f23627f2e9",
             "extract_dir": "win-x64"
         },
         "32bit": {
-            "url": "https://github.com/RayWangQvQ/BiliBiliToolPro/releases/download/2.2.0/bilibili-tool-pro-v2.2.0-win-x86.zip",
-            "hash": "21c05463e2a6b12034f7fca4c8d80152251f82dabf64eb69a1264f05d6d32b53",
+            "url": "https://github.com/RayWangQvQ/BiliBiliToolPro/releases/download/2.2.1/bilibili-tool-pro-v2.2.1-win-x86.zip",
+            "hash": "845c881556e4c34228e74b5ce8979c615f4f7a08a0359c6b58b4097b2a3c4df6",
             "extract_dir": "win-x86"
         },
         "arm64": {
-            "url": "https://github.com/RayWangQvQ/BiliBiliToolPro/releases/download/2.2.0/bilibili-tool-pro-v2.2.0-win-arm64.zip",
-            "hash": "94962169a0c0d198f3ca2f87a97d3c68bb603ba38eda316cd8c0bb2d87bad3f6",
+            "url": "https://github.com/RayWangQvQ/BiliBiliToolPro/releases/download/2.2.1/bilibili-tool-pro-v2.2.1-win-arm64.zip",
+            "hash": "96a214a57722614f377940d31968425f76e2b7787149afd771c7daf653bdf6fb",
             "extract_dir": "win-arm64"
         }
     },
