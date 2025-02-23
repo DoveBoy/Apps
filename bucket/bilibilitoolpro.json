@@ -9,17 +9,17 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/RayWangQvQ/BiliBiliToolPro/releases/download/2.2.1/bilibili-tool-pro-v2.2.1-win-x64.zip",
-            "hash": "0c9b69c214f879903de1e0faa62846822a9a4d9281927d83775638f23627f2e9",
+            "hash": "33ec1e9f933470f3b0b4408879f4ba6a744561b1da64316faddc411f66b2f672",
             "extract_dir": "win-x64"
         },
         "32bit": {
             "url": "https://github.com/RayWangQvQ/BiliBiliToolPro/releases/download/2.2.1/bilibili-tool-pro-v2.2.1-win-x86.zip",
-            "hash": "845c881556e4c34228e74b5ce8979c615f4f7a08a0359c6b58b4097b2a3c4df6",
+            "hash": "285adda8269683e38ca4bf8b6a24bb17f61d53438de589e90162550941623436",
             "extract_dir": "win-x86"
         },
         "arm64": {
             "url": "https://github.com/RayWangQvQ/BiliBiliToolPro/releases/download/2.2.1/bilibili-tool-pro-v2.2.1-win-arm64.zip",
-            "hash": "96a214a57722614f377940d31968425f76e2b7787149afd771c7daf653bdf6fb",
+            "hash": "8916733a66834b6465d3e9c14612e4b1fb4ebbfc73b8e5e8f7e48ddcd593b5a5",
             "extract_dir": "win-arm64"
         }
     },
