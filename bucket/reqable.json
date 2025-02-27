@@ -1,10 +1,10 @@
 {
-    "version": "2.32.5",
+    "version": "2.32.6",
     "description": "Reqable issue track repo",
     "homepage": "https://reqable.com/",
     "license": "Copyright © 2023 Reqable",
-    "url": "https://github.com/reqable/reqable-app/releases/download/2.32.5/reqable-app-windows-x86_64.exe",
-    "hash": "77230664b69a3d4580d2d0a40923085043d919d15d706fd707bf30e34efc5415",
+    "url": "https://github.com/reqable/reqable-app/releases/download/2.32.6/reqable-app-windows-x86_64.exe",
+    "hash": "6e742b8a72bd6aeff8e6ef2c2c6a63a6e03c854e1b0ab6077bd8154def08ed90",
     "innosetup": true,
     "architecture": {
         "64bit": {
