@@ -1,10 +1,10 @@
 {
-    "version": "9.6.0",
+    "version": "9.6.1",
     "description": "HDD/SSD utility software which supports S.M.A.R.T and a part of USB-HDD",
     "homepage": "https://crystalmark.info/en/",
     "license": "MIT",
-    "url": "https://downloads.sourceforge.net/projects/crystaldiskinfo/9.6.0/CrystalDiskInfo9_6_0.zip",
-    "hash": "sha1:26f8e9d1761f03d615b140a2f2d27359c25565e2",
+    "url": "https://downloads.sourceforge.net/projects/crystaldiskinfo/9.6.1/CrystalDiskInfo9_6_1.zip",
+    "hash": "sha1:71a29de48057e7dc5d17c1ca097f87e53903de04",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\\DiskInfo.ini\")) { New-Item \"$dir\\DiskInfo.ini\" | Out-Null }",
         "# Manually persist AMD RAID plugins (AMD_RC2t7x64.dll, AMD_RC2t7x86.dll)",
