@@ -1,0 +1,27 @@
+{
+    "version": "0.3.0",
+    "description": "🏎 Nping mean NB Ping, A Ping Tool in Rust with Real-Time Data and Visualizations",
+    "homepage": "https://github.com/hanshuaikang/Nping",
+    "license": {
+        "identifier": "MIT license",
+        "url": "https://github.com/hanshuaikang/Nping#MIT-1-ov-file"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/hanshuaikang/Nping/releases/download/v0.3.0/nping-x86_64-pc-windows-msvc.zip",
+            "hash": "3b051516e86a0f258efb10052e3a70df46a4fdebbf78aad89c36b7f374e00605"
+        }
+    },
+    "bin": "nping.exe",
+    "checkver": {
+        "url": "https://api.github.com/repos/hanshuaikang/Nping/releases",
+        "regex": "/releases/tag/v([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/hanshuaikang/Nping/releases/download/v$version/nping-x86_64-pc-windows-msvc.zip"
+            }
+        }
+    }
+}
