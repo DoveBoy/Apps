@@ -9,9 +9,17 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/stark81/VutronMusic/releases/download/v2.3.5/VutronMusic-2.3.5_win_x64.exe#/dl.7z",
-            "hash": "sha512:18c35bfeac12585b4de826d25751fa217d328313621f6844c8c50c94b24e522eba5af8043bdc45762a851fcc881ed45dc6576a0a5130908379cc239524ae675f",
+            "hash": "sha512:ff77e87f591fcbce14da30dff20dfa0a6ffcd7d595ee76264a11845e7ad8e740e01f4fdcd84595793bc4413e2e5f2d3742b2918af646531acaa3436c15bbaca2",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+                "Remove-Item \"$dir\\`$*\" -Force -Recurse"
+            ]
+        },
+        "arm64": {
+            "url": "https://github.com/stark81/VutronMusic/releases/download/v2.3.5/VutronMusic-2.3.5_win_arm64.exe#/dl.7z",
+            "hash": "sha512:bb060b5a83b5be2aa00f580fad24675ea4bd4340a3cfa1a3328bd3020f3e1ef26814756f9af962149398ff22de28105be63977dab6f229e809ccdee1cd23e356",
+            "pre_install": [
+                "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-arm64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\" -Force -Recurse"
             ]
         }
@@ -49,7 +57,16 @@
                 "url": "https://github.com/stark81/VutronMusic/releases/download/v$version/VutronMusic-$version_win_x64.exe#/dl.7z",
                 "hash": {
                     "url": "$baseurl/latest.yml",
-                    "regex": "sha512:\\s+$base64"
+                    "mode": "extract",
+                    "regex": "(?sm)$basename.*?sha512:\\s+$base64"
+                }
+            },
+            "arm64": {
+                "url": "https://github.com/stark81/VutronMusic/releases/download/v$version/VutronMusic-$version_win_arm64.exe#/dl.7z",
+                "hash": {
+                    "url": "$baseurl/latest.yml",
+                    "mode": "extract",
+                    "regex": "(?sm)$basename.*?sha512:\\s+$base64"
                 }
             }
         }
