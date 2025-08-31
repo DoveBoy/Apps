@@ -1,31 +1,31 @@
 {
-    "version": "1.8.5",
+    "version": "1.8.6",
     "description": "Another Mihomo GUI.",
     "homepage": "https://mihomo.party/",
     "license": {
         "identifier": "GPL-3.0 license",
-        "url": "https://github.com/pompurin404/mihomo-party#GPL-3.0-1-ov-file"
+        "url": "https://github.com/mihomo-party-org/clash-party#GPL-3.0-1-ov-file"
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/pompurin404/mihomo-party/releases/download/v1.8.5/mihomo-party-windows-1.8.5-x64-setup.exe#/dl.7z",
-            "hash": "5ad6a8a936ec9383806a96eef93dbe2c17eba42d5ba3c48738b7b6e73daa7638",
+            "url": "https://github.com/mihomo-party-org/clash-party/releases/download/v1.8.6/clash-party-windows-1.8.6-x64-setup.exe#/dl.7z",
+            "hash": "cb9e05b4d6d7923c15c9a970d8027cc557b1f45e170e0259aac2fd0b1ec70bcf",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\" -Force -Recurse"
             ]
         },
         "32bit": {
-            "url": "https://github.com/pompurin404/mihomo-party/releases/download/v1.8.5/mihomo-party-windows-1.8.5-ia32-setup.exe#/dl.7z",
-            "hash": "3d3d518cf255b875256db2f9a5849903edcae13bae3b3abadc8542663109cd79",
+            "url": "https://github.com/mihomo-party-org/clash-party/releases/download/v1.8.6/clash-party-windows-1.8.6-ia32-setup.exe#/dl.7z",
+            "hash": "72c4ab517173ec351f482d3d00e03b7a9e121eb01eaf3c72aad3466784442577",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\" -Force -Recurse"
             ]
         },
         "arm64": {
-            "url": "https://github.com/pompurin404/mihomo-party/releases/download/v1.8.5/mihomo-party-windows-1.8.5-arm64-setup.exe#/dl.7z",
-            "hash": "ca0192e6ac77a0481fe5d6d6ff531b4603ba791cfac70b13d09f359f302468d3",
+            "url": "https://github.com/mihomo-party-org/clash-party/releases/download/v1.8.6/clash-party-windows-1.8.6-arm64-setup.exe#/dl.7z",
+            "hash": "357508de3b5f58ef122586015011eabf455dc3fc1e0f03dff60891fd5725ee4f",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-arm64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\" -Force -Recurse"
@@ -47,26 +47,27 @@
             "Remove-Module -Name AppsUtils"
         ]
     },
+    "bin": "Clash Party.exe",
     "shortcuts": [
         [
-            "mihomo-party.exe",
-            "mihomo-party"
+            "Clash Party.exe",
+            "Clash Party"
         ]
     ],
     "checkver": {
-        "url": "https://api.github.com/repos/pompurin404/mihomo-party/releases",
+        "url": "https://api.github.com/repos/mihomo-party-org/clash-party/releases",
         "regex": "/releases/tag/v([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/pompurin404/mihomo-party/releases/download/v$version/mihomo-party-windows-$version-x64-setup.exe#/dl.7z"
+                "url": "https://github.com/mihomo-party-org/clash-party/releases/download/v$version/clash-party-windows-$version-x64-setup.exe#/dl.7z"
             },
             "32bit": {
-                "url": "https://github.com/pompurin404/mihomo-party/releases/download/v$version/mihomo-party-windows-$version-ia32-setup.exe#/dl.7z"
+                "url": "https://github.com/mihomo-party-org/clash-party/releases/download/v$version/clash-party-windows-$version-ia32-setup.exe#/dl.7z"
             },
             "arm64": {
-                "url": "https://github.com/pompurin404/mihomo-party/releases/download/v$version/mihomo-party-windows-$version-arm64-setup.exe#/dl.7z"
+                "url": "https://github.com/mihomo-party-org/clash-party/releases/download/v$version/clash-party-windows-$version-arm64-setup.exe#/dl.7z"
             }
         }
     }
