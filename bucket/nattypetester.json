@@ -1,13 +1,13 @@
 {
-    "version": "8.0.4",
+    "version": "8.0.5",
     "description": "测试当前网络的 NAT 类型（STUN）",
     "homepage": "https://github.com/HMBSbige/NatTypeTester",
     "license": {
         "identifier": "MIT license",
         "url": "https://github.com/HMBSbige/NatTypeTester#MIT-1-ov-file"
     },
-    "url": "https://github.com/HMBSbige/NatTypeTester/releases/download/8.0.4/NatTypeTester-8.0.4.7z",
-    "hash": "e585d5a1d6fcf0ef01b662d4e0e27a33ab367de1497232278aa9596d6c9827d3",
+    "url": "https://github.com/HMBSbige/NatTypeTester/releases/download/8.0.5/NatTypeTester-8.0.5.7z",
+    "hash": "61457c572a3c218d6bf7057c426aa76d6843bd5759238c933bcc7b8d9f6ff967",
     "extract_dir": "NatTypeTester",
     "architecture": {
         "64bit": {
@@ -28,7 +28,6 @@
                 "Remove-Item \"$dir\\*x64.exe\", \"$dir\\*x86.exe\" -Force -Recurse"
             ]
         }
-
     },
     "bin": "NatTypeTester.exe",
     "shortcuts": [
