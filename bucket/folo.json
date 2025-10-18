@@ -1,13 +1,13 @@
 {
-    "version": "0.6.4",
+    "version": "0.7.1",
     "description": "🧡 Follow everything in one place",
     "homepage": "https://follow.is/",
     "license": {
         "identifier": "GPL-3.0 license",
         "url": "https://github.com/RSSNext/Folo#GPL-3.0-1-ov-file"
     },
-    "url": "https://github.com/RSSNext/Folo/releases/download/v0.6.4/Folo-0.6.4-windows-x64.exe#/dl.7z",
-    "hash": "sha512:f56082952ea2b8c95911365dece2e8aad04414e5cbbe737666e07975f6c0d64eab5b385dfd26d44539e5b9395596f98302f82e2b75c6a8a4ceb3d517c16947b6",
+    "url": "https://github.com/RSSNext/Folo/releases/download/desktop/v0.7.1/Folo-0.7.1-windows-x64.exe#/dl.7z",
+    "hash": "sha512:e3e8924ec62a26753ed6e6f8ae4b94752c31d3a74347ce6aa1907e5a9aea8008a2fe70289a3433e4c720998962e401cd95e5bfc379b4458447f468d541cced73",
     "pre_install": [
         "Get-Item \"$dir\\Folo*.nupkg\" | Rename-Item -NewName 'Folo.nupkg'",
         "Expand-7zipArchive \"$dir\\Folo.nupkg\" \"$dir\" -ExtractDir 'lib\\net45'",
@@ -37,10 +37,10 @@
     ],
     "checkver": {
         "url": "https://api.github.com/repos/RSSNext/Folo/releases/latest",
-        "regex": "/releases/tag/v([\\w.-]+)"
+        "regex": "/releases/tag/desktop/v([\\w.-]+)"
     },
     "autoupdate": {
-        "url": "https://github.com/RSSNext/Folo/releases/download/v$version/Folo-$version-windows-x64.exe#/dl.7z",
+        "url": "https://github.com/RSSNext/Folo/releases/download/desktop/v$version/Folo-$version-windows-x64.exe#/dl.7z",
         "hash": {
             "url": "$baseurl/latest.yml",
             "regex": "sha512:\\s+$base64"
