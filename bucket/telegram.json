@@ -11,6 +11,10 @@
         "32bit": {
             "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v6.2.4/tportable.6.2.4.zip",
             "hash": "c66b1f42035f2614be3986c183effc0cb54523bd11b9a120b7615022058593b0"
+        },
+        "arm64": {
+            "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v6.2.4/tportable-arm64.6.2.4.zip",
+            "hash": "0e50b9356b8e2bfb64c5e69fb5cc864dfa0c3b2d5d0fd3b0e2395053026bb5d7"
         }
     },
     "extract_dir": "Telegram",
@@ -34,6 +38,9 @@
             },
             "32bit": {
                 "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v$version/tportable.$version.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v$version/tportable-arm64.$version.zip"
             }
         }
     }
