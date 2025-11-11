@@ -1,5 +1,5 @@
 {
-    "version": "2.3.4",
+    "version": "2.3.7",
     "description": "抖音、b站、斗鱼、虎牙跨平台轻量化桌面客户端",
     "homepage": "https://github.com/chen-zeong/DTV",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/chen-zeong/DTV/releases/download/v2.3.4/DTV_2.3.4_x64-setup.exe#/dl.7z",
-            "hash": "dcfa3fc4ce8646301e2ca63674535af7bba746ce9bc7cdb0244030f572f82d4d"
+            "url": "https://github.com/chen-zeong/DTV/releases/download/v2.3.7/DTV_2.3.7_x64-setup.exe#/dl.7z",
+            "hash": "bc7a3b66a88158faba3881f39af17414645e722e9f96e0f53d20af23a61f7ff9"
         }
     },
     "pre_install": "Remove-Item \"$dir\\`$*\", \"$dir\\uninst*\" -Force -Recurse",
