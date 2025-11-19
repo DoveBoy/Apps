@@ -1,13 +1,13 @@
 {
-    "version": "1.8.9",
+    "version": "1.9.0",
     "description": "基于自定义规则的番剧采集APP，支持流媒体在线观看，支持弹幕。",
     "homepage": "https://github.com/Predidit/Kazumi",
     "license": {
         "identifier": "GPL-3.0 license",
         "url": "https://github.com/Predidit/Kazumi#GPL-3.0-1-ov-file"
     },
-    "url": "https://github.com/Predidit/Kazumi/releases/download/1.8.9/Kazumi_windows_1.8.9.zip",
-    "hash": "d4131b95d0632a15b03fdd2dc5ace024a6bf2635bf0c008810c0fab41a941b37",
+    "url": "https://github.com/Predidit/Kazumi/releases/download/1.9.0/Kazumi_windows_1.9.0.zip",
+    "hash": "c6dc21c07bc976ad4f9674f288c81e1e3b5ca3c37cc009da6e71f19cb04fe80c",
     "installer": {
         "script": [
             "# handle runtime cache",
