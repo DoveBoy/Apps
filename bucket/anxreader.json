@@ -36,8 +36,8 @@
         ]
     ],
     "checkver": {
-        "url": "https://api.github.com/repos/Anxcye/anx-reader/releases",
-        "jp": "$[0].assets[*].browser_download_url",
+        "url": "https://api.github.com/repos/Anxcye/anx-reader/releases/latest",
+        "jp": "$.assets[*].browser_download_url",
         "regex": "/releases/download/v([\\d.]+)/Anx-Reader-windows"
     },
     "autoupdate": {
