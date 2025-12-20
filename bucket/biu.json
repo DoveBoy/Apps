@@ -1,5 +1,5 @@
 {
-    "version": "1.6.0-beta.12",
+    "version": "1.6.0-beta.13",
     "description": "Bilibili音乐播放器",
     "homepage": "https://github.com/wood3n/biu",
     "license": {
@@ -8,16 +8,16 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/wood3n/biu/releases/download/v1.6.0-beta.12/Biu-1.6.0-beta.12-win-setup-x64.exe#/dl.7z",
-            "hash": "6bf8f1231acecb38dcd09575c69f1b125de10f4bae0b3e9a20dc593a02a6afb5",
+            "url": "https://github.com/wood3n/biu/releases/download/v1.6.0-beta.13/Biu-1.6.0-beta.13-win-setup-x64.exe#/dl.7z",
+            "hash": "7c97a43c25c9236122995ef8136c89827682c643282b381db9c0b69999a7dc46",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\" -Force -Recurse"
             ]
         },
         "arm64": {
-            "url": "https://github.com/wood3n/biu/releases/download/v1.6.0-beta.12/Biu-1.6.0-beta.12-win-setup-arm64.exe#/dl.7z",
-            "hash": "b74340d5983a7b1756f259eb4cecaa8f246f02826e117cb0878fa4571fcef3c1",
+            "url": "https://github.com/wood3n/biu/releases/download/v1.6.0-beta.13/Biu-1.6.0-beta.13-win-setup-arm64.exe#/dl.7z",
+            "hash": "00062277205a2e8fe3d1543bd60f50c40aff7dc0a029aecd2f810d94a1c10527",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-arm64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\" -Force -Recurse"
