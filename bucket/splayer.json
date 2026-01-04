@@ -1,17 +1,27 @@
 {
-    "version": "3.0.0-beta.7",
+    "version": "3.0.0-beta.8-arm64",
     "description": "🎉 一个简约的音乐播放器，支持逐字歌词，下载歌曲，展示评论区，音乐云盘及歌单管理，音乐频谱，移动端基础适配 | A minimalist music player",
     "homepage": "https://github.com/imsyy/SPlayer",
     "license": {
         "identifier": "AGPL-3.0 license",
         "url": "https://github.com/imsyy/SPlayer#AGPL-3.0-1-ov-file"
     },
-    "url": "https://github.com/imsyy/SPlayer/releases/download/v3.0.0-beta.7/SPlayer-3.0.0-beta.7-x64-setup.exe#/dl.7z",
-    "hash": "sha512:6a193ff92316ccbc5620888a8500a1d1b1a90ba9157cd904cf9b875694a6c15d77186da85f92737b43b65ff4299e11795995f4c44e5f9440a73f132f67c5242a",
-    "pre_install": [
-        "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
-        "Remove-Item \"$dir\\`$*\", \"$dir\\uninst*\" -Force -Recurse"
-    ],
+    "url": "https://github.com/imsyy/SPlayer/releases/download/v3.0.0-beta.8.2025/SPlayer-3.0.0-beta.8-arm64-setup.exe#/dl.7z",
+    "hash": "sha512:bd7a388a1b0253f843c96f71a56b7fec501580d7b3bcb383e020132c27e9f58e1eb8ec72639fbc26a6f155971cf99db5302c5d59d072bca489805ac4b5fe213f",
+    "architecture": {
+        "64bit": {
+            "pre_install": [
+                "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+                "Remove-Item \"$dir\\`$*\", \"$dir\\uninst*\" -Force -Recurse"
+            ]
+        },
+        "arm64": {
+            "pre_install": [
+                "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-arm64.7z\" \"$dir\"",
+                "Remove-Item \"$dir\\`$*\", \"$dir\\uninst*\" -Force -Recurse"
+            ]
+        }
+    },
     "installer": {
         "script": [
             "ensure \"$persist_dir\" | Out-Null",
@@ -29,10 +39,10 @@
     ],
     "checkver": {
         "url": "https://api.github.com/repos/imsyy/SPlayer/releases/latest",
-        "regex": "/releases/tag/v([\\w.-]+)"
+        "regex": "/releases/download/v(?<tag>[\\w.-]+)/SPlayer-([\\w.-]+)-arm64-setup\\.exe"
     },
     "autoupdate": {
-        "url": "https://github.com/imsyy/SPlayer/releases/download/v$version/SPlayer-$version-x64-setup.exe#/dl.7z",
+        "url": "https://github.com/imsyy/SPlayer/releases/download/v$matchTag/SPlayer-$version-setup.exe#/dl.7z",
         "hash": {
             "url": "$baseurl/latest.yml",
             "regex": "(?sm)$basename.*?sha512:\\s+$base64"
