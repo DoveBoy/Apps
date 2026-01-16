@@ -1,13 +1,13 @@
 {
     "homepage": "https://uu.163.com/",
     "description": "Game accelerator created by Netease Inc.",
-    "version": "5.73.0.5124",
+    "version": "5.72.0.5123",
     "license": {
         "identifier": "EULA",
         "url": "https://uu.163.com/agreement.html"
     },
-    "url": "https://uu.gdl.netease.com/5124/UU-5.73.0.exe#/dl.7z",
-    "hash": "89dbbc7fc9ec8cb8cc261ee9c27cd36e623a9c8e7a300e2c04129b59d2cb9304",
+    "url": "https://uu.gdl.netease.com/5123/UU-5.72.0.exe#/dl.7z",
+    "hash": "9adc9ca29d9b5764f3f27b6b27b45304917d8f3bdb19640db32f3c7ca0c276d3",
     "installer": {
         "script": [
             "Import-Module $(Join-Path $(Find-BucketDirectory -Root -Name apps) scripts/AppsUtils.psm1)",
