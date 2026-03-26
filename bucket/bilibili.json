@@ -1,5 +1,5 @@
 {
-    "version": "1.17.5",
+    "version": "1.17.6",
     "description": "Bilibili(bilibili.com) Official Client.",
     "homepage": "https://app.bilibili.com",
     "license": {
@@ -9,7 +9,7 @@
     "architecture": {
         "64bit": {
             "url": "https://dl.hdslb.com/mobile/fixed/bili_win/bili_win-install.exe#/dl.7z",
-            "hash": "sha512:dea0e6bf22e51cd1066426bbac6bb4b323e18924361c32385636af2a45d17fc4824c5cbc99e91db0f82a13d173a9c5375b4e852f7564a4cf747c91c2f8328b91",
+            "hash": "sha512:ff980dad91e5f816722c5b670d862da6e685bd35dcfc7a39adf685638daeb7c866db6f671c3c5e705ad21910e72c56f823a9db7011107af0a8c91dc49e93cc06",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\Uninstall*\" -Force -Recurse"
