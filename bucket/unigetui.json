@@ -1,13 +1,13 @@
 {
-    "version": "2026.1.4",
+    "version": "2026.1.5",
     "description": "UniGetUI: The Graphical Interface for your package managers. Could be terribly described as a package manager manager to manage your package managers",
     "homepage": "https://devolutions.net/unigetui/",
     "license": {
         "identifier": "MIT license",
         "url": "https://github.com/Devolutions/UniGetUI#MIT-1-ov-file"
     },
-    "url": "https://github.com/Devolutions/UniGetUI/releases/download/v2026.1.4/UniGetUI.Installer.exe",
-    "hash": "2445dbc18ec47886e9ab02d22f095a6e4335b0c348d3f42f2484603d05918cfc",
+    "url": "https://github.com/Devolutions/UniGetUI/releases/download/v2026.1.5/UniGetUI.Installer.exe",
+    "hash": "f7b0e1158644bcf94f4c9302f9454af300df1ccc188d98c6d1a9673d3afceb00",
     "innosetup": true,
     "pre_install": [
         "$Files = [string[]](",
