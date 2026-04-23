@@ -1,5 +1,5 @@
 {
-    "version": "1.2.17.2006",
+    "version": "1.2.18.2100",
     "description": "Simple & Powerful proxy utility, Support routing rules for clash/sing-box",
     "homepage": "https://karing.app/",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/KaringX/karing/releases/download/v1.2.17.2006/karing_1.2.17.2006_windows_x64.exe",
-            "hash": "9bebeb0025313f86a18ab38c7a12d3b157ebd62435791de684e76a3ee6863e87"
+            "url": "https://github.com/KaringX/karing/releases/download/v1.2.18.2100/karing_1.2.18.2100_windows_x64.exe",
+            "hash": "b2d329e4aed00b98d2d14d9299e02d5a5b19d45572f66a219cc600f9b4a49e72"
         }
     },
     "innosetup": true,
