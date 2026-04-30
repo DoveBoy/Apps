@@ -1,17 +1,17 @@
 {
-    "version": "1.5.0.1408a",
+    "version": "1.5.0.1409a",
     "description": "Locate files and folders by name instantly.",
     "homepage": "https://www.voidtools.com",
     "license": "MIT",
     "notes": "Run '$dir\\install-context.reg' to add Everything to right-click context menu.",
     "architecture": {
         "64bit": {
-            "url": "https://www.voidtools.com/Everything-1.5.0.1408a.x64.zip",
-            "hash": "28984cbb8c3b748e3af5cf0a66cf7d7f0f28dab18483e4381f5e74d3242ddbd2"
+            "url": "https://www.voidtools.com/Everything-1.5.0.1409a.x64.zip",
+            "hash": "e16b3e3f562b13dbc3368b4a78357274ee9515bd3eaada58302c0f3c26af9c0c"
         },
         "32bit": {
-            "url": "https://www.voidtools.com/Everything-1.5.0.1408a.x86.zip",
-            "hash": "d7e211b0c0126fdaa256099e6c6a204ec960f8777b173c11d0d1f1956365fe66"
+            "url": "https://www.voidtools.com/Everything-1.5.0.1409a.x86.zip",
+            "hash": "f1fffd46f6075fa6cc1d9286df260f190f2e30c038680460ec25b2be20c4830f"
         }
     },
     "pre_install": [
