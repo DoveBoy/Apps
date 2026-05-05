@@ -19,7 +19,7 @@
     },
     "bin": "hok.exe",
     "checkver": {
-        "url": "https://api.github.com/repos/chawyehsu/hok/releases/latest",
+        "github": "https://api.github.com/repos/chawyehsu/hok/releases/latest",
         "regex": "/v([\\w-.]+)"
     },
     "autoupdate": {

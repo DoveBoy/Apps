@@ -36,7 +36,7 @@
         ]
     ],
     "checkver": {
-        "url": "https://api.github.com/repos/chen-zeong/DTV/releases",
+        "github": "https://api.github.com/repos/chen-zeong/DTV/releases",
         "jp": "$[*].assets[*].browser_download_url",
         "regex": "/releases/download/v([\\d.]+)/DTV_([\\d.]+)_x64-setup\\.exe"
     },
