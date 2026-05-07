@@ -22,12 +22,13 @@
     "persist": "Configurations",
     "checkver": {
         "github": "https://api.github.com/repos/Ftbom/Aria2Manager/releases",
-        "regex": "/releases/tag/v([\\d.]+)"
+        "jp": "$[0].tag_name",
+        "regex": "v([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Ftbom/Aria2Manager/releases/download/v$version/Aria2Manager-v$version.zip"
+                "url": "https://github.com/Ftbom/Aria2Manager/releases/download/v$version/Aria2Manager.$version.Portable.x64.zip"
             }
         }
     }

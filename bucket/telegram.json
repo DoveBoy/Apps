@@ -29,7 +29,8 @@
     "persist": "tdata",
     "checkver": {
         "github": "https://api.github.com/repos/telegramdesktop/tdesktop/releases",
-        "regex": "(?sm)browser_download_url.*?releases/download/v([\\d.]+)/tportable-x64.([\\d.]+)\\.zip.*?tportable.([\\d.]+)\\.zip"
+        "jp": "$[0].assets[*].browser_download_url",
+        "regex": "/releases/download/v([\\d.]+)/tportable-x64.([\\d.]+)\\.zip.*?tportable.([\\d.]+)\\.zip"
     },
     "autoupdate": {
         "architecture": {

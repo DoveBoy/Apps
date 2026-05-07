@@ -30,6 +30,7 @@
     ],
     "checkver": {
         "github": "https://github.com/Maxstupo/ydl-ui",
+        "jp": "$.assets[*].browser_download_url",
         "regex": "YDL-UI_v([\\d.]+)_Port"
     },
     "autoupdate": {

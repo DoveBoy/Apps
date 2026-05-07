@@ -27,7 +27,8 @@
     "persist": "tdata",
     "checkver": {
         "github": "https://github.com/kotatogram/kotatogram-desktop",
-        "regex": "Version ([\\d.]+)"
+        "jp": "$.tag_name",
+        "regex": "k([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {

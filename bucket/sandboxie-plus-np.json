@@ -62,6 +62,7 @@
     ],
     "checkver": {
         "github": "https://api.github.com/repos/sandboxie-plus/Sandboxie/releases",
+        "jp": "$[0].assets[*].browser_download_url",
         "regex": "releases/download/(?<tag>[vV]?[\\d.]+)/Sandboxie-Plus-x64-v([\\d.]+).exe"
     },
     "autoupdate": {

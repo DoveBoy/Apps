@@ -20,7 +20,8 @@
     "bin": "ipinfo.exe",
     "checkver": {
         "github": "https://api.github.com/repos/ipinfo/cli/releases",
-        "regex": "/releases/tag/ipinfo-([\\d.]+)"
+        "jp": "$[0].tag_name",
+        "regex": "ipinfo-([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {

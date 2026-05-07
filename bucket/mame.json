@@ -60,7 +60,8 @@
     ],
     "checkver": {
         "github": "https://github.com/mamedev/mame",
-        "regex": "MAME ([\\d.]+)"
+        "jp": "$.tag_name",
+        "regex": "mame([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {

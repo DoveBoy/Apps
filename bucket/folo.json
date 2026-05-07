@@ -37,7 +37,8 @@
     ],
     "checkver": {
         "github": "https://api.github.com/repos/RSSNext/Folo/releases/latest",
-        "regex": "/releases/tag/desktop/v([\\w.-]+)"
+        "jp": "$.tag_name",
+        "regex": "desktop/v([\\w.-]+)"
     },
     "autoupdate": {
         "url": "https://github.com/RSSNext/Folo/releases/download/desktop/v$version/Folo-$version-windows-x64.exe#/dl.7z",

@@ -34,7 +34,8 @@
     ],
     "checkver": {
         "github": "https://api.github.com/repos/4gray/iptvnator/releases",
-        "regex": "/releases/tag/v([\\d.]+)"
+        "jp": "$[0].tag_name",
+        "regex": "v([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://github.com/4gray/iptvnator/releases/download/v$version/iptvnator-$version-windows-x64-setup.exe#/dl.7z",

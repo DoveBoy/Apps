@@ -19,7 +19,8 @@
     "env_add_path": "bin",
     "checkver": {
         "github": "https://api.github.com/repos/niXman/mingw-builds-binaries/releases",
-        "regex": "tag/([\\d.]+)-(?<build>[a-z0-9_\\-]+)",
+        "jp": "$[0].tag_name",
+        "regex": "([\\d.]+)-(?<build>[a-z0-9_\\-]+)",
         "replace": "${1}-${build}"
     },
     "autoupdate": {

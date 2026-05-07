@@ -31,7 +31,8 @@
     ],
     "checkver": {
         "github": "https://api.github.com/repos/alley-rs/lsar/releases",
-        "regex": "/releases/tag/v([\\d.]+)"
+        "jp": "$[0].tag_name",
+        "regex": "v([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://github.com/alley-rs/lsar/releases/download/v$version/lsar_$version_x64-setup.exe#/dl.7z"

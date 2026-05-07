@@ -18,7 +18,8 @@
         ]
     ],
     "checkver": {
-        "github": "https://github.com/darktable-org/darktable",
+        "github": "https://api.github.com/repos/darktable-org/darktable/releases",
+        "jp": "$[*].assets[*].browser_download_url",
         "regex": "/darktable-([\\d.]+)-win64"
     },
     "autoupdate": {

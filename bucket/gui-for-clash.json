@@ -26,7 +26,8 @@
     "persist": "data",
     "checkver": {
         "github": "https://api.github.com/repos/GUI-for-Cores/GUI.for.Clash/releases/latest",
-        "regex": "/releases/tag/v([\\d.]+(?:\\-[a-zA-Z0-9.]+)?)"
+        "jp": "$.tag_name",
+        "regex": "v([\\d.]+(?:\\-[a-zA-Z0-9.]+)?)"
     },
     "autoupdate": {
         "architecture": {

@@ -30,6 +30,7 @@
     ],
     "checkver": {
         "github": "https://github.com/ModernFlyouts-Community/ModernFlyouts",
+        "jp": ".assets[*].browser_download_url",
         "regex": "ModernFlyouts_([\\d.]+)"
     },
     "autoupdate": {

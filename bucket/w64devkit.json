@@ -27,7 +27,8 @@
     "env_add_path": "bin",
     "checkver": {
         "github": "https://api.github.com/repos/skeeto/w64devkit/releases",
-        "regex": "/releases/tag/v([\\d.]+)"
+        "jp": "$[0].tag_name",
+        "regex": "v([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {

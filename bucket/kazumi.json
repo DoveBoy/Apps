@@ -31,7 +31,8 @@
     ],
     "checkver": {
         "github": "https://api.github.com/repos/Predidit/Kazumi/releases",
-        "regex": "/releases/tag/([\\d.]+)"
+        "jp": "$[0].tag_name",
+        "regex": "([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://github.com/Predidit/Kazumi/releases/download/$version/Kazumi_windows_$version.zip"
