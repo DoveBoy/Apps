@@ -1,13 +1,13 @@
 {
-    "version": "1.13.11-beta9",
+    "version": "1.13.11-beta10",
     "description": "Clash的桌面客户端，支持 windows、linux、macos",
     "homepage": "https://github.com/mapleafgo/clash-for-flutter",
     "license": {
         "identifier": "MIT license",
         "url": "https://github.com/mapleafgo/clash-for-flutter#MIT-1-ov-file"
     },
-    "url": "https://github.com/mapleafgo/clash-for-flutter/releases/download/v1.13.11-beta9/singcast-1.13.11-beta9-windows-amd64-portable.zip",
-    "hash": "09bf2f9732aeccab35d6702c42b4e61ee4674987fa9c913517487050daca0832",
+    "url": "https://github.com/mapleafgo/clash-for-flutter/releases/download/v1.13.11-beta10/singcast-1.13.11-beta10-windows-amd64-portable.zip",
+    "hash": "f13c585e06df7e16deb5307154baffb9a9b68cc170ef65abcb750543d3f13cd0",
     "installer": {
         "script": [
             "ensure \"$persist_dir\" | Out-Null",
