@@ -1,5 +1,5 @@
 {
-    "version": "0.3.0",
+    "version": "0.3.1",
     "description": "🐣一款支持在线音乐的视频下载工具 A video download tool with online music support",
     "homepage": "https://xiadown.dreamapp.cc/",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/arnoldhao/xiadown/releases/download/v0.3.0/xiadown-windows-x64-0.3.0-installer.exe#/dl.7z",
-            "hash": "ab37ca8ada0c0a8401eb6148cb3fb1ba7f17ad53030e7e045995b4f04db76566",
+            "url": "https://github.com/arnoldhao/xiadown/releases/download/v0.3.1/xiadown-windows-x64-0.3.1-installer.exe#/dl.7z",
+            "hash": "ed03d0888c8cc7d377b0b02c96430c28c58768775173315f3c4120993cbdc506",
             "pre_install": "Remove-Item \"$dir\\`$*\" -Force -Recurse"
         }
     },
