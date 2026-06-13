@@ -1,5 +1,5 @@
 {
-    "version": "2026.06.11.1044",
+    "version": "2026.06.13.0856",
     "description": "番茄小说下载器 ，提供TXT/EPUB格式，GUI界面下载功能，番茄小说转txt，MP4可用，绿色单文件",
     "homepage": "https://github.com/POf-L/Fanqie-novel-Downloader",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/POf-L/Fanqie-novel-Downloader/releases/download/desktop-v2026.06.11.1044/FanqieNovelDownloader-desktop-windows-x64.zip",
-            "hash": "173a80361c2ed3a2c43a9afe828f6b5ed8f9cf25e36c570ebf99bf0955191f75"
+            "url": "https://github.com/POf-L/Fanqie-novel-Downloader/releases/download/desktop-v2026.06.13.0856/FanqieNovelDownloader-desktop-windows-x64.zip",
+            "hash": "a00bb8b6dcdbf798880042f781d1ccdff6bd47b71dd9aca4cec10e4315c3e79c"
         }
     },
     "pre_install": "Get-ChildItem \"$dir\\FanqieNovelDownloader*.exe\" | Rename-Item -NewName 'FanqieNovelDownloader.exe'",
