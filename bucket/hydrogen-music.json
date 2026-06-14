@@ -1,5 +1,5 @@
 {
-    "version": "0.6.0",
+    "version": "0.6.1",
     "description": "第三方网易云播放器 Hydrogen Music 复活版",
     "homepage": "https://github.com/ldx123000/Hydrogen-Music",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ldx123000/Hydrogen-Music/releases/download/v0.6.0/Hydrogen.Music.Setup.0.6.0.exe#/dl.7z",
-            "hash": "sha512:8cb4dda41d0c6414969a1609c49d5857e31fbca852c0ce5898b9121b0cf5947743d179f72ee91d8e68681ad6db949957563eced01f2e068917a2c860f7e52076",
+            "url": "https://github.com/ldx123000/Hydrogen-Music/releases/download/v0.6.1/Hydrogen.Music.Setup.0.6.1.exe#/dl.7z",
+            "hash": "sha512:2246fb1d29751b8ba8f0280e785a11eb5b259cfecbfa6ca9cd048e2091691f8748129a0c3aba6afbac8e98fe21c4af5dfdc81f308896578399da6ca55005c867",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\" -Force -Recurse"
