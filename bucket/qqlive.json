@@ -2,9 +2,9 @@
     "homepage": "https://v.qq.com/",
     "description": "腾讯视频是腾讯推出的在线视频媒体平台。",
     "license": "BSD-3-Clause",
-    "version": "11.170.6541.0",
-    "url": "https://dldir1.qq.com/qqtv/TencentVideo11.170.6541.0.exe#/dl.7z",
-    "hash": "b850598c77bfb5b0ce8c4350712ddf8ec53315490db232d3fadd3f645c7673c6",
+    "version": "11.171.7577.0",
+    "url": "https://dldir1.qq.com/qqtv/TencentVideo11.171.7577.0.exe#/dl.7z",
+    "hash": "80f14069c8606163b28a4829ef0fc351c93074340bed50d42ba50091c92bb838",
     "post_install": [
         "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\`$TEMP\" -Force -Recurse",
         "Copy-Item \"$dir\\QQLive.tpc\" \"$dir\\instok\""
