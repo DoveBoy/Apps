@@ -1,5 +1,5 @@
 {
-    "version": "3.1.0",
+    "version": "3.1.1",
     "description": "🎮 An open-source game speed modifier.[一款开源的游戏变速器]",
     "homepage": "https://github.com/game1024/OpenSpeedy",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/game1024/OpenSpeedy/releases/download/3.1.0/OpenSpeedy-3.1.0-portable-signed.zip",
-            "hash": "e36d3cdf29f2cdfc30c9e917e4ecb6f7803d57ba1a1b5e65c79aa4dbc21d32d7"
+            "url": "https://github.com/game1024/OpenSpeedy/releases/download/3.1.1/OpenSpeedy-3.1.1-portable-signed.zip",
+            "hash": "859226b1ca44439dcb3687a784b99f7a9039f480f41de9c4ea152a060fa45cf7"
         }
     },
     "bin": "openspeedy.exe",
