@@ -1,13 +1,13 @@
 {
-    "version": "3.0.0",
+    "version": "3.1.0",
     "description": "批量为视频生成字幕，并可将字幕翻译成其它语言。这是一个客户端工具, 跨平台支持 mac 和 windows 系统",
     "homepage": "https://github.com/buxuku/SmartSub",
     "license": {
         "identifier": "MIT license",
         "url": "https://github.com/buxuku/SmartSub#MIT-1-ov-file"
     },
-    "url": "https://github.com/buxuku/SmartSub/releases/download/v3.0.0/SmartSub_Windows_3.0.0_x64.exe#/dl.7z",
-    "hash": "2dbb6f595fd02d44a36b8557f624d10bd55ab9838a4db93af3db7d904281c8ca",
+    "url": "https://github.com/buxuku/SmartSub/releases/download/v3.1.0/SmartSub_Windows_3.1.0_x64.exe#/dl.7z",
+    "hash": "77a8c341ab5f8f5c1b758e911bca11dce5a6cc078d33d9356a5df3eaa1a4793f",
     "pre_install": [
         "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
         "Remove-Item \"$dir\\`$*\" -Force -Recurse"
