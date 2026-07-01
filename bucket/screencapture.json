@@ -1,13 +1,13 @@
 {
-    "version": "2.4.7",
+    "version": "2.4.11",
     "description": "A multifunctional screen capture program",
     "homepage": "https://github.com/xland/ScreenCapture",
     "license": {
         "identifier": "MIT license",
         "url": "https://github.com/xland/ScreenCapture#MIT-1-ov-file"
     },
-    "url": "https://github.com/xland/ScreenCapture/releases/download/2.4.7/ScreenCapture.exe",
-    "hash": "44bfcd1dfbc1bd673876f01edd6fefc73df3c323f60249a61c13b7e1d757f826",
+    "url": "https://github.com/xland/ScreenCapture/releases/download/2.4.11/ScreenCapture.exe",
+    "hash": "a1ceb2cc377d4ef982dba4b7630cb5d1ec1c922e3c37cf2536fbd7752881e7e3",
     "shortcuts": [
         [
             "ScreenCapture.exe",
