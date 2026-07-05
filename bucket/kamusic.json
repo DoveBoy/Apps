@@ -1,5 +1,5 @@
 {
-    "version": "2.12.3",
+    "version": "2.12.4",
     "description": "最好用最轻量的第三方酷狗概念版音乐播放器",
     "homepage": "https://github.com/Linsxyx/KugouMusic.NET",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Linsxyx/KugouMusic.NET/releases/download/v2.12.3/KugouAvaloniaPlayer-win-x64.exe#/dl.7z",
-            "hash": "0991486b0271e7a615d47fbb294780ed7e435ffe5113177c19f3ac507894a969",
+            "url": "https://github.com/Linsxyx/KugouMusic.NET/releases/download/v2.12.4/KugouAvaloniaPlayer-win-x64.exe#/dl.7z",
+            "hash": "49e98c1cecce8e76711387f116d3e56878bbbbc825bd57cfad808e3f1fa2c91b",
             "pre_install": [
                 "Copy-Item \"$dir\\lib\\app\\*\" \"$dir\" -Recurse -Force -ErrorAction 'SilentlyContinue'",
                 "Remove-Item -LiteralPath \"$dir\\[Content_Types].xml\" -Force -ErrorAction 'SilentlyContinue'",
