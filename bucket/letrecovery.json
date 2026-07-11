@@ -1,5 +1,5 @@
 {
-    "version": "202607091233",
+    "version": "202607111725",
     "description": "一款免费开源的 Windows 系统重装工具",
     "homepage": "https://github.com/NORMAL-EX/LetRecovery",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/NORMAL-EX/LetRecovery/releases/download/v2026.7.9/LetRecovery.7z",
-            "hash": "6be17a71cbfae922aee356c343b2fb5b31b598918b7da30d40326459d7d3356d"
+            "url": "https://github.com/NORMAL-EX/LetRecovery/releases/download/v2026.7.11-pca2023-preview.1/LetRecovery.7z",
+            "hash": "03f2685eba1da23050c27db71270ce837035a969e2b065b505a8e035ed6c0e59"
         }
     },
     "bin": "LetRecovery.exe",
@@ -22,7 +22,7 @@
     "checkver": {
         "github": "https://api.github.com/repos/NORMAL-EX/LetRecovery/releases",
         "jsonpath": "$..['tag_name', 'updated_at', 'browser_download_url']",
-        "regex": "(?<tag>([0-9A-Za-z.]+)).*?(?<year>\\d{4})-(?<month>\\d{2})-(?<day>\\d{2})T(?<hour>\\d{2}):(?<minute>\\d{2}).*?(?<file>LetRecovery\\.(?:zip|7z))",
+        "regex": "(?<tag>([0-9A-Za-z.-]+)).*?(?<year>\\d{4})-(?<month>\\d{2})-(?<day>\\d{2})T(?<hour>\\d{2}):(?<minute>\\d{2}).*?(?<file>LetRecovery\\.(?:zip|7z))",
         "replace": "${year}${month}${day}${hour}${minute}"
     },
     "autoupdate": {
