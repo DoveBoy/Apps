@@ -16,8 +16,9 @@
     ],
     "persist": "tdata",
     "checkver": {
-        "url": "https://github.com/AyuGram/AyuGramDesktop",
-        "regex": "/releases/tag/(?:v|V)?([\\d.-]+)"
+        "github": "https://api.github.com/repos/AyuGram/AyuGramDesktop/releases",
+        "jp": "$[0].tag_name",
+        "regex": "v([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://github.com/AyuGram/AyuGramDesktop/releases/download/v$version/AyuGram.zip"
