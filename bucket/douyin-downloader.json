@@ -1,5 +1,5 @@
 {
-    "version": "0.8.3",
+    "version": "0.8.4",
     "description": "A practical Douyin downloader for both single-item and profile batch downloads, with progress display, retries, SQLite deduplication, and browser fallback support. 抖音批量下载工具，去水印，支持视频、图集、合集、音乐(原声)。免费！免费！免费！",
     "homepage": "https://github.com/jiji262/douyin-downloader",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/jiji262/douyin-downloader/releases/download/desktop-v0.8.3/Douzy-Setup-0.8.3.exe#/dl.7z",
-            "hash": "sha512:ba76906177899d032c24a4e3496556ef75192219d4c9be4eccf6c1b8c0cc2f490a4066158c235606602504c17bdc8036c676a3f1a5856c7c5f68ee1cdcd96531",
+            "url": "https://github.com/jiji262/douyin-downloader/releases/download/desktop-v0.8.4/Douzy-Setup-0.8.4.exe#/dl.7z",
+            "hash": "sha512:0dc8ca752df50a46ad80139da9db89abb15cbf6a05679ef09c7fe750ea7deb9e69a05fbc48c57970f9788f4fd36c28c7f4ccc88523a7ae2d106b1b2ba1f95e5f",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\" -Force -Recurse"
