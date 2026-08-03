@@ -1,16 +1,16 @@
 {
-    "version": "4.11.4",
+    "version": "4.11.6",
     "description": "A lightweight Markdown and plain text editor built with Tauri 2.",
     "homepage": "https://solomd.app",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/zhitongblog/solomd/releases/download/v4.11.4/SoloMD_4.11.4_x64-setup.exe#/dl.7z",
-            "hash": "908bc5285e02fee0ce96f3ad4c6a529cb318e249943baf2234a749a98bc1075b"
+            "url": "https://github.com/zhitongblog/solomd/releases/download/v4.11.6/SoloMD_4.11.6_x64-setup.exe#/dl.7z",
+            "hash": "e64918743ea96c74efc5d3bb67bfc448b9f229304cddfe4a775533e56e2daa5a"
         },
         "arm64": {
-            "url": "https://github.com/zhitongblog/solomd/releases/download/v4.11.4/SoloMD_4.11.4_arm64-setup.exe#/dl.7z",
-            "hash": "e316a4e82c608f8e82abf46d1a0df7868e84472d6e510b229ffd32b277830815"
+            "url": "https://github.com/zhitongblog/solomd/releases/download/v4.11.6/SoloMD_4.11.6_arm64-setup.exe#/dl.7z",
+            "hash": "2c93f7b03574425fb5466a29cae09e52ab8cf6ad3e6b21a30ff1877294d8e4c7"
         }
     },
     "pre_install": "Remove-Item \"$dir\\`$*\", \"$dir\\Uninst*\" -Force -Recurse -ErrorAction Ignore",
