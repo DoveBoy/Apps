@@ -1,5 +1,5 @@
 {
-    "version": "3.5.3",
+    "version": "3.5.4",
     "description": "「彩读 3.0 书源 × AI+」——一款会给内容上色的本地 TXT 小说阅读器，带给你不一样的阅读体验！（也支持打开常见的电子书格式，如 .epub）。还有章节识别、简繁互转、划线标注、记笔记、多角色语音朗读、AI 阅读助手、书源找书等功能。支持 macOS、Windows 和 Linux。",
     "homepage": "https://github.com/ssnangua/ColorTxt",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ssnangua/ColorTxt/releases/download/v3.5.3/colortxt-3.5.3-Setup.exe#/dl.7z",
-            "hash": "sha512:62699eacf87191516163c8925956a05771196ba16c7017f75a742ba8e39aa6ed842a235424a5d7734e4f468f219f56c82928c92730f1ae4f47da123857936661",
+            "url": "https://github.com/ssnangua/ColorTxt/releases/download/v3.5.4/colortxt-3.5.4-Setup.exe#/dl.7z",
+            "hash": "sha512:304387b5cd8b9027f80ccdd65328f7260fdae493dd0ba544f21a06cef073105f87000adeb9cadcefb8a71ea7fb8555685e5191a5c9274dcdfcedd36e52d45e41",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\" -Force -Recurse",
