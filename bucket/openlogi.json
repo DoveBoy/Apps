@@ -1,5 +1,5 @@
 {
-    "version": "0.6.23",
+    "version": "0.6.24",
     "description": "⚡️A native, local-first alternative to Logitech Options+, written in Rust 🦀 — remap buttons, DPI, and SmartShift over HID++. No account, no telemetry.",
     "homepage": "https://openlogi.org/",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/AprilNEA/OpenLogi/releases/download/v0.6.23/OpenLogi-v0.6.23-windows-x86_64.msi",
-            "hash": "6c42813453fee0b85e3065725fc1258c38aa0049f536896c8c6b374da10ad506"
+            "url": "https://github.com/AprilNEA/OpenLogi/releases/download/v0.6.24/OpenLogi-v0.6.24-windows-x86_64.msi",
+            "hash": "2a9bf812148841142d52f2e570b2bd22805adf3957627457f388b270120dfbf6"
         },
         "arm64": {
-            "url": "https://github.com/AprilNEA/OpenLogi/releases/download/v0.6.23/OpenLogi-v0.6.23-windows-arm64.msi",
-            "hash": "1367ce6f045fc1007a723a6f67f82d9066af40e8f22b331f3582cbcef07f332c"
+            "url": "https://github.com/AprilNEA/OpenLogi/releases/download/v0.6.24/OpenLogi-v0.6.24-windows-arm64.msi",
+            "hash": "bd42e9e2f53806ec2b4b4c007ee692919a129b639c4555c5c680c6d142690861"
         }
     },
     "extract_dir": "LocalApp\\Programs\\OpenLogi",
