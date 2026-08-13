@@ -1,5 +1,5 @@
 {
-    "version": "1.35.0",
+    "version": "1.35.1",
     "description": "A cross-platform libre handwritten notes app.",
     "homepage": "https://saber.adil.hanney.org/",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/saber-notes/saber/releases/download/v1.35.0/SaberInstaller_v1.35.0.exe",
-            "hash": "1bea21d206aa4436eba98587ab4c5b9aec39eb6d534015058a63ea273aad1ff5"
+            "url": "https://github.com/saber-notes/saber/releases/download/v1.35.1%2B1/SaberInstaller_v1.35.1.exe",
+            "hash": "72ece807df9bc1e27a10bd3012092a2681254b0aec05518269bf0043763e8320"
         }
     },
     "innosetup": true,
