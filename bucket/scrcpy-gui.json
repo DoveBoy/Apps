@@ -1,5 +1,5 @@
 {
-    "version": "2.4.0",
+    "version": "2.4.3",
     "description": "A simple & beautiful GUI application for scrcpy",
     "homepage": "http://simonaking.com/scrcpy-gui/",
     "license": {
@@ -8,16 +8,16 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/SimonAKing/scrcpy-gui/releases/download/v2.4.0/Scrcpy.GUI-2.4.0-win-x64.exe#/dl.7z",
-            "hash": "a1858134f658107b086b50eae5353349b15a57d31867d18116e24426b60b3393",
+            "url": "https://github.com/SimonAKing/scrcpy-gui/releases/download/v2.4.3/Scrcpy.GUI-2.4.3-win-x64.exe#/dl.7z",
+            "hash": "51a2cb50212b9ed76cadea8d658ca55da7f1df7e987880b17fd2ee220d608db0",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\" -Force -Recurse"
             ]
         },
         "32bit": {
-            "url": "https://github.com/SimonAKing/scrcpy-gui/releases/download/v2.4.0/Scrcpy.GUI-2.4.0-win-ia32.exe#/dl.7z",
-            "hash": "e77110e20186221ff9597c8f7147c764eb4dbe85e815b12044406cceb9fa584b",
+            "url": "https://github.com/SimonAKing/scrcpy-gui/releases/download/v2.4.3/Scrcpy.GUI-2.4.3-win-ia32.exe#/dl.7z",
+            "hash": "d18f277b2d729bc10d78b6c8d8d6a1d00d7f8ce2ede81530c3f63aa11ab2f7b5",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\" -Force -Recurse"
