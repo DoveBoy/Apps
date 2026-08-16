@@ -1,5 +1,5 @@
 {
-    "version": "2.0.0-beta.12",
+    "version": "2.0.0-beta.17",
     "description": "A full-featured download manager.",
     "homepage": "https://motrix.app",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/agalwood/Motrix/releases/download/v2.0.0-beta.12/Motrix-Setup-2.0.0-beta.12.exe#/dl.7z",
-            "hash": "sha512:ac06812db0a272b8a5578f5b2bd3ebcfb265711586891821dfbafedcbb43e9636c22ea6d16b57860943d30c194f147ad32e3e1470c560f73eafd64bb10d3b5f9",
+            "url": "https://github.com/agalwood/Motrix/releases/download/v2.0.0-beta.17/Motrix-Setup-2.0.0-beta.17.exe#/dl.7z",
+            "hash": "sha512:2f7561933f60eab2b81014ec4613cd701dc604f6475470548570609f8f37ff55ad2191ecba581dc5f2ce8a8f97461194967f9c517c5f8288ef79e289131a3148",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\resources\" -Force -Recurse"
