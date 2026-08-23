@@ -1,5 +1,5 @@
 {
-    "version": "0.9.9",
+    "version": "1.0.0",
     "description": "A NetEase Cloud Music Player for Multi-Platform, Powered With QML4J Engine.",
     "homepage": "https://github.com/TIMER-err/qplayer",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/TIMER-err/qplayer/releases/download/v0.9.9/QPlayer-windows-x64-setup.exe",
-            "hash": "bd04132a26e06399c646f5adee075e528ed08ef64243a31d8940e40c0044c909"
+            "url": "https://github.com/TIMER-err/qplayer/releases/download/v1.0.0/QPlayer-windows-x64-setup.exe",
+            "hash": "54e8edc77fc3697fd14dadb13d5c2c36f66147afdf6ac4a4ff3ad11ea7ea6532"
         }
     },
     "innosetup": true,
