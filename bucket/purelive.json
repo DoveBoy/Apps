@@ -1,5 +1,5 @@
 {
-    "version": "3.0.9",
+    "version": "3.1.1",
     "description": "一款开源的第三方多平台直播聚合播放器",
     "homepage": "https://github.com/liuchuancong/pure_live",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/liuchuancong/pure_live/releases/download/v3.0.9/PureLive-3.0.9-4097-windows-x64-setup.exe",
-            "hash": "fccd48c2d4c12375f8f6f5f4861faa0a98398e9127b00ff0e822e77d1834043e"
+            "url": "https://github.com/liuchuancong/pure_live/releases/download/v3.1.1/PureLive-3.1.1-4099-windows-x64-setup.exe",
+            "hash": "dbd2c34dca27cb67072c0633d14e9fcb4f19df2e8e02a7f7104a15939dd8e58e"
         }
     },
     "innosetup": true,
