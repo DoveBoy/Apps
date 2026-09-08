@@ -1,5 +1,5 @@
 {
-    "version": "2.16.4",
+    "version": "2.16.6",
     "description": "免费、极简、轻量且高性能的C盘清理工具",
     "homepage": "https://github.com/Chunyu33/light-c",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Chunyu33/light-c/releases/download/v2.16.4/LightC_portable_x64_v2.16.4.zip",
-            "hash": "b39d455c4f7a2496de7acefc846cf0f94549320590e33fddc34e8f5444d11aad"
+            "url": "https://github.com/Chunyu33/light-c/releases/download/v2.16.6/LightC_portable_x64_v2.16.6.zip",
+            "hash": "0e42bac0aa675b94345d49d44403d71ae3d1e718b099e7fffdb3894fde740b26"
         }
     },
     "installer": {
