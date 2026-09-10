@@ -1,0 +1,100 @@
+{
+    "version": "1.2",
+    "description": "Universal Samsung DeX alternative for all Android devices. Run Android apps on Windows, Linux & macOS with resizable windows, advanced FPS gaming controls, and high-performance wireless ADB mirroring.",
+    "homepage": "https://shrey113.github.io/Android-Dex/",
+    "license": {
+        "identifier": "Unknown"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Shrey113/Android-Dex/releases/download/Android-Dex-v.1.2/Android_Dex_Windows_x64.zip#/android_dex_payload.bin",
+            "hash": "ae8257766cb75494ad729f8d41f49ec8a9db05a8ee416c575c46ed584caa8901"
+        },
+        "arm64": {
+            "url": "https://github.com/Shrey113/Android-Dex/releases/download/Android-Dex-v.1.2/Android_Dex_Windows_ARM64.zip#/android_dex_payload.bin",
+            "hash": "e1c5c302b8c89986ad6528c572b7b3fd31b0c66e7083784f9296ff5bc6a54a98"
+        }
+    },
+    // 强制禁止 Scoop 使用内置的 7-Zip 解压下载的文件。
+    // 原因：原作者的 ZIP 存在“同名嵌套”问题（外层 zip 里包含同名 zip）。
+    // 7-Zip 在遇到同名文件夹和文件名冲突时会直接崩溃（Exit code 2），因此必须我们自己接管解压。
+    "extract": false,
+    // pre_install 阶段：在 Scoop 安装文件之前运行的 PowerShell 脚本。
+    // 整个脚本的目的：解开双层 ZIP，并将最终文件平铺到根目录，避免路径过深。
+    "pre_install": [
+        // 1. 定位伪装文件。为了绕过 Scoop 基于后缀名（.zip）自动调用 7-Zip 的逻辑，
+        //    我们在 URL 末尾使用了 #/android_dex_payload.bin 将文件伪装成二进制文件。
+        "$payload = Join-Path $dir 'android_dex_payload.bin'",
+        "if (Test-Path $payload) {",
+        // 2. 还原后缀名。将伪装文件改回 .zip，以便使用 Windows 原生的 Expand-Archive 命令。
+        //    原生解压比 7-Zip 宽容度高，遇到同名冲突会自动合并或覆盖。
+        "    Rename-Item -Path $payload -NewName 'outer.zip' -Force",
+        // 3. 解压外层压缩包到当前安装目录 $dir。
+        "    Expand-Archive -Path (Join-Path $dir 'outer.zip') -DestinationPath $dir -Force",
+        // 4. 立即删除外层压缩包。
+        //    关键：如果不删除它，解压出来的内层同名压缩包会覆盖它，或者引发后续操作的文件名冲突。
+        "    Remove-Item (Join-Path $dir 'outer.zip') -Force",
+        // 5. 搜索并定位内层的同名压缩包。
+        "    $innerZip = Get-ChildItem -Path $dir -Filter '*.zip' | Select-Object -First 1",
+        "    if ($innerZip) {",
+        // 6. 解压内层压缩包。此时里面的结构会变成 $dir/Android_Dex/xxx.exe。
+        "        Expand-Archive -Path $innerZip.FullName -DestinationPath $dir -Force",
+        // 7. 删除内层压缩包，保持目录整洁。
+        "        Remove-Item $innerZip.FullName -Force",
+        "    }",
+        // 8. 目录扁平化处理（优化体验）。
+        //    Scoop 对于 bin 和 shortcuts 的路径如果直接写文件，最好放在根目录。
+        //    目前文件全都在 $dir\Android_Dex 文件夹里，我们需要把它们提取出来。
+        "    $innerFolder = Join-Path $dir 'Android_Dex'",
+        "    if (Test-Path $innerFolder) {",
+        // 9. 移动 Android_Dex 文件夹里的所有内容到根目录 $dir。
+        //    使用 -Force 参数确保能处理隐藏文件和只读文件。
+        "        Get-ChildItem -Path $innerFolder -Force | Move-Item -Destination $dir -Force",
+        // 10. 移动完成后，删除已经变空的 Android_Dex 文件夹。
+        "        Remove-Item -Path $innerFolder -Recurse -Force",
+        "    }",
+        "}"
+    ],
+    "installer": {
+        "script": [
+            "# handle runtime cache",
+            "Import-Module $(Join-Path $(Find-BucketDirectory -Root -Name apps) scripts/AppsUtils.psm1)",
+            "Mount-ExternalRuntimeData -Source \"$persist_dir\\appdata\" -Target \"$env:APPDATA\\com.example\"",
+            "Remove-Module -Name AppsUtils"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "Import-Module $(Join-Path $(Find-BucketDirectory -Root -Name apps) scripts/AppsUtils.psm1)",
+            "Dismount-ExternalRuntimeData -Target \"$env:APPDATA\\com.example\"",
+            "Remove-Module -Name AppsUtils"
+        ]
+    },
+    "bin": [
+        [
+            "Android_Dex.exe",
+            "AndroidDex"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "Android_Dex.exe",
+            "AndroidDex"
+        ]
+    ],
+    "checkver": {
+        "github": "https://api.github.com/repos/Shrey113/Android-Dex/releases",
+        "jp": "$[0].tag_name",
+        "regex": "Android-Dex-v.([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Shrey113/Android-Dex/releases/download/Android-Dex-v.$version/Android_Dex_Windows_x64.zip#/android_dex_payload.bin"
+            },
+            "arm64": {
+                "url": "https://github.com/Shrey113/Android-Dex/releases/download/Android-Dex-v.$version/Android_Dex_Windows_ARM64.zip#/android_dex_payload.bin"
+            }
+        }
+    }
+}
