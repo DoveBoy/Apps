@@ -1,5 +1,5 @@
 {
-    "version": "6.2.29",
+    "version": "6.2.31",
     "description": "3FUI 是 ffmpeg 在 Windows 上的轻度专业交互外壳，收录大量参数，界面美观，交互友好。此项目面向国内使用环境，让普通人也能够轻松压制视频和转换格式。",
     "homepage": "https://ffmpegfreeui.top/",
     "license": {
@@ -9,22 +9,22 @@
     "architecture": {
         "64bit": {
             "url": [
-                "https://github.com/Lake1059/FFmpegFreeUI/releases/download/6.2.29/FFmpegFreeUI.x64.exe#/FFmpegFreeUI.exe",
-                "https://github.com/Lake1059/FFmpegFreeUI/releases/download/6.2.29/Updater.exe"
+                "https://github.com/Lake1059/FFmpegFreeUI/releases/download/6.2.31/FFmpegFreeUI.x64.exe#/FFmpegFreeUI.exe",
+                "https://github.com/Lake1059/FFmpegFreeUI/releases/download/6.2.31/Updater.exe"
             ],
             "hash": [
-                "c122b3e0a3adf98aaa24f204422802b4049fd3435b9a57c390d9927d278fce7c",
-                "e5fc3a4715e41abaedf979db8831180f32e8c78d81b8e2b0b4a2c036a66a2446"
+                "bb7ecd716d2c0e19d477ef7d26f197dc9b8cf0ff2fd165e88906f23c52f0d426",
+                "54bdf53a4ebba7bdfaf8821676726611f28ced4d4446bf72c0df62751089390f"
             ]
         },
         "arm64": {
             "url": [
-                "https://github.com/Lake1059/FFmpegFreeUI/releases/download/6.2.29/FFmpegFreeUI.arm64.exe#/FFmpegFreeUI.exe",
-                "https://github.com/Lake1059/FFmpegFreeUI/releases/download/6.2.29/Updater.exe"
+                "https://github.com/Lake1059/FFmpegFreeUI/releases/download/6.2.31/FFmpegFreeUI.arm64.exe#/FFmpegFreeUI.exe",
+                "https://github.com/Lake1059/FFmpegFreeUI/releases/download/6.2.31/Updater.exe"
             ],
             "hash": [
-                "543880da3b2870c2472473bc39c277bafe5d49ad769abd42cf1b993bf795a0ec",
-                "e5fc3a4715e41abaedf979db8831180f32e8c78d81b8e2b0b4a2c036a66a2446"
+                "e4d5bafea4c3361689ad9121aefa4475464de506288a8ed0790973da1673a865",
+                "54bdf53a4ebba7bdfaf8821676726611f28ced4d4446bf72c0df62751089390f"
             ]
         }
     },
