@@ -1,5 +1,5 @@
 {
-    "version": "4.0.0",
+    "version": "4.0.1",
     "description": "An easy-to-use, multi-track audio editor and recorder",
     "homepage": "https://www.audacityteam.org",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.0/audacity-win-4.0.0-x86_64.msi",
-            "hash": "2aecc44d28a004d15ae7c23c099f232ba8c5b3e6b19ebdbaf7d6c596316dc5b3"
+            "url": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.1/audacity-win-4.0.1-x86_64.msi",
+            "hash": "efb652bf04168f5d4893f28b7cefaaf5ef385d9251544540ac774e3bf54793a3"
         },
         "arm64": {
-            "url": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.0/audacity-win-4.0.0-arm64.msi",
-            "hash": "a5b222a9cf8f03cccef57c912428427eb9387f0e88fa590d9c2b1d83794b222c"
+            "url": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.1/audacity-win-4.0.1-arm64.msi",
+            "hash": "b6606d9bcb1a49254f1966c7edc68d78f7eadd04eebe7d4676350f32ca675f49"
         }
     },
     "extract_dir": "Audacity 4",
