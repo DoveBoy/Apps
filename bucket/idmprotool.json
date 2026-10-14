@@ -1,5 +1,5 @@
 {
-    "version": "1.5.0",
+    "version": "1.5.1",
     "description": "IDM激活与状态维护工具",
     "homepage": "https://github.com/angusdevgo/IDM_Pro_Tool",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/angusdevgo/IDM_Pro_Tool/releases/download/v1.5.0/IDM_Pro_Tool_v1.5.0.zip",
-            "hash": "9f19bd112f7bf08f972b9ca9379ca4ee457160a01481afd7d33f15415cd4bc6d"
+            "url": "https://github.com/angusdevgo/IDM_Pro_Tool/releases/download/v1.5.1/IDM_Pro_Tool_v1.5.1.zip",
+            "hash": "219e7d35b3b90798c5c1d4d548418e5daa1a487e46ab29d7348f4289d34e42fd"
         }
     },
     "bin": [
