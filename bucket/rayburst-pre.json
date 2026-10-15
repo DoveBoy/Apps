@@ -1,5 +1,5 @@
 {
-    "version": "4.1.0-beta.1",
+    "version": "4.1.0-beta.7",
     "description": "Redefining the open-source download manager",
     "homepage": "https://rayburst.pages.dev/",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/AnInsomniacy/rayburst/releases/download/v4.1.0-beta.1/Rayburst_4.1.0-beta.1_x64-setup.exe#/dl.7z",
-            "hash": "3cd716d6522a9e56ce5ec52cb5da9c38ccdd8fe50aa063d6d9ced39a4363b777"
+            "url": "https://github.com/AnInsomniacy/rayburst/releases/download/v4.1.0-beta.7/Rayburst_4.1.0-beta.7_x64-setup.exe#/dl.7z",
+            "hash": "ded4b787d5586c9e35311e452acb1a55af4e766770704a9b029546b6005024b4"
         },
         "arm64": {
-            "url": "https://github.com/AnInsomniacy/rayburst/releases/download/v4.1.0-beta.1/Rayburst_4.1.0-beta.1_arm64-setup.exe#/dl.7z",
-            "hash": "9b95512ebf283c3ab5d9c997b689bfd81d8a25e929ffbe4dd60ed7b70b8f4a0a"
+            "url": "https://github.com/AnInsomniacy/rayburst/releases/download/v4.1.0-beta.7/Rayburst_4.1.0-beta.7_arm64-setup.exe#/dl.7z",
+            "hash": "aa199f67b3c29843d840cbee6ca3a9df5a341fcf4f9a42fe84be8658fba4f30f"
         }
     },
     "pre_install": "Remove-Item \"$dir\\`$*\", \"$dir\\uninst*\" -Force -Recurse",
