@@ -1,5 +1,5 @@
 {
-    "version": "1.9.3",
+    "version": "1.9.4",
     "description": "🩵 A free, open-source app store for developers' releases on GitHub, Codeberg & Forgejo — browse, discover, and install apps with one click. Formerly GitHub Store.",
     "homepage": "https://www.github-store.org/",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/kurikomi-labs/komi-store/releases/download/v1.9.3/Komi-Store-1.9.3.msi",
-            "hash": "34e935b80652e49d7c543e994546bd3f9a57b4da198b991fd8aa6fa4958a2917"
+            "url": "https://github.com/kurikomi-labs/komi-store/releases/download/v1.9.4/Komi-Store-1.9.4.msi",
+            "hash": "1fae8a17182c3ce0897377c352ea66e61103b6c3a9c4d748aeb208cfd7d556c8"
         }
     },
     "innosetup": true,
