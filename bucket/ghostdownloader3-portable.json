@@ -16,7 +16,6 @@
             "hash": "ac92152df075203aeab8de4890ca9c3f2d8fcef1bae5ec518a2a401f824127b7"
         }
     },
-    "innosetup": true,
     "bin": "Ghost-Downloader-3.exe",
     "shortcuts": [
         [
