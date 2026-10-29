@@ -53,9 +53,6 @@
                 "url": "https://github.com/Miaoyww/NonsPlayer/releases/download/v$version/Nons_$version_windows_x64_portable.zip",
                 "extract_dir": "Nons_$version_windows_x64_portable"
             }
-        },
-        "hash": {
-            "url": "$baseurl/SHA256SUMS.txt"
         }
     }
 }
