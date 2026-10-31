@@ -1,12 +1,12 @@
 {
-    "version": "0.6.46",
+    "version": "0.6.52",
     "description": "基于 ChatGPT API 的划词翻译浏览器插件和跨平台桌面端应用 - Browser extension and cross-platform desktop application for translation based on ChatGPT API.",
     "homepage": "https://github.com/nextai-translator/nextai-translator",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/nextai-translator/nextai-translator/releases/download/v0.6.46/NextAI.Translator_0.6.46_x64-setup.exe#/dl.7z",
-            "hash": "5a0cc81edcb9e759496cdeac23b2c314f45bbcd22872d52d0add2ea8966e455e"
+            "url": "https://github.com/nextai-translator/nextai-translator/releases/download/v0.6.52/NextAI.Translator_0.6.52_x64-setup.exe#/dl.7z",
+            "hash": "204e3bcc6e5360a882b1970828a97a0876cb204d151891efacbfed0e8615c7be"
         }
     },
     "post_install": "@('$PLUGINSDIR', '$TEMP', 'uninstall.exe') | ForEach-Object { Remove-Item \"$dir\\$_\" -Recurse -Force }",
