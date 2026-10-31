@@ -1,5 +1,5 @@
 {
-    "version": "1.3.0",
+    "version": "1.3.2",
     "description": "YunX（云析）的官方 windows 桌面端",
     "homepage": "https://github.com/tidain/YunX-Desktop",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/tidain/YunX-Desktop/releases/download/v1.3.0/YunX-Desktop-v1.3.0-win64-portable.zip",
-            "hash": "fa6a43816c55510623fa8bd19597078ca2a75b4ed54196e53cc418235f47824e"
+            "url": "https://github.com/tidain/YunX-Desktop/releases/download/v1.3.2/YunX-Desktop-v1.3.2-win64-portable.zip",
+            "hash": "5f90ecd5b7c36949132514778fff32c9c991f5e5dab44c45bde21867d91734c6"
         }
     },
     "installer": {
