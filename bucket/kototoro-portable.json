@@ -1,5 +1,5 @@
 {
-    "version": "2.3.6",
+    "version": "2.3.7",
     "description": "Manga, Novel, and Video reader for Android",
     "homepage": "https://github.com/Kototoro-app/Kototoro",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Kototoro-app/Kototoro/releases/download/v2.3.6/Kototoro-2.3.6-windows-x64-release.zip",
-            "hash": "e2a8757de4aa8546ff86ffa9585f5913ca4e3fb7a6ab004b36ab9d014de10126"
+            "url": "https://github.com/Kototoro-app/Kototoro/releases/download/v2.3.7/Kototoro-2.3.7-windows-x64-release.zip",
+            "hash": "c3f77a560ccac142af6aeab36ea17be850984e8637e4aa8a05abe620b063131d"
         }
     },
     "extract_dir": "Kototoro",
