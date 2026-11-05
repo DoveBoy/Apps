@@ -8,7 +8,7 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/hiddify/hiddify-next/releases/download/v5.5.5/Hiddify-Windows-Portable-x64.zip",
+            "url": "https://github.com/hiddify/hiddify-app/releases/download/v5.5.5/Hiddify-Windows-Portable-x64.zip",
             "hash": "b4579d6a9a7b0bb0dedfd2e462ab4cfefc53ec25b56f287cca5edb435f01f627"
         }
     },
@@ -22,14 +22,14 @@
     ],
     "persist": "hiddify_portable_data",
     "checkver": {
-        "github": "https://api.github.com/repos/hiddify/hiddify-next/releases/latest",
-        "jsonpath": "$.assets[*].browser_download_url",
-        "regex": "/releases/download/v([\\w.]+)/(?<file>(?:hiddify|Hiddify)-(?:windows|Windows)-(?:portable|Portable)-x64\\.zip)"
+        "github": "https://api.github.com/repos/hiddify/hiddify-app/releases/latest",
+        "jp": "$.tag_name",
+        "regex": "v([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/hiddify/hiddify-next/releases/download/v$version/$matchFile"
+                "url": "https://github.com/hiddify/hiddify-app/releases/download/v$version/Hiddify-Windows-Portable-x64.zip"
             }
         }
     }
