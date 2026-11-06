@@ -1,5 +1,5 @@
 {
-    "version": "2.28.0",
+    "version": "2.28.1",
     "description": "Open-source tool to build your Windows script from scratch. It includes debloat, privacy, performance & app installing scripts.",
     "homepage": "https://winscript.cc/",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/flick9000/winscript/releases/download/v2.28.0/winscript-installer.exe#/dl.7z",
-            "hash": "6c7f6168369e6162342b3f41a7a9d204c7f4e40746cadacd08744a167e3907e0",
+            "url": "https://github.com/flick9000/winscript/releases/download/v2.28.1/winscript-installer.exe#/dl.7z",
+            "hash": "f6f5c5869d059f086cf1caeb918355f90c2bf3d41f0787007d4ad358f18caa41",
             "pre_install": "Remove-Item \"$dir\\`$*\", \"$dir\\uninst*\" -Force -Recurse"
         }
     },
