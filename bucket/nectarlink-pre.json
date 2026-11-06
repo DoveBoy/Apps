@@ -1,5 +1,5 @@
 {
-    "version": "0.1.5-nightly.5",
+    "version": "0.1.6-nightly.3",
     "description": "Your Android phone and your Windows PC, working as one. Local-first, end-to-end encrypted, no account.",
     "homepage": "https://github.com/thtbee/nectarlink",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/thtbee/nectarlink/releases/download/v0.1.5-nightly.5/Nectarlink-0.1.5-nightly.5-x64-setup.exe#/dl.7z",
-            "hash": "6f0793da86a973c38232701876b461cdc934dfb406864e388ac2fa9663f6be65"
+            "url": "https://github.com/thtbee/nectarlink/releases/download/v0.1.6-nightly.3/Nectarlink-0.1.6-nightly.3-x64-setup.exe#/dl.7z",
+            "hash": "dd76cecf86f135b8af479e2ce0be9b0805433b3f89f68c9100b87ecc90912bbe"
         },
         "arm64": {
-            "url": "https://github.com/thtbee/nectarlink/releases/download/v0.1.5-nightly.5/Nectarlink-0.1.5-nightly.5-x64-setup.exe#/dl.7z",
-            "hash": "6f0793da86a973c38232701876b461cdc934dfb406864e388ac2fa9663f6be65"
+            "url": "https://github.com/thtbee/nectarlink/releases/download/v0.1.6-nightly.3/Nectarlink-0.1.6-nightly.3-x64-setup.exe#/dl.7z",
+            "hash": "dd76cecf86f135b8af479e2ce0be9b0805433b3f89f68c9100b87ecc90912bbe"
         }
     },
     "pre_install": [
