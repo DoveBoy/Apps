@@ -45,9 +45,6 @@
             "64bit": {
                 "url": "https://github.com/flick9000/winscript/releases/download/v$version/winscript-installer.exe#/dl.7z"
             }
-        },
-        "hash": {
-            "url": "$baseurl/latest.json"
         }
     }
 }
