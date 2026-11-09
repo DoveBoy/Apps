@@ -1,5 +1,5 @@
 {
-    "version": "261021",
+    "version": "261021-1.7.23159.0",
     "description": "Highly customizable media player",
     "homepage": "https://potplayer.daum.net",
     "license": {
@@ -9,7 +9,7 @@
     "architecture": {
         "64bit": {
             "url": "https://t1.daumcdn.net/potplayer/PotPlayer/Version/261021/PotPlayerSetup64.exe#/dl.7z",
-            "hash": "121f0e686d5ab702492e6a7d44331cf3748355d03cadd11e2731c56bc13ed7d4",
+            "hash": "71374ce7f60136b8e8dd1618f736d37ccbefcc5875feb33650f9f8de0bba87e8",
             "shortcuts": [
                 [
                     "PotPlayer64.exe",
@@ -23,7 +23,7 @@
         },
         "32bit": {
             "url": "https://t1.daumcdn.net/potplayer/PotPlayer/Version/261021/PotPlayerSetup.exe#/dl.7z",
-            "hash": "c1eaeb6aadb2067939556128aeaa57f17a8913335d844a7a6a30f48c1ee59d20",
+            "hash": "56152e5cebec391b4c146408bb5d067d5f0c92825ff86719a0fcb2dddee97272",
             "shortcuts": [
                 [
                     "PotPlayer.exe",
@@ -34,10 +34,24 @@
                     "PotPlayer Mini"
                 ]
             ]
+        },
+        "arm64": {
+            "url": "https://t1.daumcdn.net/potplayer/PotPlayer/Version/261021/PotPlayerSetupARM64.exe#/dl.7z",
+            "hash": "28e457929b9aed066d0fa2f335bf25a68f47247dd37d91ebb2532fb9e18ef490",
+            "shortcuts": [
+                [
+                    "PotPlayer64.exe",
+                    "PotPlayer"
+                ],
+                [
+                    "PotPlayerMini64.exe",
+                    "PotPlayer Mini"
+                ]
+            ]
         }
     },
     "pre_install": [
-        "Remove-Item -Path \"$dir\\`$*\" -Recurse -Force -ErrorAction SilentlyContinue",
+        "Remove-Item -Path \"$dir\\`$*\", \"$dir\\Uninst*\" -Recurse -Force -ErrorAction SilentlyContinue",
         "$cfg = @(",
         "    '[Settings]'",
         "    'AutoUpdateStart=0'",
@@ -82,15 +96,31 @@
     ],
     "checkver": {
         "url": "https://t1.daumcdn.net/potplayer/PotPlayer/v4/Update2/UpdateEng.html",
-        "regex": "\\[(\\d+)\\]"
+        "script": [
+            "$date = if ($page -match '\\[(\\d+)\\]') { $Matches[1] } else { '' }",
+            "if ($date.Length -eq 0) { error 'Failed to extract date from page'; return '' }",
+            "$tempFile = New-TemporaryFile",
+            "$wc = [System.Net.HttpWebRequest]::Create(\"https://t1.daumcdn.net/potplayer/PotPlayer/Version/$date/PotPlayerSetup64.exe\")",
+            "$wc.AddRange(0, 1000000)",
+            "$out = $tempFile.OpenWrite()",
+            "$wc.GetResponse().GetResponseStream().CopyTo($out)",
+            "$out.Close()",
+            "$versionInfo = (Get-Item $tempFile.FullName).VersionInfo",
+            "Remove-Item $tempFile.FullName -Force -ErrorAction Ignore",
+            "return \"$date-$($versionInfo.ProductVersion)\""
+        ],
+        "regex": "(\\d+-\\d+(?:\\.\\d+)+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://t1.daumcdn.net/potplayer/PotPlayer/Version/$version/PotPlayerSetup64.exe#/dl.7z"
+                "url": "https://t1.daumcdn.net/potplayer/PotPlayer/Version/$majorVersion/PotPlayerSetup64.exe#/dl.7z"
             },
             "32bit": {
-                "url": "https://t1.daumcdn.net/potplayer/PotPlayer/Version/$version/PotPlayerSetup.exe#/dl.7z"
+                "url": "https://t1.daumcdn.net/potplayer/PotPlayer/Version/$majorVersion/PotPlayerSetup.exe#/dl.7z"
+            },
+            "arm64": {
+                "url": "https://t1.daumcdn.net/potplayer/PotPlayer/Version/$majorVersion/PotPlayerSetupARM64.exe#/dl.7z"
             }
         }
     }
