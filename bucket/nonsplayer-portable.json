@@ -1,5 +1,5 @@
 {
-    "version": "1.11.0",
+    "version": "1.12.4",
     "description": "Multiple music streaming services & High performance. 跨平台、多音源的音乐播放器",
     "homepage": "https://github.com/Miaoyww/NonsPlayer",
     "license": {
@@ -8,9 +8,9 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Miaoyww/NonsPlayer/releases/download/v1.11.0/Nons_1.11.0_windows_x64_portable.zip",
-            "hash": "88227962211657ecd14da680316cd24024dc8ba15b191e7549cd59ca7b3e1e96",
-            "extract_dir": "Nons_1.11.0_windows_x64_portable"
+            "url": "https://github.com/Miaoyww/NonsPlayer/releases/download/v1.12.4/Nons_1.12.4_windows_x64_portable.zip",
+            "hash": "bc54063c85a1dfb94f587c9c1913e65c484b3824bc77597cd8eaf2be028356c6",
+            "extract_dir": "Nons_1.12.4_windows_x64_portable"
         }
     },
     "installer": {
