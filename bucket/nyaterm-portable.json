@@ -1,5 +1,5 @@
 {
-    "version": "2.0.2",
+    "version": "2.0.4",
     "description": "A modern remote terminal workspace",
     "homepage": "https://nyaterm.app/",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/nyakang/nyaterm/releases/download/v2.0.2/NyaTerm_2.0.2_windows_x64_portable.zip",
-            "hash": "31fb5409ffa75d20c0add85dd915cef9fda8869e783b8317a72c8cd19d77999f"
+            "url": "https://github.com/nyakang/nyaterm/releases/download/v2.0.4/NyaTerm_2.0.4_windows_x64_portable.zip",
+            "hash": "6a73ac2cf4a35eb01820835e1e74a9d22be855c5978e9e70bb3f3228619f1a09"
         },
         "arm64": {
-            "url": "https://github.com/nyakang/nyaterm/releases/download/v2.0.2/NyaTerm_2.0.2_windows_arm64_portable.zip",
-            "hash": "aa2fa417ac4915ba95eb7ae44015be136db3760389dbeb70353807aa666635b8"
+            "url": "https://github.com/nyakang/nyaterm/releases/download/v2.0.4/NyaTerm_2.0.4_windows_arm64_portable.zip",
+            "hash": "22403ff4a9df46a646b0d319a228f27b32cbfc6e78fcf2c4ac95ba8cfe6e290e"
         }
     },
     "extract_dir": "NyaTerm-portable",
