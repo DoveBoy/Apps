@@ -1,5 +1,5 @@
 {
-    "version": "2.0.2",
+    "version": "2.0.4",
     "description": "A modern remote terminal workspace",
     "homepage": "https://nyaterm.app/",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/nyakang/nyaterm/releases/download/v2.0.2/NyaTerm_2.0.2_windows_x64-setup.exe#/dl.7z",
-            "hash": "1d6563ed8c7b97fbe63a0aaa729baafef3c1c0cf0cff16939d02894e240b44ac"
+            "url": "https://github.com/nyakang/nyaterm/releases/download/v2.0.4/NyaTerm_2.0.4_windows_x64-setup.exe#/dl.7z",
+            "hash": "80ffe3adefc4e6210b5c0ea0d82a9db5418f3a344ae5a7a238263305be144ee0"
         },
         "arm64": {
-            "url": "https://github.com/nyakang/nyaterm/releases/download/v2.0.2/NyaTerm_2.0.2_windows_arm64-setup.exe#/dl.7z",
-            "hash": "817bc82f9473dcda12ea3ac74da2185711bbd82c75ee5935f6cbc87e37d46ff2"
+            "url": "https://github.com/nyakang/nyaterm/releases/download/v2.0.4/NyaTerm_2.0.4_windows_arm64-setup.exe#/dl.7z",
+            "hash": "72bdeb514c32c8dfbc54b1489355f67646ee105f5560cdc286d6f6b53f68b9a5"
         }
     },
     "pre_install": "Remove-Item \"$dir\\`$*\", \"$dir\\uninst*\" -Force -Recurse",
