@@ -1,5 +1,5 @@
 {
-    "version": "1.7.22",
+    "version": "1.7.23",
     "description": "一个美观易用的漫画客户端, 同时支持支持 Android / iOS / MacOS / Windows / Linux。",
     "homepage": "https://github.com/niuhuan/jasmine",
     "license": {
@@ -7,8 +7,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ComicSparks/jasmine/releases/download/v1.7.22/jasmine-v1.7.22-windows-x86_64.zip",
-            "hash": "dca3e0926772dc4ce2d2eab7723546ef23fb3f67e5d057c3cc1f101307cdc7b1"
+            "url": "https://github.com/ComicSparks/jasmine/releases/download/v1.7.23/jasmine-v1.7.23-windows-x86_64.zip",
+            "hash": "c795b44cf85d1710b390c35e37dffb650ea72fc64b38510c84449ec819b04441"
         }
     },
     "shortcuts": [
