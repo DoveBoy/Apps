@@ -1,5 +1,5 @@
 {
-    "version": "0.5.20",
+    "version": "0.5.23",
     "description": "由 Pilipala 开发的 Android 电视播放器。仅提供工具，不含影视资源；内容和配置由用户自行合法获取。",
     "homepage": "https://github.com/Pilipala9919/MarcoMovie",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Pilipala9919/MarcoMovie/releases/download/windows-v0.5.20/MarcoMovie-0.5.20-windows-x64.zip",
-            "hash": "446ebfdce3148a12342bab13cea8dd07886aaffc9959e5fe78bedc3e2514f178"
+            "url": "https://github.com/Pilipala9919/MarcoMovie/releases/download/windows-v0.5.23/MarcoMovie-0.5.23-windows-x64.zip",
+            "hash": "fe07dbe7c3bb66d03a8d5886e4f0ed1e9c88bf8fd5419bbae5301324547e281f"
         }
     },
     "installer": {
