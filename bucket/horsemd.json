@@ -1,5 +1,5 @@
 {
-    "version": "0.14.0",
+    "version": "0.14.3",
     "description": "A free Typora alternative, and then some — tabs + file-tree + WYSIWYG Markdown editor for Windows & macOS | 免费的 Typora 平替：标签页 + 文件树 + 所见即所得",
     "homepage": "https://horsemd.yangsir.net/",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/BND-1/horseMD/releases/download/v0.14.0/HorseMD-Setup-0.14.0.exe#/dl.7z",
-            "hash": "sha512:48360a5c50980f96c35ad1a5c937a71083e1d72cf9490ab0cc64c7e3af9aeed87855fabf0439f2bbb2d028492c731f49bf1711d4b680a17507f045a32379e30f",
+            "url": "https://github.com/BND-1/horseMD/releases/download/v0.14.3/HorseMD-Setup-0.14.3.exe#/dl.7z",
+            "hash": "sha512:2ba661d660e52e508008fc324c201293475cd14d5d64239fdf72f6ba9b555189bfbd74ed0ee809921e199db6d30967b5b1954a562355ed21feb2b600d393d676",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\uninst*\" -Force -Recurse"
