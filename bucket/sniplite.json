@@ -1,5 +1,5 @@
 {
-    "version": "0.3.11",
+    "version": "0.3.14",
     "description": "SnipLite轻便截图工具-支持ocr-二维码识别",
     "homepage": "https://github.com/GxDongV/SnipLite",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/GxDongV/SnipLite/releases/download/v0.3.11/SnipLite-0.3.11-win-x64-setup.exe",
-            "hash": "1ad0ecd329737c846524b0267d6be0b4b182050b4a85203105c6e5c311fa203f"
+            "url": "https://github.com/GxDongV/SnipLite/releases/download/v0.3.14/SnipLite-0.3.14-win-x64-setup.exe",
+            "hash": "80a90cd648bafbd3fc3e4546345838e78642da6d82fc7f2b4fb64de154d1a5e6"
         }
     },
     "innosetup": true,
