@@ -1,16 +1,16 @@
 {
-    "version": "5.3.4",
+    "version": "5.4.2",
     "description": "A lightweight Markdown and plain text editor built with Tauri 2.",
     "homepage": "https://solomd.app",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/zhitongblog/solomd/releases/download/v5.3.4/SoloMD_5.3.4_x64_en-US.msi",
-            "hash": "c1100d7c066d5230bb2a88cd5c46609b25448db24956b68e36dd4d09d49b9c76"
+            "url": "https://github.com/zhitongblog/solomd/releases/download/v5.4.2/SoloMD_5.4.2_x64_en-US.msi",
+            "hash": "627503e387f5a7ad8c0f05563249865216d90128b451459640796ad558c5806d"
         },
         "arm64": {
-            "url": "https://github.com/zhitongblog/solomd/releases/download/v5.3.4/SoloMD_5.3.4_arm64_en-US.msi",
-            "hash": "3664dcbf976c80f4c4fb0ff11b25b06bbc2b5edb0cb6a734810928f56d997fe7"
+            "url": "https://github.com/zhitongblog/solomd/releases/download/v5.4.2/SoloMD_5.4.2_arm64_en-US.msi",
+            "hash": "7c4e3e8a89dca58e6c1d2df9605ce6aefa0f51ee4492f65d4149a48e0abe0a98"
         }
     },
     "extract_dir": "PFiles\\SoloMD",
